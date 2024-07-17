@@ -1,122 +1,508 @@
-<!DOCTYPE HTML>
-<!--
-	Ron Houser
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Ron Houser</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="https://starfield-resume.com" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ron Houser - Senior Business Intelligence Analyst</title>
+    <style>
+        :root {
+            --primary-color: #00ffff;
+            --secondary-color: #ff00ff;
+            --tirshiary-color: #b9cbce;
+            --color2: #92f3ce;
+            --color3: #f7cf87;
+            --color4: #f7f087;
+            --background-color: #080820;
+            --text-color: #e0e0ff;
+        }
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Chrome', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            height: 300vh;
+            overflow: hidden;
+        }
 
-							<!-- Logo -->
-								<a href="" class="logo">
-									<span class="symbol"><img src="https://media-exp1.licdn.com/dms/image/C5603AQHFZi7f6Em5bQ/profile-displayphoto-shrink_800_800/0/1664208649412?e=1672272000&v=beta&t=Q8DjGc9UIWpWrX5wQNYxkQkxpUSvgS8nlmblcM13Pa4" alt="" /></span><span class="title">Welcome</span>
-								</a>
+        .container {
+            display: flex;
+            height: 100vh;
+        }
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 220px;
+            height: 99vh;
+            background: linear-gradient(135deg, rgba(0,255,255,0.1), rgba(255,0,255,0.1));
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-right: 1px solid rgba(255,255,255,0.1);
+        }
 
-						</div>
-					</header>
+        .main-content {
+            margin-left: 250px;
+            padding: 40px;
+            overflow-y: auto;
+            width: calc(100% - 250px);
+        }
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="https://github.com/RonHouser/SQL">SQL</a></li>
-							<li><a href="https://github.com/RonHouser/Python">Python</a></li>
-							<li><a href="https://public.tableau.com/app/profile/ron.houser">Tableau</a></li>
-							<li><a href="https://github.com/RonHouser/Power-BI">Power BI</a></li>
-							<li><a href="elements.html"></a></li>
-						</ul>
-					</nav>
+        h2 {
+            color: var(--text-color);
+            text-transform: uppercase;
+        }
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<header>
-								<h1>Ron Houser - Public Portfolio<br />
-								<a href="https://www.linkedin.com/in/ron-houser"></a></h1>
-								<p> Feel free to browse my projects by clicking on the boxes below. Don't hesitate to reach out to me with any questions! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="mailto: ron.houser12@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a> <a href="https://www.linkedin.com/in/ron-houser" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</a></p>
-							</header>
-							<section class="tiles">
-								<section>
-									
-								</section>
-								<article class="style">
-									<span class="image">
-										<img src="images/sql.jpg" alt="" />
-									</span>
-									<a href="https://github.com/RonHouser/SQL">
-										<h2></h2>
-										<div class="content">
-											<p></p>
-										</div>
-									</a>
-								</article>
-								<article class="style">
-									<span class="image">
-										<img src="images/python.jpg" alt="" />
-									</span>
-									<a href="https://github.com/RonHouser/Python">
-										<h2></h2>
-										<div class="content">
-											<p></p>
-										</div>
-									</a>
-								</article>
-								<article class="style">
-									<span class="image">
-										<img src="images/tableau.jpg" alt="" />
-									</span>
-									<a href="https://public.tableau.com/app/profile/ron.houser">
-										<h2></h2>
-										<div class="content">
-											<p></p>
-										</div>
-									</a> 
-								</article> 
-								<article class="style">
-									<span class="image">
-										<img src="images/Power BI.jpg" alt="" />
-									</span>
-									<a href="https://github.com/RonHouser/Power-BI">
-										<h2></h2>
-										<div class="content">
-											<p></p>
-										</div>
-									</a> 
-								</article> 
-							</section> 
-						</div> 
-					</div>
+        h1, h3 {
+            color: var(--primary-color);
+            text-transform: uppercase;
+        }
 
+        nav div {
+            cursor: pointer;
+            margin: 10px 0;
+        }
 
-			</div>
+      .menu-item1 {
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid transparent;
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+      .menu-item2 {
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid transparent;
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
 
-	</body>
+      .menu-item3 {
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid transparent;
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+
+      .menu-item4 {
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid transparent;
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+    
+      .menu-item1:hover {
+        border-color: var(--primary-color);
+        box-shadow: 0 0 10px var(--primary-color);
+      }
+
+      .menu-item2:hover {
+        border-color: var(--color2);
+        box-shadow: 0 0 10px var(--color2);
+      }
+
+      .menu-item3:hover {
+        border-color: var(--color3);
+        box-shadow: 0 0 10px var(--color3);
+      }
+
+      .menu-item4:hover {
+        border-color: var(--color4);
+        box-shadow: 0 0 10px var(--color4);
+      }
+    
+      .menu-item.active {
+        border-color: white;
+        box-shadow: 0 0 10px white;
+      }
+
+      .menu-item2.active {
+        border-color: white;
+        box-shadow: 0 0 10px white;
+      }
+
+      .menu-item3.active {
+        border-color: white;
+        box-shadow: 0 0 10px white;
+      }
+
+      .menu-item4.active {
+        border-color: white;
+        box-shadow: 0 0 10px white;
+      }
+      
+    
+      .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: 0 auto 20px;
+        background: url('https://media.licdn.com/dms/image/C5603AQHFZi7f6Em5bQ/profile-displayphoto-shrink_800_800/0/1664208650498?e=1726704000&v=beta&t=Tx7GQPC6hRdnwmS3sMpQgyeyAEEQ28ED5grEeg0Mqb0') center/cover;
+        border: 2px solid var(--tirshiary-color);
+      }
+    
+      .skill-bar {
+        height: 10px;
+        background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+        margin-bottom: 10px;
+        position: relative;
+        overflow: hidden;
+      }
+    
+      .skill-bar::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+        animation: shimmer 2s infinite;
+      }
+    
+      @keyframes shimmer {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(100%); }
+      }
+    
+      .project {
+        background: rgba(255,255,255,0.05);
+        padding: 20px;
+        margin-bottom: 20px;
+        border-left: 3px solid var(--primary-color);
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+
+      .project2 {
+        background: rgba(255,255,255,0.05);
+        padding: 20px;
+        margin-bottom: 20px;
+        border-left: 3px solid #92f3ce;
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+    
+      .project3 {
+        background: rgba(255,255,255,0.05);
+        padding: 20px;
+        margin-bottom: 20px;
+        border-left: 3px solid #f7cf87;
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+    
+      .project4 {
+        background: rgba(255,255,255,0.05);
+        padding: 20px;
+        margin-bottom: 20px;
+        border-left: 3px solid #f7f087;
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+    
+      .project:hover {
+        transform: translateX(10px);
+        box-shadow: -5px 0 15px rgba(0,255,255,0.3);
+      }
+    
+      .project2:hover {
+        transform: translateX(10px);
+        box-shadow: -5px 0 15px #92f3ce;
+      }
+    
+      .project3:hover {
+        transform: translateX(10px);
+        box-shadow: -5px 0 15px #f7cf87;
+      }
+    
+      .project4:hover {
+        transform: translateX(10px);
+        box-shadow: -5px 0 15px #f7f087;
+      }
+    
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .contact-info a {
+        color: var(--text-color);
+        text-decoration: none;
+        margin: 5px 0;
+        transition: color 0.3s ease;
+      }
+    
+      .contact-info a:hover {
+        color: var(--primary-color);
+      }
+    
+      #cursor-trail {
+        position: fixed;
+        pointer-events: none;
+        z-index: 9999;
+      }
+    
+      .cursor-particle {
+        position: absolute;
+        background: radial-gradient(circle, var(--primary-color) 0%, transparent 70%);
+        border-radius: 50%;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+    
+      .expandable {
+        max-height: 100px;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        position: relative;
+        text-overflow: ellipsis;
+      }
+    
+      .expanded {
+        max-height: 1000px;
+        border-color: white;
+        box-shadow: 0 0 10px white;
+      }
+    
+      .expanded::after {
+        display: none;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div>
+                <div class="profile-pic"></div>
+                <h2>Ron Houser</h2>
+                <p>Senior Business Intelligence Analyst</p>
+            </div>
+            <nav>
+                <div class="menu-item1" onclick="scrollToSection('about')">About</div>
+                <div class="menu-item2" onclick="scrollToSection('skills')">Skills</div>
+                <div class="menu-item3" onclick="scrollToSection('experience')">Experience</div>
+                <div class="menu-item4" onclick="scrollToSection('projects')">Projects</div>
+                <div class="menu-item1" onclick="scrollToSection('contact')">Contact</div>
+            </nav>
+        </div>
+        <div class="main-content">
+            <section id="about">
+                <h1>About Me</h1>
+                <div class="expandable">
+                    <p>Former USMC Officer with 6+ years experience in Data Analytics and Process Improvement resulting in six figure cost savings.</p>
+                    <p>Significant experience communicating with and presenting to diverse stakeholders. Currently serving as Data Visualization Professional for CAT's Global Program Management Division.</p>
+                </div>
+            </section>
+      
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="project2 expandable">
+          <div>
+            <p>Data Analysis</p>
+            <div class="skill-bar" style="width: 95%;"></div>
+          </div>
+          <div>
+            <p>Power BI</p>
+            <div class="skill-bar" style="width: 95%;"></div>
+          </div>
+          <div>
+            <p>DAX</p>
+            <div class="skill-bar" style="width: 95%;"></div>
+          </div>
+          <div>
+            <p>ETL</p>
+            <div class="skill-bar" style="width: 90%;"></div>
+          </div>
+          <div>
+            <p>Microsoft Office (Word, Excel, PowerPoint, Outlook)</p>
+            <div class="skill-bar" style="width: 90%;"></div>
+          </div>
+          <div>
+            <p>Power Automate</p>
+            <div class="skill-bar" style="width: 85%;"></div>
+          </div>
+          <div>
+            <p>SQL (MySQL, PostgreSQL, SSMS)</p>
+            <div class="skill-bar" style="width: 80%;"></div>
+          </div>
+          <div>
+            <p>M</p>
+            <div class="skill-bar" style="width: 80%;"></div>
+          </div>
+          <div>
+            <p>Azure DevOps</p>
+            <div class="skill-bar" style="width: 80%;"></div>
+          </div>
+          <div>
+            <p>Snowflake</p>
+            <div class="skill-bar" style="width: 65%;"></div>
+          </div>
+          <div>
+            <p>Tableau</p>
+            <div class="skill-bar" style="width: 65%;"></div>
+          </div>
+          <div>
+            <p>Python (Pandas)</p>
+            <div class="skill-bar" style="width: 25%;"></div>
+          </div>
+          <div>
+            <p>Tetris (Classical NES)</p>
+            <div class="skill-bar" style="width: 20%;"></div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="experience">
+        <h2>Experience</h2>
+        <div class="project3 expandable">
+          <h3>Data Visualization Professional - Caterpillar (TEK Systems)</h3>
+          <p>2022 - Present</p>
+          <ul>
+            <li>Automated license tracking and implementation by producing a dashboard that extracted and transformed data from 4 distinct sources, sending automated email alerts via Power Automate; effectively reducing man hours and increasing productivity by more than an estimated 208 hours</li>
+            <li>Successfully transitioned CAT’s Global Program Management (GPM) division to a standardized process of data visualization, by migrating all existing Tableau dashboards into Power BI. </li>
+            <li>Developed over 130 unique dashboards, tailored specifically to Stakeholders' requests.</li>
+            <li>Presented metrics data and innovation team updates at the extended staff meeting for the entirety of the GPM division consisting of 260+ individuals.</li>
+            <li>Provided an immediate solution to a critical visualization error outside of CAT’s control that affected over 500 dashboards by developing a Gantt Chart visual to display Program Management Data.</li>
+            <li>Developed and automated a crucial dashboard for monitoring the GPM Toolbox (software) usage data providing necessary historical and current metrics that were leveraged in a decision making conversation with the Microsoft Corporation.</li>
+            <li>Maintained 100% positive feedback with outstanding reviews from all individuals reporting on my performance.</li>
+          </ul>
+        </div>
+        <div class="project3 expandable">
+          <h3>Manufacturing Data Analyst - Enviroserve Chemicals, Inc.</h3>
+          <p>2019 - 2022</p>
+          <ul>
+            <li>Presented data visualizations via Power BI to Manufacturing Engineering Department to develop and maintain production standards after querying data with SSMS, and organizing legacy datasets through Microsoft Excel, resulting in cost-effective savings on average of $12,000 per month. </li>
+            <li>Gathered data, provided monthly analysis reports, and effectively communicated with stakeholders of more than 15 separate manufacturing companies the current procedures and recommended implementations to drive informed decision making. </li>
+            <li>Communicated effectively KPIs through Power BI leading to the production of a 27 page Standard Operating Procedure (SOP) for chemical implementation and maintenance, including step-by-step visualizations and detailed oriented guidance of roles and responsibilities.</li>
+            <li>Developed relationships with stakeholders to gain an understanding of business drivers and objectives. Working for a company that services top manufacturers in the US such as: Caterpillar, ELKAY, Energizer Battery, Scottland MFG, and more.  </li>
+          </ul>
+        </div>
+        <div class="project3 expandable">
+            <h3>Field Artillery Officer (Operations Analyst) - USMC</h3>
+            <p>2012 - 2015</p>
+            <ul>
+              <li>Conducted detailed oriented data analysis on datasets containing 10,000+ data points, developing schemes for battalion live fire exercises and dashboard visualizations via Microsoft Power Point to communicate tactical control measures to highest ranking officials.  </li>
+              <li>Produced 63 page Standard Operating Procedure (SOP) for OPSEC, CBRN, and ORM to highlight the procedures and responsibilities that all Marines must perform in operational and non-operational environment in order to identify hazards and eliminate or reduce the risks associated with them.  </li>
+              <li>Demonstrated exceptional leadership skills by maintaining 100% training safety rate with 0% incidents as Range Safety Officer (RSO) and Officer In Charge (OIC) for 256 days of live fire training exercises by thoroughly planning precise surface danger zones (SDZ), organizing secondary and tertiary logistical maneuvers, and communicating clearly the training objectives. </li>
+              <li>Developed Battalion's first automated Microsoft Excel spreadsheet actively displaying expiration dates for 240+ individual certificates for marines at 3rd Battalion, 12th Marine Regiment; color coded to denote length of time before certificate expiration date, dramatically improving training efficiency. </li>
+            </ul>
+          </div>
+      </section>
+      
+      <section id="projects">
+        <h2>Key Projects</h2>
+        <div class="project4 expandable">
+          <h3>Customer Segmentation Analysis</h3>
+          <p>Utilized K-means clustering to segment customers, leading to a 15% increase in targeted marketing ROI. This project involved analyzing customer behavior data from multiple touchpoints, including website interactions, purchase history, and customer service interactions. The resulting segments provided deep insights into customer preferences and behaviors, enabling highly targeted marketing campaigns and personalized customer experiences.</p>
+        </div>
+        <div class="project4 expandable">
+          <h3>Sales Forecasting Model</h3>
+          <p>Developed an ARIMA model for sales forecasting, improving inventory management efficiency by 25%. This project integrated historical sales data with external factors such as economic indicators and seasonal trends. The resulting model provided accurate short-term and long-term sales forecasts, enabling more efficient inventory management and resource allocation.</p>
+        </div>
+        <div class="project4 expandable">
+          <h3>Real-time Analytics Dashboard</h3>
+          <p>Created a real-time analytics dashboard using Tableau and Kafka, reducing decision-making time by 30%. This dashboard provides a comprehensive view of key business metrics updated in real-time. It includes features such as anomaly detection, predictive analytics, and customizable alerts, enabling stakeholders to quickly identify and respond to business trends and issues.</p>
+        </div>
+      </section>
+      
+      <section id="contact">
+        <h1>Contact</h1>
+        <div class="contact-info expandable">
+          <a href="mailto:ron.houser12@gmail.com">ron.houser@email.com</a>
+          <a href="https://www.linkedin.com/in/ron-houser/">LinkedIn Profile</a>
+          <a href="https://github.com/RonHouser">GitHub Profile</a>
+        </div>
+      </section>
+    </div>
+  </div>
+  
+  <div id="cursor-trail"></div>
+  
+  <script>
+    function scrollToSection(sectionId) {
+      document.getElementById(sectionId).scrollIntoView({behavior: "smooth"});
+    }
+    
+    const cursorTrail = document.getElementById('cursor-trail');
+    const particles = [];
+    const maxParticles = 20;
+    
+    function createParticle(x, y) {
+      const particle = document.createElement('div');
+      particle.className = 'cursor-particle';
+      particle.style.left = x + 'px';
+      particle.style.top = y + 'px';
+      cursorTrail.appendChild(particle);
+      particles.push(particle);
+    
+      if (particles.length > maxParticles) {
+        const oldestParticle = particles.shift();
+        cursorTrail.removeChild(oldestParticle);
+      }
+    
+      setTimeout(() => {
+        particle.style.opacity = '0.8';
+        particle.style.width = '10px';
+        particle.style.height = '10px';
+      }, 10);
+    
+      setTimeout(() => {
+        particle.style.opacity = '0';
+        particle.style.width = '5px';
+        particle.style.height = '5px';
+      }, 200);
+    
+      setTimeout(() => {
+        cursorTrail.removeChild(particle);
+        particles.splice(particles.indexOf(particle), 1);
+      }, 500);
+    }
+    
+    document.addEventListener('mousemove', (e) => {
+      createParticle(e.clientX, e.clientY);
+    });
+    
+  const menuItems = document.querySelectorAll('.menu-item1, .menu-item2, .menu-item3, .menu-item4');
+
+menuItems.forEach(item => {
+  item.addEventListener('mouseenter', () => {
+    item.style.transform = 'scale(1.1)';
+  });
+  item.addEventListener('mouseleave', () => {
+    item.style.transform = 'scale(1)';
+  });
+  item.addEventListener('click', () => {
+    item.style.transform = 'scale(0.95)';
+    setTimeout(() => {
+      item.style.transform = 'scale(1)';
+    }, 100);
+  });
+});
+
+    
+    const expandables = document.querySelectorAll('.expandable');
+    expandables.forEach(expandable => {
+      expandable.addEventListener('click', (e) => {
+        e.stopPropagation();
+        expandable.classList.toggle('expanded');
+      });
+    });
+    
+    document.addEventListener('click', () => {
+      expandables.forEach(expandable => {
+        expandable.classList.remove('expanded');
+      });
+    });
+  </script>
+</body>
 </html>
