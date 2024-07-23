@@ -1,520 +1,715 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <base href="https://starfield-resume.com" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ron Houser - Senior Business Intelligence Analyst</title>
-    <style>
-        :root {
-            --primary-color: #00ffff;
-            --secondary-color: #ff00ff;
-            --tirshiary-color: #b9cbce;
-            --color2: #92f3ce;
-            --color3: #f7cf87;
-            --color4: #f7f087;
-            --background-color: #080820;
-            --text-color: #e0e0ff;
-        }
+<html><head><base href="https://example.com/" /><title>Personal Website</title><style>
+  body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle at center,
+          #00ff00 0%,
+          #00e600 10%,
+          #00cc00 20%,
+          #00b300 30%,
+          #009900 40%,
+          #008000 50%,
+          #006600 60%,
+          #004d00 70%,
+          #003300 80%,
+          #001a00 90%,
+          #000000 100%
+      );
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+  }
+  
+  .container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .headshot {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      transition: all 0.5s ease;
+      z-index: 10;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      cursor: pointer;
+  }
+  
+  .headshot:hover {
+      transform: scale(1.1);
+  }
+  
+  .headshot::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle, transparent 70%, rgba(0,0,0,0.7) 100%);
+      pointer-events: none;
+  }
 
-        body, html {
-            margin: 0;
-            padding: 0;
-            font-family: 'Chrome', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            height: 300vh;
-            overflow: hidden;
-        }
-
-        .container {
-            display: flex;
-            height: 100vh;
-        }
-
-        .sidebar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 220px;
-            height: 99vh;
-            background: linear-gradient(135deg, rgba(0,255,255,0.1), rgba(255,0,255,0.1));
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            border-right: 1px solid rgba(255,255,255,0.1);
-        }
-
-        .main-content {
-            margin-left: 250px;
-            padding: 40px;
-            overflow-y: auto;
-            width: calc(100% - 250px);
-        }
-
-        h2 {
-            color: var(--text-color);
-            text-transform: uppercase;
-        }
-
-        h1, h3 {
-            color: var(--primary-color);
-            text-transform: uppercase;
-        }
-
-        nav div {
-            cursor: pointer;
-            margin: 10px 0;
-        }
-
-      .menu-item1 {
-        margin: 10px 0;
-        padding: 10px;
-        border: 1px solid transparent;
-        transition: all 0.3s ease;
-        cursor: pointer;
+  .headshot img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  
+  .project-icon {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      transition: all 0.5s ease;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      background: linear-gradient(145deg, #ffffff, #e6e6e6);
+      cursor: pointer;
+  }
+  
+  .project-icon::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.4) 0%, transparent 50%, rgba(0,0,0,0.1) 100%);
+      z-index: 2;
+      border-radius: 50%;
+  }
+  
+  .project-icon img {
+      width: 80%;
+      height: 80%;
+      object-fit: contain;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.3s ease;
+      filter: brightness(0.9);
+  }
+  
+  .project-icon:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  }
+  
+  .project-icon:hover img {
+      filter: brightness(1);
+  }
+  
+  .project-icon[href*="outlook"] img {
+      transform: translate(-50%, -50%) translateX(-2px);
+  }
+  
+  .project-icon[href*="python-project"] img {
+      transform: translate(-50%, -50%) translateX(2px);
+  }
+  
+  .particles {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+  }
+  
+  .particle {
+      position: absolute;
+      background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 70%);
+      border-radius: 50%;
+      opacity: 0;
+      animation: particleAnimation 2s ease-out infinite;
+  }
+  
+  @keyframes particleAnimation {
+      0% {
+          transform: scale(0);
+          opacity: 0.8;
       }
-
-      .menu-item2 {
-        margin: 10px 0;
-        padding: 10px;
-        border: 1px solid transparent;
-        transition: all 0.3s ease;
-        cursor: pointer;
+      100% {
+          transform: scale(1);
+          opacity: 0;
       }
-
-      .menu-item3 {
-        margin: 10px 0;
-        padding: 10px;
-        border: 1px solid transparent;
-        transition: all 0.3s ease;
-        cursor: pointer;
-      }
-
-      .menu-item4 {
-        margin: 10px 0;
-        padding: 10px;
-        border: 1px solid transparent;
-        transition: all 0.3s ease;
-        cursor: pointer;
-      }
-    
-      .menu-item1:hover {
-        border-color: var(--primary-color);
-        box-shadow: 0 0 10px var(--primary-color);
-      }
-
-      .menu-item2:hover {
-        border-color: var(--color2);
-        box-shadow: 0 0 10px var(--color2);
-      }
-
-      .menu-item3:hover {
-        border-color: var(--color3);
-        box-shadow: 0 0 10px var(--color3);
-      }
-
-      .menu-item4:hover {
-        border-color: var(--color4);
-        box-shadow: 0 0 10px var(--color4);
-      }
-    
-      .menu-item.active {
-        border-color: white;
-        box-shadow: 0 0 10px white;
-      }
-
-      .menu-item2.active {
-        border-color: white;
-        box-shadow: 0 0 10px white;
-      }
-
-      .menu-item3.active {
-        border-color: white;
-        box-shadow: 0 0 10px white;
-      }
-
-      .menu-item4.active {
-        border-color: white;
-        box-shadow: 0 0 10px white;
-      }
+  }
+  
+  #layout-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 100;
+      cursor: pointer;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0);
+      border-radius: 50%;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #layout-toggle img {
+      width: 70%;
+      height: 70%;
+      object-fit: contain;
+  }
+  
+  #resume, .project-view {
+      display: none;
+      position: absolute;
+      top: 220px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 16px;
+      text-align: center;
+      max-width: 600px;
+      width: 90%;
+  }
+  
+  #resume {
+      display: none;
+      position: absolute;
+      top: 220px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgb(255, 255, 255);
+      font-size: 15px;
+      text-align: start;
+      max-width: none;
+      width: 1200px;
+      height: calc(80%);
+      overflow-y: auto;
+      padding-right: 1%;
+  }
+  
+  
+  #resume h1, .project-view h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+  }
+  
+  .project-view {
+      width: 100%;
+      height: calc(100% - 220px);
+      position: absolute;
+      left: 50%;
+      max-width: none;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      box-sizing: border-box;
+      overflow-y: hidden;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+  }
+  
+  .project-view h1 {
+      color: #00ff00;
+  }
+  
+  .project-view iframe {
+      width: 100%;
+      height: calc(100% - 60px);
+      border: none;
+      margin-top: 20px;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+  }
+  
+  .fade-in {
+      opacity: 1;
+  }
+  
+  </style></head><body>
+  <div class="container">
+      <div class="headshot">
+          <img src="https://media.licdn.com/dms/image/C5603AQHFZi7f6Em5bQ/profile-displayphoto-shrink_800_800/0/1664208650498?e=1727308800&v=beta&t=5VaxpQuuujy5yQNksXNb4nNs8iDV4QvDA9P6WpwVdjM" alt="Ron Houser Image" width="200" height="200">
+      </div>
       
-    
-      .profile-pic {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        margin: 0 auto 20px;
-        background: url('https://media.licdn.com/dms/image/C5603AQHFZi7f6Em5bQ/profile-displayphoto-shrink_800_800/0/1664208650498?e=1726704000&v=beta&t=Tx7GQPC6hRdnwmS3sMpQgyeyAEEQ28ED5grEeg0Mqb0') center/cover;
-        border: 2px solid var(--tirshiary-color);
-      }
-    
-      .skill-bar {
-        height: 10px;
-        background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-        margin-bottom: 10px;
-        position: relative;
-        overflow: hidden;
-      }
-    
-      .skill-bar::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-        animation: shimmer 2s infinite;
-      }
-    
-      @keyframes shimmer {
-        0% { transform: translateX(-100%); }
-        100% { transform: translateX(100%); }
-      }
-    
-      .project {
-        background: rgba(255,255,255,0.05);
-        padding: 20px;
-        margin-bottom: 20px;
-        border-left: 3px solid var(--primary-color);
-        transition: all 0.3s ease;
-        cursor: pointer;
-      }
-
-      .project2 {
-        background: rgba(255,255,255,0.05);
-        padding: 20px;
-        margin-bottom: 20px;
-        border-left: 3px solid #92f3ce;
-        transition: all 0.3s ease;
-        cursor: pointer;
-      }
-    
-      .project3 {
-        background: rgba(255,255,255,0.05);
-        padding: 20px;
-        margin-bottom: 20px;
-        border-left: 3px solid #f7cf87;
-        transition: all 0.3s ease;
-        cursor: pointer;
-      }
-    
-      .project4 {
-        background: rgba(255,255,255,0.05);
-        padding: 20px;
-        margin-bottom: 20px;
-        border-left: 3px solid #f7f087;
-        transition: all 0.3s ease;
-        cursor: pointer;
-      }
-    
-      .project:hover {
-        transform: translateX(10px);
-        box-shadow: -5px 0 15px rgba(0,255,255,0.3);
-      }
-    
-      .project2:hover {
-        transform: translateX(10px);
-        box-shadow: -5px 0 15px #92f3ce;
-      }
-    
-      .project3:hover {
-        transform: translateX(10px);
-        box-shadow: -5px 0 15px #f7cf87;
-      }
-    
-      .project4:hover {
-        transform: translateX(10px);
-        box-shadow: -5px 0 15px #f7f087;
-      }
-    
-      .contact-info {
-        display: flex;
-        flex-direction: column;
-      }
-    
-      .contact-info a {
-        color: var(--text-color);
-        text-decoration: none;
-        margin: 5px 0;
-        transition: color 0.3s ease;
-      }
-    
-      .contact-info a:hover {
-        color: var(--primary-color);
-      }
-    
-      #cursor-trail {
-        position: fixed;
-        pointer-events: none;
-        z-index: 9999;
-      }
-    
-      .cursor-particle {
-        position: absolute;
-        background: radial-gradient(circle, var(--primary-color) 0%, transparent 70%);
-        border-radius: 50%;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
-    
-      .expandable {
-        max-height: 100px;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-        position: relative;
-        text-overflow: ellipsis;
-      }
-    
-      .expanded {
-        max-height: 1000px;
-        border-color: white;
-        box-shadow: 0 0 10px white;
-      }
-    
-      .expanded::after {
-        display: none;
-      }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="sidebar">
-            <div>
-                <div class="profile-pic"></div>
-                <h2>Ron Houser</h2>
-                <p>Senior Business Intelligence Analyst</p>
-            </div>
-            <nav>
-                <div class="menu-item1" onclick="scrollToSection('about')">About</div>
-                <div class="menu-item2" onclick="scrollToSection('skills')">Skills</div>
-                <div class="menu-item3" onclick="scrollToSection('experience')">Experience</div>
-                <div class="menu-item4" onclick="scrollToSection('projects')">Projects</div>
-                <div class="menu-item1" onclick="scrollToSection('contact')">Contact</div>
-            </nav>
-        </div>
-        <div class="main-content">
-            <section id="about">
-                <h1>About Me</h1>
-                <div class="expandable">
-                    <p>Former USMC Officer with 6+ years experience in Data Analytics and Process Improvement resulting in six figure cost savings.</p>
-                    <p>Significant experience communicating with and presenting to diverse stakeholders. Currently serving as Data Visualization Professional for CAT's Global Program Management Division.</p>
-                </div>
-            </section>
+      <div class="project-icon" data-project="powerbi">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Modern PowerBI logo, golden chart on blue background" width="80" height="80">
+      </div>
       
-      <section id="skills">
-        <h2>Skills</h2>
-        <div class="project2 expandable">
-          <div>
-            <p>Data Analysis</p>
-            <div class="skill-bar" style="width: 95%;"></div>
-          </div>
-          <div>
-            <p>Power BI</p>
-            <div class="skill-bar" style="width: 95%;"></div>
-          </div>
-          <div>
-            <p>DAX</p>
-            <div class="skill-bar" style="width: 95%;"></div>
-          </div>
-          <div>
-            <p>ETL</p>
-            <div class="skill-bar" style="width: 90%;"></div>
-          </div>
-          <div>
-            <p>Microsoft Office (Word, Excel, PowerPoint, Outlook)</p>
-            <div class="skill-bar" style="width: 90%;"></div>
-          </div>
-          <div>
-            <p>Power Automate</p>
-            <div class="skill-bar" style="width: 85%;"></div>
-          </div>
-          <div>
-            <p>SQL (MySQL, PostgreSQL, SSMS)</p>
-            <div class="skill-bar" style="width: 80%;"></div>
-          </div>
-          <div>
-            <p>M</p>
-            <div class="skill-bar" style="width: 80%;"></div>
-          </div>
-          <div>
-            <p>Azure DevOps</p>
-            <div class="skill-bar" style="width: 80%;"></div>
-          </div>
-          <div>
-            <p>Snowflake</p>
-            <div class="skill-bar" style="width: 65%;"></div>
-          </div>
-          <div>
-            <p>Tableau</p>
-            <div class="skill-bar" style="width: 65%;"></div>
-          </div>
-          <div>
-            <p>Python (Pandas)</p>
-            <div class="skill-bar" style="width: 25%;"></div>
-          </div>
-          <div>
-            <p>Tetris (Classical NES)</p>
-            <div class="skill-bar" style="width: 20%;"></div>
-          </div>
-        </div>
-      </section>
+      <div class="project-icon" data-project="python">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Modern Python logo, blue and yellow intertwined snakes" width="80" height="80">
+      </div>
       
-      <section id="experience">
-        <h2>Experience</h2>
-        <div class="project3 expandable">
-          <h3>Data Visualization Professional - Caterpillar (TEK Systems)</h3>
-          <p>2022 - Present</p>
-          <ul>
-            <li>Automated license tracking and implementation by producing a dashboard that extracted and transformed data from 4 distinct sources, sending automated email alerts via Power Automate; effectively reducing man hours and increasing productivity by more than an estimated 208 hours</li>
-            <li>Successfully transitioned CAT’s Global Program Management (GPM) division to a standardized process of data visualization, by migrating all existing Tableau dashboards into Power BI. </li>
-            <li>Developed over 130 unique dashboards, tailored specifically to Stakeholders' requests.</li>
-            <li>Presented metrics data and innovation team updates at the extended staff meeting for the entirety of the GPM division consisting of 260+ individuals.</li>
-            <li>Provided an immediate solution to a critical visualization error outside of CAT’s control that affected over 500 dashboards by developing a Gantt Chart visual to display Program Management Data.</li>
-            <li>Developed and automated a crucial dashboard for monitoring the GPM Toolbox (software) usage data providing necessary historical and current metrics that were leveraged in a decision making conversation with the Microsoft Corporation.</li>
-            <li>Maintained 100% positive feedback with outstanding reviews from all individuals reporting on my performance.</li>
-          </ul>
-        </div>
-        <div class="project3 expandable">
-          <h3>Manufacturing Data Analyst - Enviroserve Chemicals, Inc.</h3>
-          <p>2019 - 2022</p>
-          <ul>
-            <li>Presented data visualizations via Power BI to Manufacturing Engineering Department to develop and maintain production standards after querying data with SSMS, and organizing legacy datasets through Microsoft Excel, resulting in cost-effective savings on average of $12,000 per month. </li>
-            <li>Gathered data, provided monthly analysis reports, and effectively communicated with stakeholders of more than 15 separate manufacturing companies the current procedures and recommended implementations to drive informed decision making. </li>
-            <li>Communicated effectively KPIs through Power BI leading to the production of a 27 page Standard Operating Procedure (SOP) for chemical implementation and maintenance, including step-by-step visualizations and detailed oriented guidance of roles and responsibilities.</li>
-            <li>Developed relationships with stakeholders to gain an understanding of business drivers and objectives. Working for a company that services top manufacturers in the US such as: Caterpillar, ELKAY, Energizer Battery, Scottland MFG, and more.  </li>
-          </ul>
-        </div>
-        <div class="project3 expandable">
-            <h3>Field Artillery Officer (Operations Analyst) - USMC</h3>
-            <p>2012 - 2015</p>
-            <ul>
-              <li>Conducted detailed oriented data analysis on datasets containing 10,000+ data points, developing schemes for battalion live fire exercises and dashboard visualizations via Microsoft Power Point to communicate tactical control measures to highest ranking officials.  </li>
-              <li>Produced 63 page Standard Operating Procedure (SOP) for OPSEC, CBRN, and ORM to highlight the procedures and responsibilities that all Marines must perform in operational and non-operational environment in order to identify hazards and eliminate or reduce the risks associated with them.  </li>
-              <li>Demonstrated exceptional leadership skills by maintaining 100% training safety rate with 0% incidents as Range Safety Officer (RSO) and Officer In Charge (OIC) for 256 days of live fire training exercises by thoroughly planning precise surface danger zones (SDZ), organizing secondary and tertiary logistical maneuvers, and communicating clearly the training objectives. </li>
-              <li>Developed Battalion's first automated Microsoft Excel spreadsheet actively displaying expiration dates for 240+ individual certificates for marines at 3rd Battalion, 12th Marine Regiment; color coded to denote length of time before certificate expiration date, dramatically improving training efficiency. </li>
-            </ul>
-          </div>
-      </section>
+      <div class="project-icon" data-project="sql">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" alt="Modern SQL logo, database symbol with SQL text" width="80" height="80">
+      </div>
       
-      <section id="projects">
-        <h2>Key Projects</h2>
-        <div class="project4 expandable">
-          <h3>SQL with Tableau Visualization - World COVID Dataset </h3>
-          <ul>
-            <li>Utilized 7+ SQL skills: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, Views, and Converting Data Types. </li>
-            <li>Analyzed data to determine infection and vaccination rate per country, and demographics of vaccinations received. </li>
-            <li>Created 2 dashboards through Tableau to depict the information gathered and display the analysis conclusion. </li>
-          </ul>
-        </div>
-        <div class="project4 expandable">
-          <h3>Data Cleaning - Nashville Housing Data</h3>
-          <ul>
-            <li>Utilized 13+ SQL Skills: Converting Data Types, Alter, Update, Self Join, IsNull, Substring, Charindex, Parsename, Replace, Case, CTE, Windows Functions, Aggregate Functions. </li>
-            <li>223 lines of scripted SQL using SSMS to standardize dates, convert NULL values, parse delimiters, remove duplicates, and drop columns. </li>
-            <li>Demonstrated detailed oriented transforming data in the ETL process.  </li>
-          </ul>
-        </div>
-        <div class="project4 expandable">
-          <h3>Python</h3>
-          <ul>
-            <li>Performed Data Cleaning, Data Visualization, Web Scraping and Correlation Analysis on 2 separate datasets.  </li>
-            <li>Utilized 3 Python libraries: Pandas, NumPy, and Seaborn to create and display statistical analysis visualizations.  </li>
-            <li>Generated a 24 hour incremental scraping script that populates a dataset and automatically emails notifications</li>
-          </ul>
-        </div>
-      </section>
+      <div class="project-icon" data-project="tableau">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Tableau_Logo.png" alt="Modern Tableau logo, data visualization symbol" width="80" height="80">
+      </div>
       
-      <section id="contact">
-        <h1>Contact</h1>
-        <div class="contact-info expandable">
-          <a href="mailto:ron.houser12@gmail.com">ron.houser@email.com</a>
-          <a href="https://www.linkedin.com/in/ron-houser/">LinkedIn Profile</a>
-          <a href="https://github.com/RonHouser">GitHub Profile</a>
-        </div>
-      </section>
-    </div>
+      <div class="project-icon" data-project="linkedin">
+          <img src="https://download.logo.wine/logo/LinkedIn/LinkedIn-Logo.wine.png" alt="Linkedin" width="80" height="80">
+      </div>
+      
+      <div class="project-icon" data-project="outlook">
+          <img src="https://download.logo.wine/logo/Microsoft_Outlook/Microsoft_Outlook-Logo.wine.png" alt="Outlook" width="80" height="80">
+      </div>
+  
+      <div class="particles"></div>
   </div>
   
-  <div id="cursor-trail"></div>
+  <div id="layout-toggle">
+      <img src="https://www.freeiconspng.com/thumbs/up-arrow-png/orange-up-arrow-png-21.png" alt="Mobile layout" width="42" height="42">
+  </div>
+  
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Ron Houser - Resume</title>
+      <style>
+          body {
+              font-family: Arial, sans-serif;
+              line-height: 1.6;
+              display: flex;
+              justify-content: center;
+          }
+          #resume {
+              max-width: 800px;
+              margin: 20px;
+          }
+          h1, h2, h3 {
+              margin-bottom: 10px;
+          }
+          p, ul {
+              margin-bottom: 20px;
+          }
+          ul {
+              padding-left: 20px;
+          }
+      </style>
+  </head>
+  <body>
+      <div id="resume">
+          <h1>Ron Houser</h1>
+          <p>Former USMC Officer with 6+ years experience in Data Analytics and Process Improvement resulting in six figure cost savings. Significant experience communicating with and presenting to diverse stakeholders. Currently serving as Data Visualization Professional for CAT's Global Program Management Division.</p>
+  
+          <h2>Technical Skills</h2>
+          <p>Microsoft Power BI, SQL (MySQL, PostgreSQL, SSMS), DAX, M, Power Automate, Azure DevOps, Snowflake, Tableau, R, Python (Pandas), Microsoft Excel, Microsoft PowerPoint, Data Analytics, Data Presentation, RPA, Statistical Analysis, Data Cleaning, XML Documents, Tetris (Classical NES), Problem Solver, Critical thinking, Motivated, Collaborative, Communicative, Passionate, Resourceful, Quantitative, Methodical, Analytical</p>
+  
+          <h2>Professional Experience</h2>
+          <h3>Data Visualization Professional</h3>
+          <p><strong>Caterpillar Inc.</strong><br>November 2022 - Present</p>
+          <ul>
+              <li>Automated license tracking and implementation by producing a dashboard that extracted and transformed data from 4 distinct sources, sending automated email alerts via Power Automate; effectively reducing man hours and increasing productivity by more than an estimated 208 hours.</li>
+              <li>Successfully transitioned CAT’s Global Program Management (GPM) division to a standardized process of data visualization, by migrating all existing Tableau dashboards into Power BI.</li>
+              <li>Developed over 130 unique dashboards, tailored specifically to Stakeholders' requests.</li>
+              <li>Presented metrics data and innovation team updates at the extended staff meeting for the entirety of the GPM division consisting of 260+ individuals.</li>
+              <li>Provided an immediate solution to a critical visualization error outside of CAT’s control that affected over 500 dashboards by developing a Gantt Chart visual to display Program Management Data.</li>
+              <li>Developed and automated a crucial dashboard for monitoring the GPM Toolbox (software) usage data providing necessary historical and current metrics that were leveraged in a decision making conversation with the Microsoft Corporation.</li>
+              <li>Maintained 100% positive feedback with outstanding reviews from all individuals reporting on my performance.</li>
+          </ul>
+  
+          <h3>Manufacturing Data Analyst</h3>
+          <p><strong>EnviroServe Chemicals, Inc.</strong><br>July 2019 - 2022</p>
+          <ul>
+              <li>Presented data visualizations via Power BI to Manufacturing Engineering Department to develop and maintain production standards after querying data with SSMS, and organizing legacy datasets through Microsoft Excel, resulting in cost-effective savings on average of $12,000 per month.</li>
+              <li>Gathered data, provided monthly analysis reports, and effectively communicated with stakeholders of more than 15 separate manufacturing companies the current procedures and recommended implementations to drive informed decision making.</li>
+              <li>Communicated effectively KPIs through Power BI leading to the production of a 27 page Standard Operating Procedure (SOP) for chemical implementation and maintenance, including step-by-step visualizations and detailed oriented guidance of roles and responsibilities.</li>
+              <li>Developed relationships with stakeholders to gain an understanding of business drivers and objectives. Working for a company that services top manufacturers in the US such as: Caterpillar, ELKAY, Energizer Battery, Scottland MFG, and more.</li>
+          </ul>
+  
+          <h3>Field Artillery Officer (Operations Analyst)</h3>
+          <p><strong>United State Marine Corps</strong><br>Sept 2012 - Sept 2015</p>
+          <ul>
+              <li>Conducted detailed oriented data analysis on datasets containing 10,000+ data points, developing schemes for battalion live fire exercises and dashboard visualizations via Microsoft Power Point to communicate tactical control measures to highest ranking officials.</li>
+              <li>Produced 63 page Standard Operating Procedure (SOP) for OPSEC, CBRN, and ORM to highlight the procedures and responsibilities that all Marines must perform in operational and non-operational environment in order to identify hazards and eliminate or reduce the risks associated with them.</li>
+              <li>Demonstrated exceptional leadership skills by maintaining 100% training safety rate with 0% incidents as Range Safety Officer (RSO) and Officer In Charge (OIC) for 256 days of live fire training exercises by thoroughly planning precise surface danger zones (SDZ), organizing secondary and tertiary logistical maneuvers, and communicating clearly the training objectives.</li>
+              <li>Developed Battalion's first automated Microsoft Excel spreadsheet actively displaying expiration dates for 240+ individual certificates for marines at 3rd Battalion, 12th Marine Regiment; color coded to denote length of time before certificate expiration date, dramatically improving training efficiency.</li>
+          </ul>
+  
+          <h2>Independent Projects</h2>
+          <h3>SQL with Tableau Visualization</h3>
+          <p><strong>World COVID Dataset</strong><br>February 2021 - October 2022</p>
+          <ul>
+              <li>Utilized 7+ SQL skills: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, Views, and Converting Data Types.</li>
+              <li>Analyzed data to determine infection and vaccination rate per country, and demographics of vaccinations received.</li>
+              <li>Created 2 dashboards through Tableau to depict the information gathered and display the analysis conclusion.</li>
+          </ul>
+  
+          <h3>Data Cleaning</h3>
+          <p><strong>Nashville Housing Data</strong></p>
+          <ul>
+              <li>Utilized 13+ SQL Skills: Converting Data Types, Alter, Update, Self Join, IsNull, Substring, Charindex, Parsename, Replace, Case, CTE, Windows Functions, Aggregate Functions.</li>
+              <li>223 lines of scripted SQL using SSMS to standardize dates, convert NULL values, parse delimiters, remove duplicates, and drop columns.</li>
+              <li>Demonstrated detailed oriented transforming data in the ETL process.</li>
+          </ul>
+  
+          <h3>Python</h3>
+          <ul>
+              <li>Performed Data Cleaning, Data Visualization, Web Scraping and Correlation Analysis on 2 separate datasets.</li>
+              <li>Utilized 3 Python libraries: Pandas, NumPy, and Seaborn to create and display statistical analysis visualizations.</li>
+              <li>Generated a 24 hour incremental scraping script that populates a dataset and automatically emails notifications.</li>
+          </ul>
+  
+          <h2>Education</h2>
+          <p><strong>Campbell University</strong> (2019)<br>Master of Divinity (Distinction with Languages: Hebrew, Greek)<br>Buies Creek, NC</p>
+          <p><strong>Gardner-Webb University</strong> (2011)<br>Bachelor of Arts in Religious Studies Minor in Theatre<br>Boiling Springs, NC</p>
+      </div>
+  </body>
+  </html>
+  
+  
+  <div id="powerbi-view" class="project-view">
+      <h1>Power BI Repository</h1>
+      <a href="https://github.com/RonHouser/Power-BI" target="_self"><img src="https://img.icons8.com/?size=512&id=52539&format=png" alt=""></a>
+      <iframe src="https://github.com/RonHouser/Power-BI" frameborder="0"></iframe>
+  </div>
+  
+  <div id="python-view" class="project-view">
+      <h1>Python Repository</h1>
+      <a href="https://github.com/RonHouser/Python" target="_self"><img src="https://img.icons8.com/?size=512&id=52539&format=png" alt=""></a>
+      <iframe src="https://github.com/ronhouser/python-project" frameborder="0"></iframe>
+  </div>
+  
+  <div id="sql-view" class="project-view">
+      <h1>SQL Repository</h1>
+      <a href="https://github.com/RonHouser/SQL" target="_self"><img src="https://img.icons8.com/?size=512&id=52539&format=png" alt=""></a>
+      <iframe src="https://github.com/RonHouser/SQL" frameborder="0"></iframe>
+  </div>
+  
+  <div id="tableau-view" class="project-view">
+      <h1>Tableau Repository</h1>
+      <a href="https://github.com/RonHouser/Tableau" target="_self"><img src="https://img.icons8.com/?size=512&id=52539&format=png" alt=""></a>
+      <iframe src="https://github.com/ronhouser/tableau-project" frameborder="0"></iframe>
+  </div>
+  
+  <div id="linkedin-view" class="project-view">
+      <h1>Visit me on LinkedIn</h1>
+      <a href="https://www.linkedin.com/in/ron-houser/" target="_self"><img src="https://freepngimg.com/save/62826-like-icons-button-neon-linkedin-facebook,-computer/512x512" alt=""></a>
+      <iframe src="https://github.com/ronhouser/r-project" frameborder="0"></iframe>
+  </div>
+  
+  <div id="outlook-view" class="project-view">
+      <h1>Send me an Email</h1>
+      <a href="mailto:ron.houser12@gmail.com"><img src="https://t4.ftcdn.net/jpg/05/35/93/17/360_F_535931719_Fz1LOcuk8ELu3f8KyQQN1TGZMM2j0yKA.png" alt=""></a>
+      <iframe src="https://github.com/ronhouser/excel-project" frameborder="0"></iframe>
+  </div>
   
   <script>
-    function scrollToSection(sectionId) {
-      document.getElementById(sectionId).scrollIntoView({behavior: "smooth"});
-    }
-    
-    const cursorTrail = document.getElementById('cursor-trail');
-    const particles = [];
-    const maxParticles = 20;
-    
-    function createParticle(x, y) {
-      const particle = document.createElement('div');
-      particle.className = 'cursor-particle';
-      particle.style.left = x + 'px';
-      particle.style.top = y + 'px';
-      cursorTrail.appendChild(particle);
-      particles.push(particle);
-    
-      if (particles.length > maxParticles) {
-        const oldestParticle = particles.shift();
-        cursorTrail.removeChild(oldestParticle);
-      }
-    
-      setTimeout(() => {
-        particle.style.opacity = '0.8';
-        particle.style.width = '10px';
-        particle.style.height = '10px';
-      }, 10);
-    
-      setTimeout(() => {
-        particle.style.opacity = '0';
-        particle.style.width = '5px';
-        particle.style.height = '5px';
-      }, 200);
-    
-      setTimeout(() => {
-        cursorTrail.removeChild(particle);
-        particles.splice(particles.indexOf(particle), 1);
-      }, 500);
-    }
-    
-    document.addEventListener('mousemove', (e) => {
-      createParticle(e.clientX, e.clientY);
-    });
-    
-  const menuItems = document.querySelectorAll('.menu-item1, .menu-item2, .menu-item3, .menu-item4');
+  let isCircular = true;
+  let isResumeView = false;
+  let isProjectView = false;
+  let homeHeadshotPosition = { left: 0, top: 0 };
+  let currentProject = null;
+  
+  // Function to position icons in a circle
+  function positionIconsCircular() {
+      const container = document.querySelector('.container');
+      const headshot = document.querySelector('.headshot');
+      const icons = document.querySelectorAll('.project-icon');
+      const centerX = container.offsetWidth / 2;
+      const centerY = container.offsetHeight / 2;
+      const radius = Math.min(centerX, centerY) * 0.6; // Adjust this value to change the circle size
+  
+      icons.forEach((icon, index) => {
+          const angle = (index / icons.length) * 2 * Math.PI;
+          const x = centerX + radius * Math.cos(angle) - icon.offsetWidth / 2;
+          const y = centerY + radius * Math.sin(angle) - icon.offsetHeight / 2;
+          icon.style.left = `${x}px`;
+          icon.style.top = `${y}px`;
+          icon.style.opacity = '1';
+          icon.style.visibility = 'visible';
+      });
+  
+      // Center the headshot
+      const headshotLeft = `${centerX - headshot.offsetWidth / 2}px`;
+      const headshotTop = `${centerY - headshot.offsetHeight / 2}px`;
+      headshot.style.left = headshotLeft;
+      headshot.style.top = headshotTop;
+  
+      // Store the home position of the headshot
+      homeHeadshotPosition = { left: headshotLeft, top: headshotTop };
+  }
+  
+  // Function to position icons vertically
+  function positionIconsVertical() {
+      const container = document.querySelector('.container');
+      const headshot = document.querySelector('.headshot');
+      const icons = document.querySelectorAll('.project-icon');
+      const centerX = container.offsetWidth / 2;
+      const centerY = container.offsetHeight / 2;
+      const spacing = 120; // Spacing between icons
+      const bottomOffset = 25; // 0.5cm in pixels (assuming 96 DPI)
+  
+      icons.forEach((icon, index) => {
+          const x = centerX - icon.offsetWidth / 2;
+          let y;
+          if (index < 3) {
+              y = centerY - headshot.offsetHeight / 2 - (3 - index) * spacing;
+          } else {
+              y = centerY + headshot.offsetHeight / 2 + (index - 3) * spacing + bottomOffset;
+          }
+          icon.style.left = `${x}px`;
+          icon.style.top = `${y}px`;
+          icon.style.opacity = '1';
+          icon.style.visibility = 'visible';
+      });
+  
+      // Center the headshot
+      const headshotLeft = `${centerX - headshot.offsetWidth / 2}px`;
+      const headshotTop = `${centerY - headshot.offsetHeight / 2}px`;
+      headshot.style.left = headshotLeft;
+      headshot.style.top = headshotTop;
+  
+      // Store the home position of the headshot
+      homeHeadshotPosition = { left: headshotLeft, top: headshotTop };
+  }
+  
+  // Function to transition to resume view
+  function showResumeView() {
+      const headshot = document.querySelector('.headshot');
+      const icons = document.querySelectorAll('.project-icon');
+      const resume = document.getElementById('resume');
+      const layoutToggle = document.getElementById('layout-toggle');
+  
+      headshot.style.left = '50%';
+      headshot.style.top = '20px';
+      headshot.style.transform = 'translateX(-50%)';
+  
+      icons.forEach(icon => {
+          icon.style.opacity = '0';
+          icon.style.visibility = 'hidden';
+      });
+  
+      resume.style.display = 'block';
+      layoutToggle.style.display = 'none';
+  
+      isResumeView = true;
+  }
+  
+  // Function to transition to project view
+  function showProjectView(project) {
+    const projectIcon = document.querySelector(`.project-icon[data-project="${project}"]`);
+    const icons = document.querySelectorAll('.project-icon');
+    const projectView = document.getElementById(`${project}-view`);
+    const layoutToggle = document.getElementById('layout-toggle');
+    const headshot = document.querySelector('.headshot');
 
-menuItems.forEach(item => {
-  item.addEventListener('mouseenter', () => {
-    item.style.transform = 'scale(1.1)';
-  });
-  item.addEventListener('mouseleave', () => {
-    item.style.transform = 'scale(1)';
-  });
-  item.addEventListener('click', () => {
-    item.style.transform = 'scale(0.95)';
+    projectIcon.style.left = '47.8%';
+    projectIcon.style.top = '50px'; // Adjusted from 45px to 50px for better alignment
+    projectIcon.style.transform = 'translateX(-50%) translateY(-50%) scale(1.5)'; // Ensure proper centering and scaling
+
+    icons.forEach(icon => {
+        if (icon !== projectIcon) {
+            icon.style.opacity = '0';
+            icon.style.visibility = 'hidden';
+        }
+    });
+
+    // Hide the headshot
+    headshot.style.opacity = '0';
+    headshot.style.visibility = 'hidden';
+
+    projectView.style.display = 'block';
+    layoutToggle.style.display = 'none';
+
+    // Fade in the project view
     setTimeout(() => {
-      item.style.transform = 'scale(1)';
-    }, 100);
-  });
-});
+        projectView.classList.add('fade-in');
+    }, 50);
 
-    
-    const expandables = document.querySelectorAll('.expandable');
-    expandables.forEach(expandable => {
-      expandable.addEventListener('click', (e) => {
-        e.stopPropagation();
-        expandable.classList.toggle('expanded');
+    // Fade in the iframe
+    setTimeout(() => {
+        const iframe = projectView.querySelector('iframe');
+        iframe.classList.add('fade-in');
+    }, 500);
+
+    isProjectView = true;
+    currentProject = project;
+}
+
+  
+  // Function to transition back to home view
+  function showHomeView() {
+      const headshot = document.querySelector('.headshot');
+      const icons = document.querySelectorAll('.project-icon');
+      const resume = document.getElementById('resume');
+      const projectViews = document.querySelectorAll('.project-view');
+      const layoutToggle = document.getElementById('layout-toggle');
+  
+      resume.style.display = 'none';
+      projectViews.forEach(view => {
+          view.classList.remove('fade-in');
+          const iframe = view.querySelector('iframe');
+          iframe.classList.remove('fade-in');
+          setTimeout(() => {
+              view.style.display = 'none';
+          }, 500);
       });
-    });
-    
-    document.addEventListener('click', () => {
-      expandables.forEach(expandable => {
-        expandable.classList.remove('expanded');
+      layoutToggle.style.display = 'flex';
+  
+      // Return headshot and icons to their original positions
+      headshot.style.left = homeHeadshotPosition.left;
+      headshot.style.top = homeHeadshotPosition.top;
+      headshot.style.transform = 'none';
+      headshot.style.opacity = '1';
+      headshot.style.visibility = 'visible';
+  
+      icons.forEach(icon => {
+          icon.style.transform = 'none';
+          icon.style.transition = 'all 0.5s ease'; // Ensure transition is re-enabled
       });
-    });
+  
+      if (isCircular) {
+          positionIconsCircular();
+      } else {
+          positionIconsVertical();
+      }
+  
+      isResumeView = false;
+      isProjectView = false;
+      currentProject = null;
+  
+      // Re-add hover effects
+      addHoverEffects();
+  }
+  
+  // Function to add hover effects
+  function addHoverEffects() {
+      const icons = document.querySelectorAll('.project-icon');
+      icons.forEach(icon => {
+          icon.addEventListener('mouseenter', () => {
+              icon.style.transform = 'scale(1.1)';
+          });
+          icon.addEventListener('mouseleave', () => {
+              icon.style.transform = 'none';
+          });
+      });
+  }
+  
+  // Call the circular positioning function on load and resize
+  window.addEventListener('load', () => {
+      positionIconsCircular();
+      addHoverEffects();
+  });
+  window.addEventListener('resize', () => {
+      if (!isResumeView && !isProjectView) {
+          if (isCircular) {
+              positionIconsCircular();
+          } else {
+              positionIconsVertical();
+          }
+      }
+  });
+  
+  // Particle animation on hover
+  const particlesContainer = document.querySelector('.particles');
+  const icons = document.querySelectorAll('.project-icon');
+  
+  function createParticle(x, y) {
+      const particle = document.createElement('div');
+      particle.classList.add('particle');
+      particle.style.left = `${x}px`;
+      particle.style.top = `${y}px`;
+      particle.style.width = `${Math.random() * 10 + 5}px`;
+      particle.style.height = particle.style.width;
+      particlesContainer.appendChild(particle);
+  
+      setTimeout(() => {
+          particle.remove();
+      }, 2000);
+  }
+  
+  function animateParticles(event) {
+      const icon = event.currentTarget;
+      const rect = icon.getBoundingClientRect();
+      const centerX = rect.left + rect.width / 2;
+      const centerY = rect.top + rect.height / 2;
+  
+      const createParticleInterval = setInterval(() => {
+          for (let i = 0; i < 3; i++) {
+              const angle = Math.random() * Math.PI * 2;
+              const distance = Math.random() * 50 + 50;
+              const x = centerX + Math.cos(angle) * distance;
+              const y = centerY + Math.sin(angle) * distance;
+              createParticle(x, y);
+          }
+      }, 50);
+  
+      icon.addEventListener('mouseleave', () => {
+          clearInterval(createParticleInterval);
+      }, { once: true });
+  }
+  
+  icons.forEach(icon => {
+      icon.addEventListener('mouseenter', animateParticles);
+  });
+  
+  // Layout toggle functionality
+  const layoutToggle = document.getElementById('layout-toggle');
+  const layoutToggleImg = layoutToggle.querySelector('img');
+  
+  layoutToggle.addEventListener('click', () => {
+      if (isCircular) {
+          positionIconsVertical();
+          layoutToggleImg.src = "https://freepngtransparent.com/wp-content/uploads/2023/03/Red-Arrow-Png-209.png";
+          layoutToggleImg.alt = "Desktop layout";
+      } else {
+          positionIconsCircular();
+          layoutToggleImg.src = "https://www.freeiconspng.com/thumbs/up-arrow-png/orange-up-arrow-png-21.png";
+          layoutToggleImg.alt = "Mobile layout";
+      }
+      isCircular = !isCircular;
+      addHoverEffects();
+  });
+  
+  // Headshot click functionality
+  const headshot = document.querySelector('.headshot');
+  headshot.addEventListener('click', () => {
+      if (isResumeView) {
+          showHomeView();
+      } else {
+          showResumeView();
+      }
+  });
+  
+  // Project icon click functionality
+  icons.forEach(icon => {
+      icon.addEventListener('click', () => {
+          const project = icon.getAttribute('data-project');
+          if (isProjectView && currentProject === project) {
+              showHomeView();
+          } else {
+              showProjectView(project);
+          }
+      });
+  });
+  
+  // Ensure hover animation works after returning from resume view
+  headshot.addEventListener('mouseenter', () => {
+      if (!isResumeView && !isProjectView) {
+          headshot.style.transform = 'scale(1.1)';
+      }
+  });
+  
+  headshot.addEventListener('mouseleave', () => {
+      if (!isResumeView && !isProjectView) {
+          headshot.style.transform = 'none';
+      }
+  });
+  
+  // Initialize hover effects
+  addHoverEffects();
   </script>
-</body>
-</html>
+  
+  </body></html>
