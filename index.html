@@ -1,299 +1,1663 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ron Houser | Senior Business Intelligence Analyst</title>
-  <meta name="description" content="Senior Business Intelligence Analyst at Caterpillar. Expert in enterprise Power BI, Snowflake, data visualization, KPI reporting, and delivering actionable insights that drive decisions." />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #0f0f1a;
-      --card: rgba(20, 25, 45, 0.7);
-      --text: #e2e8f0;
-      --text-light: #94a3b8;
-      --accent: #00d4ff;
-      --accent-dark: #0099cc;
-      --border: rgba(100, 150, 255, 0.2);
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Inter', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-      overflow-x: hidden;
-    }
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 2rem;
-      background: radial-gradient(circle at top left, rgba(0, 212, 255, 0.15), transparent 50%),
-                  radial-gradient(circle at bottom right, rgba(0, 150, 255, 0.1), transparent 60%);
-    }
-    .hero-content { max-width: 900px; z-index: 10; }
-    .profile-img {
-      width: 220px; height: 220px; border-radius: 50%; object-fit: cover;
-      border: 6px solid rgba(0, 212, 255, 0.3); box-shadow: 0 20px 40px rgba(0,0,0,0.6);
-      margin-bottom: 2rem; transition: all 0.4s ease;
-    }
-    .profile-img:hover { transform: scale(1.05); border-color: var(--accent); }
-    h1 {
-      font-size: 3.8rem; font-weight: 700;
-      background: linear-gradient(90deg, #ffffff, var(--accent));
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-      margin-bottom: 1rem;
-    }
-    .subtitle { font-size: 1.6rem; color: var(--accent); font-weight: 500; margin-bottom: 1rem; }
-    .tagline { font-size: 1.2rem; color: var(--text-light); max-width: 700px; margin: 0 auto 3rem; }
-    .social-links {
-      display: flex; gap: 1.5rem; justify-content: center; margin-top: 3rem; flex-wrap: wrap;
-    }
-    .social-links a {
-      display: flex; align-items: center; gap: 0.8rem;
-      padding: 0.9rem 1.8rem; background: var(--card); border: 1px solid var(--border);
-      border-radius: 50px; color: white; text-decoration: none; font-weight: 500;
-      transition: all 0.3s ease; backdrop-filter: blur(10px);
-    }
-    .social-links a:hover {
-      background: rgba(0, 212, 255, 0.15); border-color: var(--accent);
-      transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
-    }
-    .social-links i { font-size: 1.4rem; color: var(--accent); }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ron Houser — Senior Business Intelligence Analyst</title>
+<meta name="description" content="Ron Houser — Senior Business Intelligence Analyst at Caterpillar. Enterprise Power BI, Snowflake, executive KPI reporting, and self-service analytics. Former USMC officer.">
+<meta name="author" content="Ron Houser">
+<meta name="theme-color" content="#0A0D12">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Ron Houser — Senior Business Intelligence Analyst">
+<meta property="og:description" content="Enterprise Power BI & Snowflake. Executive scorecards, KPI reporting, and insights leaders act on.">
+<meta property="og:image" content="https://raw.githubusercontent.com/RonHouser/RonHouser.github.io/refs/heads/main/images/profile.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23FFC72C'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-size='30' font-weight='700' fill='%23141000'%3ERH%3C/text%3E%3C/svg%3E">
+<script>
+  (function () {
+    var d = document.documentElement, t;
+    d.classList.remove('no-js'); d.classList.add('js');
+    try { t = localStorage.getItem('rh-theme'); } catch (e) {}
+    if (!t) t = window.matchMedia && matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+    d.setAttribute('data-theme', t);
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ron Houser",
+  "jobTitle": "Senior Business Intelligence Analyst",
+  "worksFor": { "@type": "Organization", "name": "Caterpillar Inc." },
+  "email": "mailto:ron.houser12@gmail.com",
+  "image": "https://raw.githubusercontent.com/RonHouser/RonHouser.github.io/refs/heads/main/images/profile.jpg",
+  "sameAs": ["https://www.linkedin.com/in/ron-houser/", "https://github.com/RonHouser"],
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Campbell University" },
+    { "@type": "CollegeOrUniversity", "name": "Gardner-Webb University" }
+  ],
+  "knowsAbout": ["Power BI", "DAX", "Snowflake", "SQL", "Python", "ThoughtSpot", "Data Visualization", "KPI Reporting", "S&OP Analytics"]
+}
+</script>
+<style>
+/* ==========================================================================
+   Tokens
+   ========================================================================== */
+:root {
+  --bg: #0A0D12; --bg-elev: #0E131A; --surface: #121922; --surface-2: #18212D;
+  --line: rgba(255,255,255,.08); --line-strong: rgba(255,255,255,.16);
+  --text: #E9EDF2; --muted: #8E9AAA; --faint: #5C6878;
+  --accent: #FFC72C; --accent-text: #FFC72C; --accent-soft: rgba(255,199,44,.12); --on-accent: #161100;
+  --cyan: #5AD7C8; --cyan-soft: rgba(90,215,200,.12);
+  --rose: #FF7A6B; --rose-soft: rgba(255,122,107,.14);
+  --radius: 18px; --radius-sm: 10px;
+  --shadow: 0 40px 80px -40px rgba(0,0,0,.75);
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Code', Consolas, monospace;
+  --maxw: 1200px;
+  --ease: cubic-bezier(.2,.7,.2,1);
+}
+[data-theme="light"] {
+  --bg: #F6F4EE; --bg-elev: #EFECE3; --surface: #FFFFFF; --surface-2: #F4F1E9;
+  --line: rgba(17,22,29,.09); --line-strong: rgba(17,22,29,.18);
+  --text: #11161D; --muted: #535E6C; --faint: #8A939F;
+  --accent: #F2B400; --accent-text: #8A5A00; --accent-soft: rgba(242,180,0,.16); --on-accent: #161100;
+  --cyan: #0E8F80; --cyan-soft: rgba(14,143,128,.1);
+  --rose: #D6453A; --rose-soft: rgba(214,69,58,.1);
+  --shadow: 0 40px 80px -40px rgba(40,35,20,.28);
+}
 
-    /* Sections */
-    .skills, .experience, .projects, .education {
-      padding: 8rem 2rem; max-width: 1200px; margin: 0 auto;
-    }
-    .section-title {
-      text-align: center; font-size: 2.8rem; margin-bottom: 4rem;
-      background: linear-gradient(90deg, #00d4ff, #0099ff);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    }
-    .skills-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;
-    }
-    .skill-card {
-      background: var(--card); padding: 2rem; border-radius: 16px; border: 1px solid var(--border);
-      text-align: center; transition: all 0.4s ease; backdrop-filter: blur(12px);
-    }
-    .skill-card:hover {
-      transform: translateY(-12px); border-color: var(--accent);
-      box-shadow: 0 20px 40px rgba(0, 212, 255, 0.15);
-    }
-    .skill-card h3 { color: var(--accent); margin-bottom: 1rem; font-size: 1.5rem; }
+/* ==========================================================================
+   Base
+   ========================================================================== */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font: 400 1rem/1.65 var(--font-body);
+  -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  transition: background-color .4s var(--ease), color .4s var(--ease);
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+button { font: inherit; color: inherit; }
+::selection { background: var(--accent); color: var(--on-accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+.skip { position: absolute; left: 1rem; top: -4rem; z-index: 200; background: var(--accent); color: var(--on-accent); padding: .6rem 1rem; border-radius: 8px; font-weight: 600; text-decoration: none; }
+.skip:focus { top: 1rem; }
+.wrap { width: min(var(--maxw), 100% - 2.5rem); margin-inline: auto; }
+.mono { font-family: var(--font-mono); }
+kbd {
+  font: 500 .72rem/1 var(--font-mono); padding: .28rem .42rem; border-radius: 6px;
+  border: 1px solid var(--line-strong); background: var(--surface-2); color: var(--muted);
+}
 
-    /* Timeline */
-    .experience { background: rgba(10, 15, 35, 0.6); }
-    .timeline { max-width: 1000px; margin: 0 auto; position: relative; }
-    .timeline::before {
-      content: ''; position: absolute; width: 4px;
-      background: linear-gradient(transparent, var(--accent), transparent);
-      top: 0; bottom: 0; left: 50%; margin-left: -2px;
-    }
-    .timeline-item {
-      padding: 2rem; position: relative; width: 50%; margin-bottom: 4rem;
-    }
-    .timeline-item:nth-child(odd) { left: 0; }
-    .timeline-item:nth-child(even) { left: 50%; }
-    .timeline-content {
-      background: var(--card); padding: 2rem; border-radius: 16px;
-      border: 1px solid var(--border); backdrop-filter: blur(10px); position: relative;
-    }
-    .timeline-content::before {
-      content: ''; position: absolute; top: 30px; width: 20px; height: 20px;
-      background: var(--accent); border-radius: 50%; right: -52px;
-    }
-    .timeline-item:nth-child(even) .timeline-content::before { left: -52px; }
-    .company { color: var(--accent); font-weight: 600; font-size: 1.3rem; margin-bottom: 0.5rem; }
-    .timeline-content ul { margin-top: 1rem; padding-left: 1.4rem; }
-    .timeline-content li { margin-bottom: 0.8rem; }
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+.progress { position: fixed; inset: 0 0 auto 0; height: 2px; z-index: 120; pointer-events: none; }
+.progress span { display: block; height: 100%; width: 100%; transform-origin: 0 50%; transform: scaleX(0); background: linear-gradient(90deg, var(--accent), var(--cyan)); }
+.nav {
+  position: fixed; inset: 0 0 auto 0; z-index: 100;
+  transition: background-color .3s, border-color .3s, backdrop-filter .3s;
+  border-bottom: 1px solid transparent;
+}
+.nav.scrolled { background: color-mix(in srgb, var(--bg) 78%, transparent); backdrop-filter: blur(14px) saturate(1.4); -webkit-backdrop-filter: blur(14px) saturate(1.4); border-color: var(--line); }
+.nav-inner { display: flex; align-items: center; gap: 1.25rem; height: 68px; }
+.brand { display: flex; align-items: center; gap: .65rem; text-decoration: none; font-weight: 600; letter-spacing: -.01em; }
+.brand-mark {
+  width: 34px; height: 34px; border-radius: 9px; display: grid; place-items: center;
+  background: var(--accent); color: var(--on-accent); font: 700 .95rem/1 var(--font-display);
+}
+.brand small { display: block; font: 500 .68rem/1.2 var(--font-mono); color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
+.nav-inner > nav { margin-left: auto; }
+.nav-links { display: flex; gap: .25rem; list-style: none; padding: 0; margin-block: 0; }
+.nav-links a {
+  display: block; padding: .45rem .75rem; border-radius: 999px; text-decoration: none;
+  font-size: .9rem; color: var(--muted); transition: color .2s, background-color .2s;
+}
+.nav-links a:hover { color: var(--text); }
+.nav-links a.active { color: var(--text); background: var(--surface-2); }
+.nav-actions { display: flex; align-items: center; gap: .5rem; }
+.icon-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  height: 38px; min-width: 38px; padding: 0 .7rem; border-radius: 10px;
+  border: 1px solid var(--line-strong); background: var(--surface); cursor: pointer;
+  color: var(--text); transition: border-color .2s, transform .2s, background-color .2s;
+}
+.icon-btn:hover { border-color: var(--accent); }
+.icon-btn svg { width: 17px; height: 17px; }
+.icon-btn .lbl { font-size: .85rem; color: var(--muted); }
+.theme-btn .sun { display: none; }
+[data-theme="light"] .theme-btn .sun { display: block; }
+[data-theme="light"] .theme-btn .moon { display: none; }
 
-    /* Projects & Education */
-    .projects-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;
-    }
-    .project-card {
-      background: var(--card); padding: 2rem; border-radius: 16px;
-      border: 1px solid var(--border); backdrop-filter: blur(10px);
-    }
-    .project-card h3 { color: var(--accent); margin-bottom: 0.8rem; }
+/* ==========================================================================
+   Buttons / chips
+   ========================================================================== */
+.btn {
+  display: inline-flex; align-items: center; gap: .6rem; padding: .85rem 1.25rem;
+  border-radius: 12px; font-weight: 600; font-size: .95rem; text-decoration: none; cursor: pointer;
+  border: 1px solid var(--line-strong); background: var(--surface); color: var(--text);
+  transition: transform .25s var(--ease), border-color .25s, background-color .25s, box-shadow .25s;
+}
+.btn:hover { transform: translateY(-2px); border-color: var(--accent); }
+.btn svg { width: 18px; height: 18px; }
+.btn-primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); box-shadow: 0 10px 30px -12px var(--accent); }
+.btn-primary:hover { box-shadow: 0 18px 40px -14px var(--accent); }
+.btn .arrow { transition: transform .25s var(--ease); }
+.btn:hover .arrow { transform: translateX(3px); }
+.chip {
+  display: inline-flex; align-items: center; gap: .4rem; padding: .3rem .65rem; border-radius: 999px;
+  font: 500 .75rem/1.2 var(--font-mono); color: var(--muted); border: 1px solid var(--line); background: var(--surface-2);
+}
 
-    footer { text-align: center; padding: 4rem 2rem; color: var(--text-light); font-size: 0.9rem; }
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+.hero { position: relative; min-height: 100vh; min-height: 100svh; display: flex; align-items: center; padding: 110px 0 80px; overflow: hidden; isolation: isolate; }
+.hero::before {
+  content: ""; position: absolute; inset: 0; z-index: -2;
+  background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 56px 56px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 30% 35%, #000 20%, transparent 75%);
+  mask-image: radial-gradient(ellipse 70% 60% at 30% 35%, #000 20%, transparent 75%);
+  opacity: .55;
+}
+.hero::after {
+  content: ""; position: absolute; z-index: -2; width: 60vmax; height: 60vmax; left: -15vmax; top: -25vmax;
+  background: radial-gradient(circle, var(--accent-soft), transparent 62%); filter: blur(10px);
+}
+#ridge { position: absolute; inset: auto 0 0 0; width: 100%; height: 62%; z-index: -1; opacity: .9; pointer-events: none; }
+.hero-grid { display: grid; grid-template-columns: 1.08fr .92fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
+.status {
+  display: inline-flex; align-items: center; gap: .6rem; padding: .4rem .85rem .4rem .55rem; border-radius: 999px;
+  border: 1px solid var(--line-strong); background: color-mix(in srgb, var(--surface) 70%, transparent);
+  font-size: .82rem; color: var(--muted); backdrop-filter: blur(8px);
+}
+.status strong { color: var(--text); font-weight: 600; }
+.pulse { width: 8px; height: 8px; border-radius: 50%; background: #3DDC97; box-shadow: 0 0 0 0 rgba(61,220,151,.6); animation: pulse 2.4s infinite; }
+@keyframes pulse { 70% { box-shadow: 0 0 0 10px rgba(61,220,151,0); } 100% { box-shadow: 0 0 0 0 rgba(61,220,151,0); } }
+.hero h1 {
+  font: 400 clamp(2.6rem, 6.2vw, 5.3rem)/1.02 var(--font-display);
+  letter-spacing: -.035em; margin: 1.4rem 0 1.4rem; font-variation-settings: "opsz" 144;
+}
+.hero h1 em { font-style: italic; color: var(--accent-text); font-weight: 300; }
+.hero h1 .u { position: relative; white-space: nowrap; }
+.hero h1 .u svg { position: absolute; left: 0; bottom: -.12em; width: 100%; height: .28em; overflow: visible; }
+.hero h1 .u path { fill: none; stroke: var(--cyan); stroke-width: 3; stroke-linecap: round; stroke-dasharray: 400; stroke-dashoffset: 400; animation: draw 1.4s .9s var(--ease) forwards; }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+.lede { font-size: clamp(1.02rem, 1.4vw, 1.14rem); color: var(--muted); max-width: 40rem; margin: 0; }
+.lede strong { color: var(--text); font-weight: 600; }
+.hero-cta { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2.2rem; }
+.socials { display: flex; gap: .5rem; margin-top: 2rem; align-items: center; flex-wrap: wrap; }
+.socials span { font: 500 .72rem/1 var(--font-mono); color: var(--faint); text-transform: uppercase; letter-spacing: .12em; margin-right: .4rem; }
+.socials a {
+  width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center;
+  border: 1px solid var(--line); color: var(--muted); transition: color .2s, border-color .2s, transform .2s;
+}
+.socials a:hover { color: var(--accent-text); border-color: var(--accent); transform: translateY(-2px); }
+.socials svg { width: 18px; height: 18px; }
 
-    @media (max-width: 768px) {
-      h1 { font-size: 2.8rem; }
-      .subtitle { font-size: 1.4rem; }
-      .timeline::before { left: 30px; }
-      .timeline-item { width: 100%; left: 0 !important; padding-left: 70px; }
-      .timeline-content::before { left: -42px !important; }
-    }
-  </style>
+/* Console */
+.console {
+  position: relative; border-radius: var(--radius); border: 1px solid var(--line-strong);
+  background: color-mix(in srgb, var(--surface) 88%, transparent); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  box-shadow: var(--shadow); overflow: hidden; transform: perspective(1400px) rotateY(-4deg) rotateX(2deg);
+  transition: transform .8s var(--ease);
+}
+.console:hover { transform: perspective(1400px) rotateY(0) rotateX(0); }
+.console-bar { display: flex; align-items: center; gap: .75rem; padding: .8rem 1rem; border-bottom: 1px solid var(--line); background: var(--surface-2); }
+.dots { display: flex; gap: 6px; }
+.dots i { width: 11px; height: 11px; border-radius: 50%; background: var(--line-strong); }
+.dots i:nth-child(1) { background: #FF5F57; } .dots i:nth-child(2) { background: #FEBC2E; } .dots i:nth-child(3) { background: #28C840; }
+.console-file { font: 500 .78rem/1 var(--font-mono); color: var(--muted); }
+.console-who { margin-left: auto; display: flex; align-items: center; gap: .55rem; font-size: .78rem; color: var(--muted); }
+.avatar { width: 28px; height: 28px; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--accent); background: var(--accent-soft); }
+.avatar-fallback { display: grid; place-items: center; font: 700 .7rem/1 var(--font-display); color: var(--accent-text); }
+.code { padding: 1.1rem 0 .9rem; font: 400 .84rem/1.75 var(--font-mono); min-height: 15.5rem; }
+.code .ln { display: flex; padding-right: 1rem; }
+.code .num { width: 2.8rem; flex: none; text-align: right; padding-right: 1rem; color: var(--faint); user-select: none; }
+.code .txt { white-space: pre; overflow: hidden; }
+.tk-k { color: #C792EA; } .tk-s { color: #C3E88D; } .tk-f { color: #82AAFF; } .tk-c { color: var(--faint); font-style: italic; } .tk-p { color: var(--text); }
+[data-theme="light"] .tk-k { color: #7C3AED; } [data-theme="light"] .tk-s { color: #3F7D20; } [data-theme="light"] .tk-f { color: #1D5FD1; }
+.caret { display: inline-block; width: .55em; height: 1.1em; vertical-align: -.18em; background: var(--accent); animation: blink 1s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+.result { border-top: 1px solid var(--line); padding: .9rem 1rem 1.1rem; opacity: 0; transform: translateY(6px); transition: opacity .5s, transform .5s var(--ease); }
+.result.show { opacity: 1; transform: none; }
+.result-meta { display: flex; align-items: center; gap: .6rem; font: 500 .74rem/1 var(--font-mono); color: var(--muted); margin-bottom: .7rem; }
+.result-meta .ok { color: #3DDC97; }
+.result-meta button { margin-left: auto; background: none; border: 1px solid var(--line-strong); border-radius: 7px; padding: .3rem .55rem; cursor: pointer; color: var(--muted); font: 500 .72rem/1 var(--font-mono); }
+.result-meta button:hover { color: var(--text); border-color: var(--accent); }
+.table-scroll { overflow-x: auto; border-radius: 10px; border: 1px solid var(--line); }
+.result table { width: 100%; border-collapse: collapse; font: 400 .8rem/1.4 var(--font-mono); min-width: 380px; }
+.result th { text-align: left; font-weight: 600; color: var(--muted); background: var(--surface-2); padding: .5rem .7rem; font-size: .7rem; letter-spacing: .06em; }
+.result td { padding: .6rem .7rem; border-top: 1px solid var(--line); white-space: nowrap; }
+.result td:first-child { color: var(--accent-text); font-weight: 600; }
+.scroll-cue { position: absolute; bottom: 1.6rem; left: 50%; translate: -50% 0; font: 500 .7rem/1 var(--font-mono); letter-spacing: .2em; text-transform: uppercase; color: var(--faint); display: flex; flex-direction: column; align-items: center; gap: .6rem; text-decoration: none; }
+.scroll-cue i { width: 1px; height: 36px; background: linear-gradient(var(--faint), transparent); animation: cue 2s infinite var(--ease); transform-origin: top; }
+@keyframes cue { 0% { transform: scaleY(0); } 50% { transform: scaleY(1); } 100% { transform: scaleY(1); opacity: 0; } }
+
+/* ==========================================================================
+   Sections
+   ========================================================================== */
+section { position: relative; }
+.section { padding: clamp(5rem, 11vw, 8.5rem) 0; }
+.section + .section { border-top: 1px solid var(--line); }
+.sec-head { display: grid; grid-template-columns: auto 1fr; gap: .25rem 1.25rem; align-items: baseline; margin-bottom: clamp(2.5rem, 5vw, 4rem); max-width: 52rem; }
+.sec-idx { font: 500 .8rem/1 var(--font-mono); color: var(--accent-text); padding-top: .2rem; }
+.eyebrow { font: 500 .78rem/1 var(--font-mono); text-transform: uppercase; letter-spacing: .16em; color: var(--muted); }
+.sec-head h2 { grid-column: 2; margin: .7rem 0 0; font: 400 clamp(2.1rem, 4.4vw, 3.4rem)/1.06 var(--font-display); letter-spacing: -.03em; }
+.sec-head h2 em { font-style: italic; color: var(--accent-text); font-weight: 300; }
+.sec-head p { grid-column: 2; margin: 1rem 0 0; color: var(--muted); font-size: 1.05rem; max-width: 40rem; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+
+.js .reveal { opacity: 0; transform: translateY(22px); transition: opacity .8s var(--ease), transform .8s var(--ease); transition-delay: var(--d, 0s); }
+.js .reveal.in { opacity: 1; transform: none; }
+
+/* ==========================================================================
+   KPI board
+   ========================================================================== */
+.kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.kpi { background: var(--surface); padding: 1.6rem 1.5rem 1.5rem; position: relative; min-height: 210px; display: flex; flex-direction: column; transition: background-color .3s; }
+.kpi:hover { background: var(--surface-2); }
+.kpi-tag { font: 500 .68rem/1 var(--font-mono); text-transform: uppercase; letter-spacing: .14em; color: var(--faint); display: flex; align-items: center; gap: .5rem; }
+.kpi-tag::before { content: ""; width: 6px; height: 6px; border-radius: 2px; background: var(--c, var(--accent)); }
+.kpi-val { font: 400 clamp(2.4rem, 4vw, 3.3rem)/1 var(--font-display); letter-spacing: -.03em; margin: 1.2rem 0 .75rem; font-variant-numeric: tabular-nums; }
+.kpi-val .unit { color: var(--c, var(--accent-text)); }
+.kpi p { margin: 0; color: var(--muted); font-size: .9rem; line-height: 1.5; }
+.kpi-bar { margin-top: auto; padding-top: 1.1rem; }
+.kpi-bar i { display: block; height: 2px; background: var(--line); border-radius: 2px; overflow: hidden; }
+.kpi-bar i::after { content: ""; display: block; height: 100%; width: 100%; background: var(--c, var(--accent)); transform: scaleX(0); transform-origin: 0 50%; transition: transform 1.6s var(--ease) .2s; }
+.kpi.in .kpi-bar i::after { transform: scaleX(1); }
+.kpi-note { margin-top: 1rem; font: 400 .74rem/1.4 var(--font-mono); color: var(--faint); }
+
+/* ==========================================================================
+   Case files
+   ========================================================================== */
+.cases { display: grid; grid-template-columns: 280px 1fr; gap: 1.5rem; }
+.case-tabs { display: flex; flex-direction: column; gap: .5rem; }
+.case-tab {
+  text-align: left; padding: 1.1rem 1.15rem; border-radius: 14px; border: 1px solid var(--line); background: transparent;
+  cursor: pointer; transition: background-color .25s, border-color .25s; position: relative;
+}
+.case-tab:hover { background: var(--surface); }
+.case-tab[aria-selected="true"] { background: var(--surface); border-color: var(--line-strong); }
+.case-tab[aria-selected="true"]::before { content: ""; position: absolute; left: -1px; top: 18%; bottom: 18%; width: 3px; border-radius: 3px; background: var(--accent); }
+.case-tab .ct-k { display: block; font: 500 .7rem/1 var(--font-mono); color: var(--faint); letter-spacing: .1em; text-transform: uppercase; }
+.case-tab .ct-t { display: block; font-weight: 600; margin-top: .45rem; line-height: 1.3; }
+.case-tab .ct-s { display: block; font-size: .82rem; color: var(--muted); margin-top: .2rem; }
+.case-panel { padding: clamp(1.4rem, 3vw, 2.4rem); display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(1.5rem, 3vw, 2.5rem); align-items: start; min-height: 470px; }
+.case-panel[hidden] { display: none; }
+.case-panel h3 { font: 400 clamp(1.6rem, 2.6vw, 2.1rem)/1.12 var(--font-display); letter-spacing: -.02em; margin: .5rem 0 1.2rem; }
+.case-panel dl { margin: 0; display: grid; gap: 1rem; }
+.case-panel dt { font: 600 .7rem/1 var(--font-mono); text-transform: uppercase; letter-spacing: .14em; color: var(--accent-text); }
+.case-panel dd { margin: .4rem 0 0; color: var(--muted); font-size: .95rem; }
+.case-panel dd strong { color: var(--text); font-weight: 600; }
+.viz { border: 1px solid var(--line); border-radius: 14px; background: var(--bg-elev); padding: 1.2rem; position: relative; }
+.viz-head { display: flex; justify-content: space-between; align-items: center; font: 500 .72rem/1 var(--font-mono); color: var(--muted); margin-bottom: 1rem; text-transform: uppercase; letter-spacing: .1em; }
+.replay { background: none; border: 1px solid var(--line-strong); color: var(--muted); border-radius: 7px; padding: .3rem .55rem; cursor: pointer; font: 500 .7rem/1 var(--font-mono); text-transform: none; letter-spacing: 0; }
+.replay:hover { color: var(--text); border-color: var(--accent); }
+
+/* Case 1: minimap */
+.minimaps { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.mm-label { font: 400 clamp(1.6rem, 3vw, 2.2rem)/1 var(--font-display); letter-spacing: -.02em; }
+.mm-label.before { color: var(--rose); } .mm-label.after { color: var(--accent-text); }
+.mm-sub { font: 500 .7rem/1.3 var(--font-mono); color: var(--faint); margin: .35rem 0 .8rem; }
+.mm { display: flex; flex-direction: column; gap: 2px; }
+.mm i { display: block; height: 3px; border-radius: 2px; background: var(--rose); opacity: .55; transform: scaleX(0); transform-origin: 0 50%; transition: transform .5s var(--ease); }
+.mm.after i { background: var(--accent); opacity: .9; }
+.viz.play .mm i { transform: scaleX(1); }
+.viz-foot { margin-top: 1rem; font: 400 .72rem/1.4 var(--font-mono); color: var(--faint); }
+
+/* Case 2: nodes + phases */
+.nodes { display: grid; grid-template-columns: repeat(auto-fill, minmax(34px, 1fr)); gap: 7px; }
+.node { aspect-ratio: 1; border-radius: 8px; border: 1.5px dashed var(--line-strong); display: grid; place-items: center; font: 500 .62rem/1 var(--font-mono); color: var(--faint); transition: background-color .35s, border-color .35s, color .35s, transform .35s var(--ease); }
+.node.on { background: var(--cyan-soft); border: 1.5px solid var(--cyan); color: var(--cyan); transform: scale(1.04); }
+.phases { list-style: none; padding: 0; margin: 1.2rem 0 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; counter-reset: ph; }
+.phases li { font: 500 .66rem/1.3 var(--font-mono); color: var(--faint); padding-top: .6rem; border-top: 2px solid var(--line-strong); transition: color .3s, border-color .3s; }
+.phases li.on { color: var(--text); border-color: var(--cyan); }
+.counter-line { display: flex; align-items: baseline; gap: .5rem; margin-top: 1rem; }
+.counter-line b { font: 400 2rem/1 var(--font-display); color: var(--cyan); font-variant-numeric: tabular-nums; }
+.counter-line span { font: 500 .74rem/1.3 var(--font-mono); color: var(--muted); }
+
+/* Case 3: waffle */
+.waffle { display: grid; grid-template-columns: repeat(auto-fill, minmax(15px, 1fr)); gap: 4px; }
+.waffle i { aspect-ratio: 1; border-radius: 3px; background: var(--line-strong); transition: background-color .3s, transform .3s var(--ease); }
+.waffle i.on { background: var(--accent); transform: rotate(90deg); }
+.legend { display: flex; gap: 1rem; margin-top: 1rem; font: 500 .72rem/1 var(--font-mono); color: var(--muted); flex-wrap: wrap; }
+.legend span { display: inline-flex; align-items: center; gap: .4rem; }
+.legend i { width: 10px; height: 10px; border-radius: 3px; background: var(--line-strong); }
+.legend .pb i { background: var(--accent); }
+
+/* ==========================================================================
+   Semantic model (skills)
+   ========================================================================== */
+.model { position: relative; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: auto auto auto; gap: 4.5rem 2rem; }
+.model svg.wires { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
+.wires path { fill: none; stroke: var(--line-strong); stroke-width: 1.5; transition: stroke .3s, stroke-width .3s; }
+.wires path.hot { stroke: var(--accent); stroke-width: 2; }
+.wires text { font: 600 12px var(--font-mono); fill: var(--faint); transition: fill .3s; }
+.wires text.hot { fill: var(--accent-text); }
+.wires circle.flow { fill: var(--accent); opacity: 0; }
+.wires circle.flow.hot { opacity: 1; }
+.tbl { position: relative; z-index: 1; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; transition: border-color .3s, transform .3s var(--ease), box-shadow .3s; }
+.tbl:hover, .tbl:focus-within, .tbl.hot { border-color: var(--accent); transform: translateY(-3px); box-shadow: var(--shadow); }
+.tbl-h { display: flex; align-items: center; gap: .55rem; padding: .75rem 1rem; background: var(--surface-2); border-bottom: 1px solid var(--line); font: 600 .78rem/1 var(--font-mono); letter-spacing: .02em; }
+.tbl-h svg { width: 15px; height: 15px; color: var(--muted); flex: none; }
+.tbl-h .tt { margin-left: auto; font-weight: 500; color: var(--faint); font-size: .66rem; }
+.tbl ul { list-style: none; margin: 0; padding: .55rem 0; }
+.tbl li { display: flex; align-items: center; gap: .6rem; padding: .32rem 1rem; font-size: .88rem; }
+.tbl li::before { content: ""; width: 5px; height: 5px; border-radius: 50%; background: var(--faint); flex: none; }
+.tbl li.key { font: 500 .78rem/1.4 var(--font-mono); color: var(--accent-text); }
+.tbl li.key::before { display: none; }
+.tbl li.key svg { width: 13px; height: 13px; flex: none; }
+.tbl-f { border-top: 1px solid var(--line); padding: .55rem .6rem; }
+.xfilter { width: 100%; display: flex; align-items: center; justify-content: space-between; background: none; border: 0; padding: .45rem .5rem; border-radius: 8px; color: var(--muted); font: 500 .74rem/1 var(--font-mono); cursor: pointer; }
+.xfilter:hover { background: var(--accent-soft); color: var(--accent-text); }
+.xfilter svg { width: 14px; height: 14px; }
+.tbl[data-dim="lead"], .tbl[data-dim="comm"], .tbl[data-dim="domain"] { grid-row: 3; }
+.tbl.fact { grid-column: 2; grid-row: 2; border-color: color-mix(in srgb, var(--accent) 50%, var(--line)); box-shadow: 0 0 0 6px var(--accent-soft); }
+.tbl.fact .tbl-h { background: var(--accent); color: var(--on-accent); }
+.tbl.fact .tbl-h svg, .tbl.fact .tbl-h .tt { color: var(--on-accent); opacity: .7; }
+.tbl.fact li { font: 400 .8rem/1.4 var(--font-mono); color: var(--muted); }
+.tbl.fact li.m { color: var(--accent-text); font-weight: 600; }
+.tbl.fact li.m::before { background: var(--accent); }
+.model-legend { margin-top: 2rem; display: flex; gap: 1.5rem; flex-wrap: wrap; font: 500 .74rem/1 var(--font-mono); color: var(--faint); }
+
+/* ==========================================================================
+   Journey (gantt + timeline)
+   ========================================================================== */
+.gantt { padding: 1.5rem 1.5rem 1.2rem; margin-bottom: 2.5rem; }
+.gantt-head { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 2.1rem; flex-wrap: wrap; }
+.gantt-head h3 { margin: 0; font: 600 .78rem/1 var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.gantt-head .total { font: 500 .78rem/1 var(--font-mono); color: var(--faint); }
+.g-row { display: grid; grid-template-columns: 150px 1fr; align-items: center; min-height: 44px; }
+.g-row + .g-row { border-top: 1px dashed var(--line); }
+.g-label { font-size: .84rem; font-weight: 600; padding-right: 1rem; }
+.g-label small { display: block; font: 400 .7rem/1.3 var(--font-mono); color: var(--faint); }
+.g-track { position: relative; height: 44px; }
+.g-bar {
+  position: absolute; top: 10px; height: 24px; border-radius: 6px; border: 0; padding: 0 .55rem; cursor: default;
+  font: 600 .7rem/24px var(--font-mono); color: var(--on-accent); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: left;
+  background: var(--c); transform-origin: 0 50%; transform: scaleX(0); transition: transform 1.1s var(--ease), filter .2s;
+}
+.gantt.in .g-bar { transform: scaleX(1); }
+.g-bar:hover, .g-bar:focus-visible { filter: brightness(1.12); }
+.g-bar.live { background: linear-gradient(90deg, var(--c) 70%, color-mix(in srgb, var(--c) 30%, transparent)); }
+.g-ms { position: absolute; top: 14px; width: 16px; height: 16px; margin-left: -8px; transform: rotate(45deg); background: var(--surface); border: 2px solid var(--cyan); border-radius: 3px; padding: 0; cursor: default; }
+.g-axis { display: grid; grid-template-columns: 150px 1fr; margin-top: .4rem; }
+.g-ticks { position: relative; height: 22px; border-top: 1px solid var(--line-strong); }
+.g-ticks span { position: absolute; top: 6px; translate: -50% 0; font: 500 .66rem/1 var(--font-mono); color: var(--faint); }
+.g-ticks span::before { content: ""; position: absolute; left: 50%; top: -7px; height: 5px; width: 1px; background: var(--line-strong); }
+.g-today { position: absolute; top: -6px; bottom: -6px; width: 0; border-left: 1.5px dashed var(--accent); pointer-events: none; }
+.g-today b { position: absolute; top: -18px; left: 0; translate: -50% 0; font: 600 .62rem/1 var(--font-mono); color: var(--accent-text); background: var(--surface); padding: 2px 4px; border-radius: 4px; white-space: nowrap; }
+.g-tracks-wrap { position: relative; }
+.tip {
+  position: fixed; z-index: 150; pointer-events: none; padding: .55rem .7rem; border-radius: 9px; background: var(--text); color: var(--bg);
+  font: 500 .75rem/1.4 var(--font-mono); max-width: 260px; opacity: 0; transform: translateY(4px); transition: opacity .15s, transform .15s;
+}
+.tip.show { opacity: 1; transform: none; }
+
+.filters { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 2rem; align-items: center; }
+.filters .lbl { font: 500 .72rem/1 var(--font-mono); text-transform: uppercase; letter-spacing: .14em; color: var(--faint); margin-right: .5rem; }
+.fchip {
+  display: inline-flex; align-items: center; gap: .5rem; padding: .5rem .85rem; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--line-strong); background: var(--surface); font-size: .85rem; color: var(--muted); transition: all .2s;
+}
+.fchip:hover { color: var(--text); border-color: var(--faint); }
+.fchip[aria-pressed="true"] { background: var(--text); color: var(--bg); border-color: var(--text); }
+.fchip .n { font: 600 .7rem/1 var(--font-mono); opacity: .7; }
+.fchip i { width: 7px; height: 7px; border-radius: 2px; background: var(--c); }
+
+.roles { position: relative; display: grid; gap: 1.25rem; padding-left: 2.25rem; }
+.roles::before { content: ""; position: absolute; left: 7px; top: 8px; bottom: 8px; width: 2px; background: linear-gradient(var(--accent), var(--cyan) 60%, var(--line)); border-radius: 2px; }
+.role { position: relative; padding: clamp(1.25rem, 2.6vw, 2rem); }
+.role::before { content: ""; position: absolute; left: calc(-2.25rem + 1px); top: 2.1rem; width: 14px; height: 14px; border-radius: 50%; background: var(--bg); border: 3px solid var(--accent); }
+.role.past::before { border-color: var(--cyan); }
+.role-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .4rem 1.5rem; align-items: baseline; }
+.role h3 { margin: 0; font: 400 clamp(1.35rem, 2.3vw, 1.7rem)/1.2 var(--font-display); letter-spacing: -.015em; }
+.role .org { margin: .3rem 0 0; color: var(--accent-text); font-weight: 600; font-size: .92rem; }
+.role .when { font: 500 .78rem/1.4 var(--font-mono); color: var(--muted); text-align: right; }
+.role .when b { display: block; color: var(--faint); font-weight: 500; }
+.wins { list-style: none; padding: 0; margin: 1.3rem 0 0; display: grid; gap: .2rem; }
+.wins li { position: relative; padding: .55rem .75rem .55rem 1.6rem; border-radius: 10px; color: var(--muted); font-size: .95rem; transition: opacity .35s, background-color .35s, color .35s; }
+.wins li::before { content: ""; position: absolute; left: .55rem; top: 1.1rem; width: 6px; height: 6px; border-radius: 2px; background: var(--faint); transition: background-color .3s; }
+.wins li strong { color: var(--text); font-weight: 600; }
+.wins.filtering li { opacity: .28; }
+.wins.filtering li.match { opacity: 1; background: var(--accent-soft); color: var(--text); }
+.wins.filtering li.match::before { background: var(--accent); }
+.role.empty { opacity: .5; }
+
+/* ==========================================================================
+   Projects
+   ========================================================================== */
+.projects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+.proj { display: flex; flex-direction: column; overflow: hidden; transition: transform .35s var(--ease), border-color .35s; }
+.proj:hover { transform: translateY(-6px); border-color: var(--line-strong); }
+.proj-code { background: var(--bg-elev); border-bottom: 1px solid var(--line); padding: 1rem 1.1rem; font: 400 .74rem/1.7 var(--font-mono); white-space: pre; overflow: hidden; color: var(--muted); min-height: 9.2rem; position: relative; }
+.proj-code::after { content: ""; position: absolute; inset: auto 0 0 0; height: 40px; background: linear-gradient(transparent, var(--bg-elev)); }
+.proj-body { padding: 1.4rem 1.4rem 1.5rem; display: flex; flex-direction: column; flex: 1; }
+.proj h3 { margin: 0 0 .35rem; font: 400 1.4rem/1.2 var(--font-display); letter-spacing: -.01em; }
+.proj .meta { font: 500 .74rem/1.4 var(--font-mono); color: var(--accent-text); margin: 0 0 1rem; }
+.proj ul { margin: 0 0 1.25rem; padding-left: 1.1rem; color: var(--muted); font-size: .92rem; }
+.proj li { margin-bottom: .35rem; }
+.proj .tags { display: flex; flex-wrap: wrap; gap: .35rem; margin-bottom: 1.2rem; }
+.proj a.go { margin-top: auto; display: inline-flex; align-items: center; gap: .45rem; text-decoration: none; font-weight: 600; font-size: .9rem; color: var(--text); }
+.proj a.go svg { width: 16px; height: 16px; transition: transform .25s var(--ease); }
+.proj a.go:hover svg { transform: translate(2px,-2px); }
+
+/* ==========================================================================
+   Through-line
+   ========================================================================== */
+.through { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: start; }
+.quote { font: 300 clamp(1.5rem, 2.8vw, 2.15rem)/1.35 var(--font-display); letter-spacing: -.015em; margin: 0 0 1.5rem; }
+.quote em { color: var(--accent-text); }
+.through p.body { color: var(--muted); font-size: 1.02rem; margin: 0 0 1rem; }
+.pillars { display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; margin-top: 2rem; }
+.pillar { background: var(--surface); padding: 1.1rem 1.25rem; display: grid; grid-template-columns: 2.2rem 1fr; gap: .9rem; align-items: start; }
+.pillar svg { width: 22px; height: 22px; color: var(--accent-text); margin-top: .15rem; }
+.pillar b { display: block; font-weight: 600; }
+.pillar span { color: var(--muted); font-size: .9rem; }
+.edu { display: grid; gap: 1rem; }
+.edu .card { padding: 1.5rem; display: grid; grid-template-columns: auto 1fr; gap: 1.1rem; align-items: start; }
+.edu .yr { font: 400 2.2rem/1 var(--font-display); color: var(--accent-text); letter-spacing: -.02em; }
+.edu h3 { margin: 0 0 .3rem; font-size: 1.05rem; line-height: 1.35; }
+.edu p { margin: 0; color: var(--muted); font-size: .9rem; }
+.edu .badge { display: inline-block; margin-top: .7rem; }
+
+/* ==========================================================================
+   Contact / footer
+   ========================================================================== */
+.contact { text-align: center; padding: clamp(6rem, 13vw, 10rem) 0; overflow: hidden; isolation: isolate; }
+.contact::before { content: ""; position: absolute; z-index: -1; left: 50%; top: 50%; width: 70vmax; height: 70vmax; translate: -50% -50%; background: radial-gradient(circle, var(--accent-soft), transparent 60%); }
+.contact .big-avatar { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.8rem; border: 3px solid var(--accent); box-shadow: 0 0 0 8px var(--accent-soft); }
+.contact h2 { font: 400 clamp(2.4rem, 6vw, 4.6rem)/1.04 var(--font-display); letter-spacing: -.035em; margin: 0 auto 1.2rem; max-width: 16ch; }
+.contact h2 em { font-style: italic; color: var(--accent-text); font-weight: 300; }
+.contact p { color: var(--muted); max-width: 36rem; margin: 0 auto 2.4rem; font-size: 1.08rem; }
+.contact .row { display: flex; gap: .75rem; justify-content: center; flex-wrap: wrap; }
+footer { border-top: 1px solid var(--line); padding: 2rem 0; }
+.foot { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; font: 400 .78rem/1.5 var(--font-mono); color: var(--faint); }
+.foot button { background: none; border: 0; padding: 0; cursor: pointer; color: var(--muted); font: inherit; text-decoration: underline; text-underline-offset: 3px; }
+
+/* ==========================================================================
+   Command palette + toast
+   ========================================================================== */
+.cmdk { position: fixed; inset: 0; z-index: 300; display: grid; place-items: start center; padding: 12vh 1rem 1rem; }
+.cmdk[hidden] { display: none; }
+.cmdk-bg { position: absolute; inset: 0; background: color-mix(in srgb, var(--bg) 60%, transparent); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); animation: fade .2s; }
+.cmdk-panel { position: relative; width: min(620px, 100%); background: var(--surface); border: 1px solid var(--line-strong); border-radius: 16px; box-shadow: 0 50px 100px -30px rgba(0,0,0,.6); overflow: hidden; animation: pop .25s var(--ease); }
+@keyframes fade { from { opacity: 0; } }
+@keyframes pop { from { opacity: 0; transform: translateY(-8px) scale(.98); } }
+.cmdk-in { display: flex; align-items: center; gap: .7rem; padding: 1rem 1.1rem; border-bottom: 1px solid var(--line); }
+.cmdk-in svg { width: 18px; height: 18px; color: var(--muted); flex: none; }
+.cmdk-in input { flex: 1; min-width: 0; background: none; border: 0; outline: 0; color: var(--text); font: 400 1rem var(--font-body); }
+.cmdk-in input::placeholder { color: var(--faint); }
+.cmdk ul { list-style: none; margin: 0; padding: .5rem; max-height: min(52vh, 420px); overflow-y: auto; }
+.cmdk .grp { padding: .7rem .7rem .35rem; font: 600 .66rem/1 var(--font-mono); text-transform: uppercase; letter-spacing: .14em; color: var(--faint); }
+.cmdk li[role="option"] { display: flex; align-items: center; gap: .75rem; padding: .65rem .7rem; border-radius: 10px; cursor: pointer; font-size: .93rem; }
+.cmdk li[role="option"] svg { width: 17px; height: 17px; color: var(--muted); flex: none; }
+.cmdk li[role="option"] .hint { margin-left: auto; font: 500 .7rem/1 var(--font-mono); color: var(--faint); }
+.cmdk li[aria-selected="true"] { background: var(--accent-soft); }
+.cmdk li[aria-selected="true"] svg { color: var(--accent-text); }
+.cmdk .empty { padding: 2rem; text-align: center; color: var(--faint); font-size: .9rem; }
+.cmdk-foot { display: flex; gap: 1rem; padding: .7rem 1.1rem; border-top: 1px solid var(--line); font: 500 .7rem/1 var(--font-mono); color: var(--faint); }
+.toast { position: fixed; left: 50%; bottom: 1.5rem; z-index: 310; translate: -50% 0; padding: .7rem 1.1rem; border-radius: 12px; background: var(--text); color: var(--bg); font-size: .88rem; font-weight: 500; opacity: 0; transform: translateY(10px); transition: opacity .25s, transform .25s var(--ease); pointer-events: none; }
+.toast.show { opacity: 1; transform: none; }
+
+.print-only { display: none; }
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width: 1080px) {
+  .nav-links { display: none; }
+  .nav-actions { margin-left: auto; }
+  .kpis { grid-template-columns: repeat(2, 1fr); }
+  .cases { grid-template-columns: 1fr; }
+  .case-tabs { flex-direction: row; overflow-x: auto; padding-bottom: .25rem; scrollbar-width: thin; }
+  .case-tab { flex: 1 0 220px; }
+  .case-tab[aria-selected="true"]::before { left: 18%; right: 18%; top: auto; bottom: -1px; width: auto; height: 3px; }
+  .projects { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .console { transform: none; }
+  .case-panel { grid-template-columns: 1fr; min-height: 0; }
+  .model { grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .model svg.wires { display: none; }
+  .tbl.fact { grid-column: 1 / -1; grid-row: 1; }
+  .tbl[data-dim="lead"], .tbl[data-dim="comm"], .tbl[data-dim="domain"] { grid-row: auto; }
+  .through { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .wrap { width: calc(100% - 2rem); }
+  .kpis { grid-template-columns: 1fr; }
+  .kpi { min-height: 0; }
+  .projects { grid-template-columns: 1fr; }
+  .model { grid-template-columns: 1fr; }
+  .sec-head { grid-template-columns: 1fr; }
+  .sec-head h2, .sec-head p { grid-column: 1; }
+  .g-row, .g-axis { grid-template-columns: 1fr; }
+  .g-label { padding: .6rem 0 0; }
+  .g-axis > div:first-child { display: none; }
+  .g-ticks span:nth-child(even) { display: none; }
+  .role .when { text-align: left; }
+  .roles { padding-left: 1.6rem; }
+  .role::before { left: calc(-1.6rem + 1px); }
+  .icon-btn .lbl, .icon-btn kbd { display: none; }
+  .phases { grid-template-columns: repeat(5, minmax(0,1fr)); }
+  .phases li { font-size: .58rem; }
+  .scroll-cue { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
+  .js .reveal { opacity: 1; transform: none; }
+  .console { transform: none; }
+}
+
+/* ==========================================================================
+   Print — the site doubles as a clean résumé
+   ========================================================================== */
+@media print {
+  @page { margin: .6in; }
+  :root, [data-theme] { --bg: #fff; --surface: #fff; --surface-2: #fff; --text: #000; --muted: #333; --faint: #666; --line: #ddd; --accent-text: #6b4a00; --accent-soft: transparent; }
+  body { font-size: 10.5pt; }
+  .nav, .progress, #ridge, .console, .scroll-cue, .hero-cta, .socials, .viz, .case-tabs, .model svg, .xfilter, .gantt, .filters, .proj-code, .contact, .cmdk, .toast, .tip, .no-print { display: none !important; }
+  .print-only { display: block; }
+  .js .reveal { opacity: 1 !important; transform: none !important; }
+  .hero { min-height: 0; padding: 0 0 1rem; display: block; }
+  .hero h1 { font-size: 22pt; margin: .4rem 0; }
+  .hero::before, .hero::after { display: none; }
+  .section { padding: 1.2rem 0; break-inside: auto; }
+  .sec-head { margin-bottom: .8rem; }
+  .sec-head h2 { font-size: 15pt; margin-top: .2rem; }
+  .sec-head p { display: none; }
+  .kpis { grid-template-columns: repeat(4, 1fr); }
+  .kpi { min-height: 0; padding: .6rem; }
+  .kpi-val { font-size: 18pt; margin: .4rem 0; }
+  .kpi-bar, .kpi-note { display: none; }
+  .case-panel[hidden] { display: grid !important; }
+  .case-panel { grid-template-columns: 1fr; min-height: 0; padding: .6rem 0; border: 0; }
+  .card { border: 0; box-shadow: none; }
+  .model { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem; }
+  .tbl { break-inside: avoid; } .tbl.fact { display: none; }
+  .roles::before, .role::before { display: none; }
+  .roles { padding: 0; }
+  .role { padding: .4rem 0; break-inside: avoid; }
+  .wins li { opacity: 1 !important; background: none !important; padding: .1rem 0 .1rem 1rem; }
+  .projects { grid-template-columns: 1fr 1fr 1fr; }
+  .through { grid-template-columns: 1fr 1fr; }
+  a { text-decoration: none; }
+}
+</style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"><span id="progress"></span></div>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-content">
-      <img src="https://raw.githubusercontent.com/RonHouser/RonHouser.github.io/refs/heads/main/images/profile.jpg" alt="Ron Houser" class="profile-img">
-      <h1>Ron Houser</h1>
-      <p class="subtitle">Senior Business Intelligence Analyst</p>
-      <p class="tagline">
-        Enterprise Power BI & Snowflake specialist at Caterpillar delivering executive-level dashboards, KPI reporting, self-service analytics, and actionable insights that drive decisions and measurable value. Former USMC Officer with proven leadership and stakeholder communication skills.
-      </p>
-      <div class="social-links">
-        <a href="https://github.com/RonHouser/Power-BI" target="_blank"><i class="fab fa-github"></i> Power BI</a>
-        <a href="https://github.com/RonHouser/Python" target="_blank"><i class="fab fa-python"></i> Python</a>
-        <a href="https://github.com/RonHouser/SQL" target="_blank"><i class="fas fa-database"></i> SQL</a>
-        <a href="https://www.linkedin.com/in/ron-houser/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a href="mailto:ron.houser12@gmail.com"><i class="fas fa-envelope"></i> Contact</a>
+<!-- SVG sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a10.9 10.9 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/></g></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-print" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9V3h10v6"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M7 14h10v7H7z"/></g></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></g></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></symbol>
+    <symbol id="i-cmd" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M9 6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6Z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></g></symbol>
+    <symbol id="i-table" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 10v10"/></g></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="8" cy="15" r="4"/><path d="m11 12 9-9m-3 3 2 2m-5 1 2 2"/></g></symbol>
+    <symbol id="i-filter" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M4 5h16l-6 7.5V19l-4 1.5v-8L4 5Z"/></symbol>
+    <symbol id="i-hash" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M5 9h14M5 15h14M10 4 8 20m8-16-2 16"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></g></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5v-15ZM4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></symbol>
+    <symbol id="i-people" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5a6.5 6.5 0 0 1 3.5 5.5"/></g></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></symbol>
+  </defs>
+</svg>
+
+<!-- Navigation -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="Ron Houser — back to top">
+      <span class="brand-mark" aria-hidden="true">RH</span>
+      <span>Ron Houser<small>BI · Analytics</small></span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#cases">Case files</a></li>
+        <li><a href="#model">Skills</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="openCmdk" type="button" aria-label="Open command menu" aria-haspopup="dialog">
+        <svg aria-hidden="true"><use href="#i-search"/></svg><span class="lbl">Search</span><kbd id="kbdHint">Ctrl K</kbd>
+      </button>
+      <button class="icon-btn theme-btn" id="themeBtn" type="button" aria-label="Toggle light and dark theme">
+        <svg class="moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        <svg class="sun" aria-hidden="true"><use href="#i-sun"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<!-- ====================================================================== HERO -->
+<section class="hero" id="top">
+  <canvas id="ridge" aria-hidden="true"></canvas>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="print-only" style="font:500 10pt var(--font-mono);color:#333">ron.houser12@gmail.com · linkedin.com/in/ron-houser · github.com/RonHouser</div>
+      <span class="status reveal"><span class="pulse" aria-hidden="true"></span><span><strong>Senior BI Analyst</strong> · Caterpillar Inc.</span></span>
+      <h1 class="reveal" style="--d:.08s">Turning operational data into <em>decisions</em> leaders <span class="u">act on.<svg viewBox="0 0 200 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8 C 50 2, 120 2, 198 7"/></svg></span></h1>
+      <p class="lede reveal" style="--d:.16s">I'm <strong>Ron Houser</strong>. I design enterprise <strong>Power BI</strong> and <strong>Snowflake</strong> solutions — executive scorecards, KPI reporting, and self-service analytics for S&amp;OP, demand planning, and manufacturing scheduling. Former <strong>USMC officer</strong>: I lead with clarity and finish the mission.</p>
+      <div class="hero-cta reveal" style="--d:.24s">
+        <a class="btn btn-primary" href="#impact">See the impact <svg class="arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <button class="btn" type="button" id="printBtn"><svg aria-hidden="true"><use href="#i-print"/></svg> Résumé PDF</button>
+      </div>
+      <div class="socials reveal" style="--d:.32s">
+        <span>Find me</span>
+        <a href="https://www.linkedin.com/in/ron-houser/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+        <a href="https://github.com/RonHouser" target="_blank" rel="noopener" aria-label="GitHub"><svg aria-hidden="true"><use href="#i-github"/></svg></a>
+        <a href="mailto:ron.houser12@gmail.com" aria-label="Email"><svg aria-hidden="true"><use href="#i-mail"/></svg></a>
       </div>
     </div>
-  </section>
 
-  <!-- Skills -->
-  <section class="skills">
-    <h2 class="section-title">Core Expertise</h2>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <h3>Business Intelligence & Visualization</h3>
-        <p>Enterprise Power BI • Advanced DAX & Data Modeling • Executive Scorecards & KPI Reporting • Self-Service Analytics • Dashboard Design • Performance Optimization</p>
+    <div class="console reveal" style="--d:.3s" aria-label="Animated SQL query introducing Ron Houser">
+      <div class="console-bar">
+        <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
+        <span class="console-file">find_analyst.sql</span>
+        <span class="console-who">
+          <img class="avatar" src="https://raw.githubusercontent.com/RonHouser/RonHouser.github.io/refs/heads/main/images/profile.jpg" alt="" width="28" height="28" data-fallback="RH">
+          Snowflake
+        </span>
       </div>
-      <div class="skill-card">
-        <h3>Data Engineering & Analytics</h3>
-        <p>Snowflake (Complex Procedures & ETL) • SQL • Python • Data Storytelling • Value Realization • ThoughtSpot</p>
-      </div>
-      <div class="skill-card">
-        <h3>Leadership & Influence</h3>
-        <p>Cross-Functional Project Leadership • Mentoring & Enablement • Executive Presentations • Stakeholder Communication • Change Management</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience Timeline -->
-  <section class="experience">
-    <div class="timeline">
-      <h2 class="section-title">Professional Journey</h2>
-
-      <!-- Current Role -->
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <h3>Senior Business Intelligence Analyst</h3>
-          <p class="company">Caterpillar Inc. • July 2024 – Present</p>
-          <ul>
-            <li>Overhauled a critical Snowflake stored procedure from 8,000+ lines to under 1,000 lines using advanced SQL and data modeling, incorporated LVHV data, enforced business rules, and enabled high-performance enterprise Power BI reporting solutions.</li>
-            <li>Lead the design, development, and maintenance of enterprise Power BI dashboards and reporting solutions that deliver executive-level scorecards, KPI reporting, and self-service analytics supporting S&OP, demand planning, and manufacturing scheduling.</li>
-            <li>Facilitated development of a scheduled distribution analytics solution used across CI, ART and LNH manufacturing facilities; translated complex operational data into compelling, actionable insights presented to the EO Board, demonstrating measurable business value and value realization.</li>
-            <li>Served as Project Lead for the Forecast Region Code Restructuring initiative impacting 29 tools; drove cross-functional collaboration with data engineering, digital, and business stakeholders while owning the master plan, risk tracking, change management, and post-cutover performance measurement.</li>
-            <li>Act as S&OP Analytics ThoughtSpot Enablement Lead and Tier-2 expert: mentor analysts and business partners, deliver training, create enablement materials, and drive technology adoption and utilization during the enterprise transition from BIC to ThoughtSpot.</li>
-            <li>Developed and automated Power BI refresh processes driven by Snowflake data; successfully deployed scalable solutions to multiple Infohub and Toolbox reports with strong performance optimization.</li>
-            <li>Deliver high-value ad-hoc analytics and strategic insights that influence decisions, support value realization, and translate complex data into clear recommendations for leadership.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Previous Caterpillar Role -->
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <h3>Data Visualization Professional</h3>
-          <p class="company">Caterpillar Inc. • November 2022 – July 2024</p>
-          <ul>
-            <li>Created a standardized budget dashboard querying Snowflake and transforming data in Power BI for resource allocation analysis.</li>
-            <li>Automated license tracking across 4 data sources with Power Automate alerts, reducing man-hours by more than 208 annually.</li>
-            <li>Led the full migration of CAT’s Global Program Management division from Tableau to Power BI, redirecting 131 dashboards to Dataflows and standardizing visualization practices.</li>
-            <li>Developed over 130 unique interactive executive dashboards tailored to stakeholder needs.</li>
-            <li>Presented metrics and innovation updates to 260+ leaders in extended GPM staff meetings.</li>
-            <li>Delivered an emergency Gantt chart solution during a critical Microsoft outage that impacted over 500 dashboards.</li>
-            <li>Built and automated the GPM Toolbox usage dashboard whose metrics were leveraged in strategic discussions with Microsoft.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- EnviroServe -->
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <h3>Manufacturing Data Analyst</h3>
-          <p class="company">EnviroServe Chemicals, Inc. • July 2019 – November 2022</p>
-          <ul>
-            <li>Delivered Power BI visualizations that improved production standards and generated average cost savings of $12,000 per month.</li>
-            <li>Provided monthly analytical reports and recommendations to more than 15 manufacturing partners.</li>
-            <li>Authored a 27-page interactive SOP with embedded Power BI visuals for chemical implementation and maintenance.</li>
-            <li>Built strong stakeholder relationships with top U.S. manufacturers including Caterpillar, ELKAY, Energizer, and others.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- USMC -->
-      <div class="timeline-item">
-        <div class="timeline-content">
-          <h3>Field Artillery Officer (Operations Analyst)</h3>
-          <p class="company">United States Marine Corps • September 2012 – September 2015</p>
-          <ul>
-            <li>Conducted detailed analysis on datasets of 10,000+ data points to plan battalion live-fire exercises.</li>
-            <li>Created dashboard-style visualizations in PowerPoint to communicate tactical control measures to senior leadership.</li>
-            <li>Authored a 63-page SOP covering OPSEC, CBRN, and ORM protocols.</li>
-            <li>Maintained a 100% safety record as Range Safety Officer and Officer in Charge across 256 days of live-fire training.</li>
-            <li>Developed the battalion’s first automated Excel certificate tracker for 240+ Marines, dramatically improving training efficiency.</li>
-          </ul>
+      <div class="code" id="code" aria-hidden="true"></div>
+      <div class="result" id="result">
+        <div class="result-meta"><span class="ok">●</span> Query succeeded · 1 row <button type="button" id="rerun">↻ Run again</button></div>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>NAME</th><th>TITLE</th><th>FOCUS</th></tr></thead>
+            <tbody><tr><td>Ron Houser</td><td>Sr. BI Analyst</td><td>Executive KPIs · S&amp;OP</td></tr></tbody>
+          </table>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+  <a class="scroll-cue" href="#impact" aria-label="Scroll to impact"><span aria-hidden="true">Scroll</span><i aria-hidden="true"></i></a>
+</section>
 
-  <!-- Projects -->
-  <section class="projects">
-    <h2 class="section-title">Independent Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>World COVID Dataset Analysis</h3>
-        <p><strong>SQL + Tableau • Feb 2021 – Oct 2022</strong></p>
+<!-- ====================================================================== IMPACT -->
+<section class="section" id="impact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-idx">01</span><span class="eyebrow">Impact</span>
+      <h2>Results, <em>measured.</em></h2>
+      <p>A scorecard of my own — outcomes from a career spanning the Marine Corps, manufacturing, and Caterpillar.</p>
+    </div>
+    <div class="kpis">
+      <article class="kpi reveal" style="--c:var(--accent)">
+        <span class="kpi-tag">Engineering</span>
+        <div class="kpi-val"><span data-count="87">0</span><span class="unit">%+</span></div>
+        <p>Leaner critical Snowflake stored procedure, rebuilt with advanced SQL &amp; data modeling.</p>
+        <div class="kpi-note">8,000+ → under 1,000 lines</div>
+        <div class="kpi-bar"><i></i></div>
+      </article>
+      <article class="kpi reveal" style="--d:.05s;--c:var(--cyan)">
+        <span class="kpi-tag">Migration</span>
+        <div class="kpi-val"><span data-count="131">0</span></div>
+        <p>Dashboards redirected to Dataflows in the GPM division's full Tableau → Power BI migration, which I led.</p>
+        <div class="kpi-bar"><i></i></div>
+      </article>
+      <article class="kpi reveal" style="--d:.1s;--c:var(--accent)">
+        <span class="kpi-tag">Delivery</span>
+        <div class="kpi-val"><span data-count="130">0</span><span class="unit">+</span></div>
+        <p>Unique interactive executive dashboards, each tailored to stakeholder needs.</p>
+        <div class="kpi-bar"><i></i></div>
+      </article>
+      <article class="kpi reveal" style="--d:.15s;--c:var(--cyan)">
+        <span class="kpi-tag">Leadership</span>
+        <div class="kpi-val"><span data-count="29">0</span></div>
+        <p>Tools in scope as Project Lead for the Forecast Region Code Restructuring initiative.</p>
+        <div class="kpi-bar"><i></i></div>
+      </article>
+      <article class="kpi reveal" style="--c:var(--cyan)">
+        <span class="kpi-tag">Automation</span>
+        <div class="kpi-val"><span data-count="208">0</span><span class="unit">+</span></div>
+        <p>Man-hours saved annually by automating license tracking across 4 data sources with Power Automate.</p>
+        <div class="kpi-bar"><i></i></div>
+      </article>
+      <article class="kpi reveal" style="--d:.05s;--c:var(--accent)">
+        <span class="kpi-tag">Savings</span>
+        <div class="kpi-val"><span class="unit">$</span><span data-count="12">0</span><span class="unit">K</span></div>
+        <p>Average monthly cost savings from Power BI visuals that improved production standards.</p>
+        <div class="kpi-note">per month · EnviroServe</div>
+        <div class="kpi-bar"><i></i></div>
+      </article>
+      <article class="kpi reveal" style="--d:.1s;--c:var(--cyan)">
+        <span class="kpi-tag">Influence</span>
+        <div class="kpi-val"><span data-count="260">0</span><span class="unit">+</span></div>
+        <p>Leaders briefed on metrics and innovation updates in extended GPM staff meetings.</p>
+        <div class="kpi-bar"><i></i></div>
+      </article>
+      <article class="kpi reveal" style="--d:.15s;--c:var(--accent)">
+        <span class="kpi-tag">Precision</span>
+        <div class="kpi-val"><span data-count="256">0</span></div>
+        <p>Days of live-fire training as Range Safety Officer — with a 100% safety record.</p>
+        <div class="kpi-note">USMC · Officer in Charge</div>
+        <div class="kpi-bar"><i></i></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================== CASE FILES -->
+<section class="section" id="cases">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-idx">02</span><span class="eyebrow">Case files</span>
+      <h2>Three problems, <em>solved.</em></h2>
+      <p>The work behind the numbers — what was at stake, what I did, and what changed.</p>
+    </div>
+
+    <div class="cases reveal">
+      <div class="case-tabs" role="tablist" aria-label="Case studies">
+        <button class="case-tab" role="tab" id="tab-1" aria-controls="case-1" aria-selected="true" type="button">
+          <span class="ct-k">Case 01 · Snowflake</span><span class="ct-t">The 8,000-line procedure</span><span class="ct-s">Refactor for performance &amp; trust</span>
+        </button>
+        <button class="case-tab" role="tab" id="tab-2" aria-controls="case-2" aria-selected="false" tabindex="-1" type="button">
+          <span class="ct-k">Case 02 · Program lead</span><span class="ct-t">Forecast Region Code Restructuring</span><span class="ct-s">29 tools, one cutover</span>
+        </button>
+        <button class="case-tab" role="tab" id="tab-3" aria-controls="case-3" aria-selected="false" tabindex="-1" type="button">
+          <span class="ct-k">Case 03 · Migration</span><span class="ct-t">Tableau → Power BI</span><span class="ct-s">131 dashboards standardized</span>
+        </button>
+      </div>
+
+      <div>
+        <!-- Case 1 -->
+        <article class="card case-panel" role="tabpanel" id="case-1" aria-labelledby="tab-1" tabindex="0">
+          <div>
+            <span class="chip">Senior BI Analyst · Caterpillar</span>
+            <h3>Rewriting a critical stored procedure to a fraction of its size.</h3>
+            <dl>
+              <div><dt>The problem</dt><dd>A critical Snowflake stored procedure had grown past <strong>8,000 lines</strong> — and enterprise Power BI reporting depended on it.</dd></div>
+              <div><dt>What I did</dt><dd>Rebuilt it with advanced SQL and data modeling, <strong>incorporated LVHV data</strong>, and enforced business rules directly in the logic.</dd></div>
+              <div><dt>The outcome</dt><dd>Under <strong>1,000 lines</strong>, powering high-performance enterprise Power BI reporting solutions.</dd></div>
+            </dl>
+          </div>
+          <div class="viz" data-viz="minimap">
+            <div class="viz-head"><span>Code minimap</span><button class="replay" type="button">↻ replay</button></div>
+            <div class="minimaps">
+              <div><div class="mm-label before">8,000+</div><div class="mm-sub">lines · before</div><div class="mm" id="mmBefore"></div></div>
+              <div><div class="mm-label after">&lt;1,000</div><div class="mm-sub">lines · after</div><div class="mm after" id="mmAfter"></div></div>
+            </div>
+            <div class="viz-foot">Each bar ≈ 125 lines. Illustrative scale, drawn to the real ratio.</div>
+          </div>
+        </article>
+
+        <!-- Case 2 -->
+        <article class="card case-panel" role="tabpanel" id="case-2" aria-labelledby="tab-2" tabindex="0" hidden>
+          <div>
+            <span class="chip">Project Lead · Caterpillar</span>
+            <h3>Restructuring forecast region codes across 29 tools.</h3>
+            <dl>
+              <div><dt>The problem</dt><dd>A change to forecast region codes touched <strong>29 tools</strong> at once. Every downstream report had to land cleanly at cutover.</dd></div>
+              <div><dt>What I did</dt><dd>As Project Lead, I drove collaboration across <strong>data engineering, digital, and business</strong> stakeholders and owned the master plan, risk tracking, and change management.</dd></div>
+              <div><dt>The outcome</dt><dd>A coordinated cutover, followed by <strong>post-cutover performance measurement</strong> that I owned end to end.</dd></div>
+            </dl>
+          </div>
+          <div class="viz" data-viz="nodes">
+            <div class="viz-head"><span>Tools in scope</span><button class="replay" type="button">↻ replay</button></div>
+            <div class="nodes" id="nodes"></div>
+            <div class="counter-line"><b id="nodeCount">0</b><span>/ 29 tools through cutover</span></div>
+            <ol class="phases" id="phases">
+              <li>Master plan</li><li>Risk tracking</li><li>Change mgmt</li><li>Cutover</li><li>Measure</li>
+            </ol>
+          </div>
+        </article>
+
+        <!-- Case 3 -->
+        <article class="card case-panel" role="tabpanel" id="case-3" aria-labelledby="tab-3" tabindex="0" hidden>
+          <div>
+            <span class="chip">Data Visualization Professional · Caterpillar</span>
+            <h3>Leading a division-wide move from Tableau to Power BI.</h3>
+            <dl>
+              <div><dt>The problem</dt><dd>Caterpillar's Global Program Management division ran its reporting on Tableau, and practices differed from one dashboard to the next.</dd></div>
+              <div><dt>What I did</dt><dd>Led the <strong>full migration</strong> to Power BI and redirected <strong>131 dashboards to Dataflows</strong>.</dd></div>
+              <div><dt>The outcome</dt><dd>Standardized visualization practices across the division — and the foundation for <strong>130+ executive dashboards</strong> I went on to build.</dd></div>
+            </dl>
+          </div>
+          <div class="viz" data-viz="waffle">
+            <div class="viz-head"><span>131 dashboards</span><button class="replay" type="button">↻ replay</button></div>
+            <div class="waffle" id="waffle"></div>
+            <div class="counter-line"><b id="waffleCount" style="color:var(--accent-text)">0</b><span>/ 131 redirected to Dataflows</span></div>
+            <div class="legend"><span><i></i> Tableau</span><span class="pb"><i></i> Power BI</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================== SKILLS MODEL -->
+<section class="section" id="model">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-idx">03</span><span class="eyebrow">Core expertise</span>
+      <h2>My skills, as a <em>star schema.</em></h2>
+      <p>Every skill is a dimension, and every one connects to a single fact: impact. Pick a dimension to cross-filter my journey, just like a slicer.</p>
+    </div>
+
+    <div class="model reveal" id="modelGrid">
+      <svg class="wires" id="wires" aria-hidden="true"></svg>
+
+      <div class="tbl" data-dim="viz">
+        <div class="tbl-h"><svg aria-hidden="true"><use href="#i-table"/></svg>DIM_VISUALIZATION<span class="tt">1</span></div>
+        <ul><li class="key"><svg aria-hidden="true"><use href="#i-key"/></svg>viz_key</li><li>Enterprise Power BI</li><li>Advanced DAX &amp; data modeling</li><li>Executive scorecards &amp; KPIs</li><li>Dashboard design &amp; performance</li></ul>
+        <div class="tbl-f"><button class="xfilter" type="button" data-filter="viz">Cross-filter journey <svg aria-hidden="true"><use href="#i-filter"/></svg></button></div>
+      </div>
+      <div class="tbl" data-dim="eng">
+        <div class="tbl-h"><svg aria-hidden="true"><use href="#i-table"/></svg>DIM_ENGINEERING<span class="tt">1</span></div>
+        <ul><li class="key"><svg aria-hidden="true"><use href="#i-key"/></svg>eng_key</li><li>Snowflake procedures &amp; ETL</li><li>SQL</li><li>Python</li><li>Power Automate &amp; refresh automation</li></ul>
+        <div class="tbl-f"><button class="xfilter" type="button" data-filter="eng">Cross-filter journey <svg aria-hidden="true"><use href="#i-filter"/></svg></button></div>
+      </div>
+      <div class="tbl" data-dim="platform">
+        <div class="tbl-h"><svg aria-hidden="true"><use href="#i-table"/></svg>DIM_PLATFORM<span class="tt">1</span></div>
+        <ul><li class="key"><svg aria-hidden="true"><use href="#i-key"/></svg>platform_key</li><li>ThoughtSpot (Tier-2 expert)</li><li>Power BI Dataflows</li><li>Tableau</li><li>Platform migration</li></ul>
+        <div class="tbl-f"><button class="xfilter" type="button" data-filter="platform">Cross-filter journey <svg aria-hidden="true"><use href="#i-filter"/></svg></button></div>
+      </div>
+
+      <div class="tbl fact" data-dim="fact">
+        <div class="tbl-h"><svg aria-hidden="true"><use href="#i-hash"/></svg>FACT_IMPACT<span class="tt">∗</span></div>
         <ul>
-          <li>Applied advanced SQL: Joins, CTEs, Temp Tables, Window Functions, Views</li>
-          <li>Analyzed global infection/vaccination rates and demographic trends</li>
-          <li>Built 2 interactive Tableau dashboards presenting key insights</li>
+          <li>viz_key</li><li>eng_key</li><li>platform_key</li><li>lead_key</li><li>comm_key</li><li>domain_key</li>
+          <li class="m">Σ value_realized</li>
         </ul>
       </div>
-      <div class="project-card">
-        <h3>Nashville Housing Data Cleaning</h3>
-        <p><strong>223-line SQL Script</strong></p>
-        <ul>
-          <li>Used 13+ SQL techniques: CTEs, Self-Joins, Parsename, Case Statements, Window Functions</li>
-          <li>Standardized dates, parsed addresses, removed duplicates, filled nulls</li>
-          <li>Full ETL transformation demonstrating data hygiene mastery</li>
-        </ul>
+
+      <div class="tbl" data-dim="lead">
+        <div class="tbl-h"><svg aria-hidden="true"><use href="#i-table"/></svg>DIM_LEADERSHIP<span class="tt">1</span></div>
+        <ul><li class="key"><svg aria-hidden="true"><use href="#i-key"/></svg>lead_key</li><li>Cross-functional project leadership</li><li>Mentoring &amp; enablement</li><li>Change management</li><li>USMC officer</li></ul>
+        <div class="tbl-f"><button class="xfilter" type="button" data-filter="lead">Cross-filter journey <svg aria-hidden="true"><use href="#i-filter"/></svg></button></div>
       </div>
-      <div class="project-card">
-        <h3>Python Automation & Analysis</h3>
-        <p><strong>Pandas • NumPy • Seaborn</strong></p>
-        <ul>
-          <li>Performed data cleaning, visualization, and correlation analysis on multiple datasets</li>
-          <li>Built 24-hour incremental web scraper with automated email reporting</li>
-        </ul>
+      <div class="tbl" data-dim="comm">
+        <div class="tbl-h"><svg aria-hidden="true"><use href="#i-table"/></svg>DIM_COMMUNICATION<span class="tt">1</span></div>
+        <ul><li class="key"><svg aria-hidden="true"><use href="#i-key"/></svg>comm_key</li><li>Executive presentations</li><li>Data storytelling</li><li>Stakeholder communication</li><li>Value realization</li></ul>
+        <div class="tbl-f"><button class="xfilter" type="button" data-filter="comm">Cross-filter journey <svg aria-hidden="true"><use href="#i-filter"/></svg></button></div>
+      </div>
+      <div class="tbl" data-dim="domain">
+        <div class="tbl-h"><svg aria-hidden="true"><use href="#i-table"/></svg>DIM_DOMAIN<span class="tt">1</span></div>
+        <ul><li class="key"><svg aria-hidden="true"><use href="#i-key"/></svg>domain_key</li><li>S&amp;OP analytics</li><li>Demand planning</li><li>Manufacturing scheduling</li><li>Production standards</li></ul>
+        <div class="tbl-f"><button class="xfilter" type="button" data-filter="domain">Cross-filter journey <svg aria-hidden="true"><use href="#i-filter"/></svg></button></div>
       </div>
     </div>
-  </section>
+    <div class="model-legend reveal"><span>1 ── ∗ &nbsp;one-to-many</span><span>Single-direction filter: dimension → fact</span></div>
+  </div>
+</section>
 
-  <!-- Education -->
-  <section class="education">
-    <h2 class="section-title">Education</h2>
-    <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-      <div style="background: var(--card); padding: 2rem; border-radius: 16px; border: 1px solid var(--border); backdrop-filter: blur(10px);">
-        <h3>Master of Divinity (Distinction in Hebrew & Greek)</h3>
-        <p><strong>Campbell University</strong> • Buies Creek, NC • 2019</p>
+<!-- ====================================================================== JOURNEY -->
+<section class="section" id="journey">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-idx">04</span><span class="eyebrow">Professional journey</span>
+      <h2>The path, as a <em>Gantt chart.</em></h2>
+      <p>I once built an emergency Gantt solution during a Microsoft outage that hit 500+ dashboards. It seemed only right to chart my career the same way.</p>
+    </div>
+
+    <div class="card gantt reveal" id="gantt">
+      <div class="gantt-head"><h3>Career timeline</h3><span class="total" id="ganttTotal"></span></div>
+      <div class="g-tracks-wrap" id="gTracks"></div>
+      <div class="g-axis"><div></div><div class="g-ticks" id="gTicks"></div></div>
+    </div>
+
+    <div class="filters reveal" role="group" aria-label="Filter achievements by skill">
+      <span class="lbl">Slicer</span>
+      <button class="fchip" type="button" data-f="all" aria-pressed="true">All <span class="n"></span></button>
+      <button class="fchip" type="button" data-f="viz" aria-pressed="false" style="--c:var(--accent)"><i></i>Visualization <span class="n"></span></button>
+      <button class="fchip" type="button" data-f="eng" aria-pressed="false" style="--c:var(--cyan)"><i></i>Engineering <span class="n"></span></button>
+      <button class="fchip" type="button" data-f="platform" aria-pressed="false" style="--c:var(--accent)"><i></i>Platforms <span class="n"></span></button>
+      <button class="fchip" type="button" data-f="lead" aria-pressed="false" style="--c:var(--cyan)"><i></i>Leadership <span class="n"></span></button>
+      <button class="fchip" type="button" data-f="comm" aria-pressed="false" style="--c:var(--accent)"><i></i>Communication <span class="n"></span></button>
+      <button class="fchip" type="button" data-f="domain" aria-pressed="false" style="--c:var(--cyan)"><i></i>Ops &amp; planning <span class="n"></span></button>
+    </div>
+    <p class="sr-only" aria-live="polite" id="filterStatus"></p>
+
+    <div class="roles" id="roles">
+      <article class="card role reveal">
+        <div class="role-head">
+          <div><h3>Senior Business Intelligence Analyst</h3><p class="org">Caterpillar Inc.</p></div>
+          <div class="when">Jul 2024 – Present<b data-start="2024-07" data-end="present"></b></div>
+        </div>
+        <ul class="wins">
+          <li data-tags="eng viz">Overhauled a critical Snowflake stored procedure from <strong>8,000+ lines to under 1,000</strong> using advanced SQL and data modeling; incorporated LVHV data, enforced business rules, and enabled high-performance enterprise Power BI reporting.</li>
+          <li data-tags="viz domain">Lead the design, development, and maintenance of enterprise Power BI dashboards: <strong>executive-level scorecards, KPI reporting, and self-service analytics</strong> supporting S&amp;OP, demand planning, and manufacturing scheduling.</li>
+          <li data-tags="comm domain">Facilitated a scheduled distribution analytics solution used across <strong>CI, ART and LNH</strong> manufacturing facilities; turned complex operational data into actionable insights <strong>presented to the EO Board</strong>, demonstrating measurable value realization.</li>
+          <li data-tags="lead domain">Project Lead for the <strong>Forecast Region Code Restructuring</strong> initiative impacting 29 tools; owned the master plan, risk tracking, change management, and post-cutover performance measurement.</li>
+          <li data-tags="platform lead">S&amp;OP Analytics <strong>ThoughtSpot Enablement Lead and Tier-2 expert</strong>: mentor analysts and business partners, deliver training, and build enablement materials during the enterprise transition from BIC to ThoughtSpot.</li>
+          <li data-tags="eng viz">Developed and automated Power BI refresh processes driven by Snowflake data; deployed scalable solutions to multiple <strong>Infohub and Toolbox</strong> reports with strong performance optimization.</li>
+          <li data-tags="comm">Deliver high-value ad-hoc analytics and strategic insights that <strong>translate complex data into clear recommendations</strong> for leadership.</li>
+        </ul>
+      </article>
+
+      <article class="card role past reveal">
+        <div class="role-head">
+          <div><h3>Data Visualization Professional</h3><p class="org">Caterpillar Inc.</p></div>
+          <div class="when">Nov 2022 – Jul 2024<b data-start="2022-11" data-end="2024-07"></b></div>
+        </div>
+        <ul class="wins">
+          <li data-tags="viz eng">Created a standardized budget dashboard querying Snowflake and transforming data in Power BI for resource allocation analysis.</li>
+          <li data-tags="eng">Automated license tracking across 4 data sources with Power Automate alerts, <strong>saving 208+ man-hours annually</strong>.</li>
+          <li data-tags="platform lead">Led the full migration of CAT's Global Program Management division from <strong>Tableau to Power BI</strong>, redirecting 131 dashboards to Dataflows and standardizing visualization practices.</li>
+          <li data-tags="viz">Developed <strong>130+ unique interactive executive dashboards</strong> tailored to stakeholder needs.</li>
+          <li data-tags="comm">Presented metrics and innovation updates to <strong>260+ leaders</strong> in extended GPM staff meetings.</li>
+          <li data-tags="viz">Delivered an <strong>emergency Gantt chart solution</strong> during a critical Microsoft outage that impacted 500+ dashboards.</li>
+          <li data-tags="viz comm">Built and automated the GPM Toolbox usage dashboard, whose metrics were used in <strong>strategic discussions with Microsoft</strong>.</li>
+        </ul>
+      </article>
+
+      <article class="card role past reveal">
+        <div class="role-head">
+          <div><h3>Manufacturing Data Analyst</h3><p class="org">EnviroServe Chemicals, Inc.</p></div>
+          <div class="when">Jul 2019 – Nov 2022<b data-start="2019-07" data-end="2022-11"></b></div>
+        </div>
+        <ul class="wins">
+          <li data-tags="viz domain">Delivered Power BI visualizations that improved production standards and generated <strong>average cost savings of $12,000 per month</strong>.</li>
+          <li data-tags="comm">Provided monthly analytical reports and recommendations to <strong>15+ manufacturing partners</strong>.</li>
+          <li data-tags="comm viz">Authored a 27-page interactive SOP with embedded Power BI visuals for chemical implementation and maintenance.</li>
+          <li data-tags="comm">Built strong stakeholder relationships with top U.S. manufacturers including <strong>Caterpillar, ELKAY, and Energizer</strong>.</li>
+        </ul>
+      </article>
+
+      <article class="card role past reveal">
+        <div class="role-head">
+          <div><h3>Field Artillery Officer <span style="color:var(--muted)">(Operations Analyst)</span></h3><p class="org">United States Marine Corps</p></div>
+          <div class="when">Sep 2012 – Sep 2015<b data-start="2012-09" data-end="2015-09"></b></div>
+        </div>
+        <ul class="wins">
+          <li data-tags="eng">Analyzed datasets of <strong>10,000+ data points</strong> to plan battalion live-fire exercises.</li>
+          <li data-tags="viz comm">Created dashboard-style visualizations in PowerPoint to communicate tactical control measures to senior leadership.</li>
+          <li data-tags="comm">Authored a 63-page SOP covering OPSEC, CBRN, and ORM protocols.</li>
+          <li data-tags="lead">Maintained a <strong>100% safety record</strong> as Range Safety Officer and Officer in Charge across 256 days of live-fire training.</li>
+          <li data-tags="eng">Developed the battalion's first automated Excel certificate tracker for <strong>240+ Marines</strong>, dramatically improving training efficiency.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================== PROJECTS -->
+<section class="section" id="projects">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-idx">05</span><span class="eyebrow">Independent projects</span>
+      <h2>Built on my <em>own time.</em></h2>
+      <p>Public work in SQL, Tableau, and Python. The code is on GitHub.</p>
+    </div>
+    <div class="projects">
+      <article class="card proj reveal">
+<div class="proj-code" aria-hidden="true"><span class="tk-c">-- rolling vaccinations by location</span>
+<span class="tk-k">WITH</span> pop_vs_vac <span class="tk-k">AS</span> (
+  <span class="tk-k">SELECT</span> location, date,
+    <span class="tk-f">SUM</span>(new_vaccinations) <span class="tk-k">OVER</span> (
+      <span class="tk-k">PARTITION BY</span> location
+      <span class="tk-k">ORDER BY</span> date)
+  ...</div>
+        <div class="proj-body">
+          <h3>World COVID Dataset Analysis</h3>
+          <p class="meta">SQL + Tableau · Feb 2021 – Oct 2022</p>
+          <ul>
+            <li>Advanced SQL: joins, CTEs, temp tables, window functions, views</li>
+            <li>Analyzed global infection and vaccination rates and demographic trends</li>
+            <li>Two interactive Tableau dashboards presenting key insights</li>
+          </ul>
+          <div class="tags"><span class="chip">CTEs</span><span class="chip">Window fns</span><span class="chip">Tableau</span></div>
+          <a class="go" href="https://github.com/RonHouser/SQL" target="_blank" rel="noopener">View SQL repo <svg aria-hidden="true"><use href="#i-ext"/></svg></a>
+        </div>
+      </article>
+      <article class="card proj reveal" style="--d:.08s">
+<div class="proj-code" aria-hidden="true"><span class="tk-c">-- split address into columns</span>
+<span class="tk-k">SELECT</span>
+  <span class="tk-f">PARSENAME</span>(<span class="tk-f">REPLACE</span>(addr, <span class="tk-s">','</span>, <span class="tk-s">'.'</span>), 3),
+  <span class="tk-f">PARSENAME</span>(<span class="tk-f">REPLACE</span>(addr, <span class="tk-s">','</span>, <span class="tk-s">'.'</span>), 2),
+  <span class="tk-f">PARSENAME</span>(<span class="tk-f">REPLACE</span>(addr, <span class="tk-s">','</span>, <span class="tk-s">'.'</span>), 1)
+<span class="tk-k">FROM</span> nashville_housing
+  ...</div>
+        <div class="proj-body">
+          <h3>Nashville Housing Data Cleaning</h3>
+          <p class="meta">223-line SQL script</p>
+          <ul>
+            <li>13+ SQL techniques: CTEs, self-joins, PARSENAME, CASE, window functions</li>
+            <li>Standardized dates, parsed addresses, removed duplicates, filled nulls</li>
+            <li>A full ETL transformation built around data hygiene</li>
+          </ul>
+          <div class="tags"><span class="chip">ETL</span><span class="chip">Self-joins</span><span class="chip">Dedup</span></div>
+          <a class="go" href="https://github.com/RonHouser/SQL" target="_blank" rel="noopener">View SQL repo <svg aria-hidden="true"><use href="#i-ext"/></svg></a>
+        </div>
+      </article>
+      <article class="card proj reveal" style="--d:.16s">
+<div class="proj-code" aria-hidden="true"><span class="tk-k">import</span> pandas <span class="tk-k">as</span> pd
+<span class="tk-k">import</span> seaborn <span class="tk-k">as</span> sns
+
+df = pd.<span class="tk-f">read_csv</span>(<span class="tk-s">"data.csv"</span>)
+corr = df.<span class="tk-f">corr</span>(numeric_only=<span class="tk-k">True</span>)
+sns.<span class="tk-f">heatmap</span>(corr, annot=<span class="tk-k">True</span>)
+  ...</div>
+        <div class="proj-body">
+          <h3>Python Automation &amp; Analysis</h3>
+          <p class="meta">Pandas · NumPy · Seaborn</p>
+          <ul>
+            <li>Data cleaning, visualization, and correlation analysis on multiple datasets</li>
+            <li>A 24-hour incremental web scraper with automated email reporting</li>
+          </ul>
+          <div class="tags"><span class="chip">Pandas</span><span class="chip">Scraping</span><span class="chip">Automation</span></div>
+          <a class="go" href="https://github.com/RonHouser/Python" target="_blank" rel="noopener">View Python repo <svg aria-hidden="true"><use href="#i-ext"/></svg></a>
+        </div>
+      </article>
+    </div>
+    <p class="reveal" style="margin-top:1.5rem;color:var(--muted);font-size:.92rem">Power BI work samples: <a href="https://github.com/RonHouser/Power-BI" target="_blank" rel="noopener" style="color:var(--accent-text);font-weight:600">github.com/RonHouser/Power-BI ↗</a></p>
+  </div>
+</section>
+
+<!-- ====================================================================== THROUGH-LINE + EDUCATION -->
+<section class="section" id="through-line">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-idx">06</span><span class="eyebrow">The through-line</span>
+      <h2>Translation <em>is the job.</em></h2>
+    </div>
+    <div class="through">
+      <div class="reveal">
+        <p class="quote">Marine officer. Scholar of <em>Hebrew &amp; Greek.</em> Data analyst. It sounds like three careers. It's really one skill.</p>
+        <p class="body">As a Field Artillery Officer, I turned thousands of data points into fire plans where the analysis had to be right and the message had to be impossible to misread. In seminary, I spent years carrying dense ancient texts into plain, modern meaning.</p>
+        <p class="body">Today the languages are DAX and SQL, and the audience is an executive board. The discipline hasn't changed: know the source deeply, respect the reader's time, and never lose the meaning in translation.</p>
+        <div class="pillars">
+          <div class="pillar"><svg aria-hidden="true"><use href="#i-target"/></svg><div><b>Precision</b><span>100% safety record across 256 days of live-fire training.</span></div></div>
+          <div class="pillar"><svg aria-hidden="true"><use href="#i-book"/></svg><div><b>Translation</b><span>Master of Divinity, with distinction in Hebrew &amp; Greek.</span></div></div>
+          <div class="pillar"><svg aria-hidden="true"><use href="#i-people"/></svg><div><b>Enablement</b><span>Tier-2 ThoughtSpot expert who mentors analysts and trains business partners.</span></div></div>
+        </div>
       </div>
-      <div style="background: var(--card); padding: 2rem; border-radius: 16px; border: 1px solid var(--border); backdrop-filter: blur(10px); margin-top: 2rem;">
-        <h3>B.A. Religious Studies • Minor in Theatre</h3>
-        <p><strong>Gardner-Webb University</strong> • Boiling Springs, NC • 2011</p>
+      <div class="edu">
+        <h3 class="eyebrow reveal" style="margin:0 0 .25rem">Education</h3>
+        <div class="card reveal">
+          <span class="yr">2019</span>
+          <div>
+            <h3>Master of Divinity</h3>
+            <p><strong style="color:var(--text)">Campbell University</strong> · Buies Creek, NC</p>
+            <span class="chip badge">Distinction in Hebrew &amp; Greek</span>
+          </div>
+        </div>
+        <div class="card reveal" style="--d:.08s">
+          <span class="yr">2011</span>
+          <div>
+            <h3>B.A. Religious Studies</h3>
+            <p><strong style="color:var(--text)">Gardner-Webb University</strong> · Boiling Springs, NC</p>
+            <span class="chip badge">Minor in Theatre</span>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    <p>&copy; 2026 Ron Houser • Crafted with precision. Deployed with purpose.</p>
-  </footer>
+<!-- ====================================================================== CONTACT -->
+<section class="section contact" id="contact">
+  <div class="wrap reveal">
+    <img class="big-avatar" src="https://raw.githubusercontent.com/RonHouser/RonHouser.github.io/refs/heads/main/images/profile.jpg" alt="Portrait of Ron Houser" width="96" height="96" data-fallback="RH">
+    <h2>Got a messy dataset and a <em>decision to make?</em></h2>
+    <p>Whether it's an executive scorecard, a Snowflake pipeline that needs taming, or a team that needs enablement, let's talk.</p>
+    <div class="row">
+      <a class="btn btn-primary" href="mailto:ron.houser12@gmail.com"><svg aria-hidden="true"><use href="#i-mail"/></svg> ron.houser12@gmail.com</a>
+      <button class="btn" type="button" id="copyEmail"><svg aria-hidden="true"><use href="#i-copy"/></svg> Copy email</button>
+      <a class="btn" href="https://www.linkedin.com/in/ron-houser/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-linkedin"/></svg> LinkedIn</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© <span id="yr">2026</span> Ron Houser · Crafted with precision. Deployed with purpose.</span>
+    <span class="no-print">One hand-built HTML file, no frameworks · <button type="button" id="footCmdk">press <span class="kbd-word">Ctrl K</span></button></span>
+  </div>
+</footer>
+
+<!-- Command palette -->
+<div class="cmdk" id="cmdk" hidden>
+  <div class="cmdk-bg" data-close></div>
+  <div class="cmdk-panel" role="dialog" aria-modal="true" aria-label="Command menu">
+    <div class="cmdk-in">
+      <svg aria-hidden="true"><use href="#i-search"/></svg>
+      <input id="cmdkInput" type="text" placeholder="Jump to a section, run an action…" autocomplete="off" spellcheck="false"
+             role="combobox" aria-expanded="true" aria-controls="cmdkList" aria-autocomplete="list">
+      <kbd>Esc</kbd>
+    </div>
+    <ul id="cmdkList" role="listbox" aria-label="Commands"></ul>
+    <div class="cmdk-foot"><span>↑↓ navigate</span><span>↵ select</span><span>esc close</span></div>
+  </div>
+</div>
+
+<div class="tip" id="tip" role="tooltip"></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(() => {
+  'use strict';
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+  const root = document.documentElement;
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const isMac = /Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent);
+  const EMAIL = 'ron.houser12@gmail.com';
+
+  /* ---------- Small utilities ---------- */
+  const toastEl = $('#toast'); let toastT;
+  function toast(msg) {
+    toastEl.textContent = msg; toastEl.classList.add('show');
+    clearTimeout(toastT); toastT = setTimeout(() => toastEl.classList.remove('show'), 2200);
+  }
+  function onceVisible(el, fn, threshold = 0.3) {
+    if (!('IntersectionObserver' in window)) { fn(); return; }
+    const io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { io.disconnect(); fn(); } }), { threshold });
+    io.observe(el);
+  }
+  function parseYM(s) { if (s === 'present') return new Date(); const [y, m] = s.split('-').map(Number); return new Date(y, m - 1, 1); }
+  function monthsBetween(a, b) { return Math.max(0, (b.getFullYear() - a.getFullYear()) * 12 + (b.getMonth() - a.getMonth())); }
+  function fmtDur(m) {
+    const y = Math.floor(m / 12), mo = m % 12, out = [];
+    if (y) out.push(y + (y === 1 ? ' yr' : ' yrs'));
+    if (mo) out.push(mo + ' mo');
+    return out.join(' ') || '< 1 mo';
+  }
+
+  /* ---------- Year + keyboard hint ---------- */
+  $('#yr').textContent = new Date().getFullYear();
+  const kh = isMac ? '⌘ K' : 'Ctrl K';
+  $('#kbdHint').textContent = kh; $$('.kbd-word').forEach(n => n.textContent = kh);
+
+  /* ---------- Image fallbacks ---------- */
+  $$('img[data-fallback]').forEach(img => {
+    const swap = () => {
+      const d = document.createElement('div');
+      d.className = img.className + ' avatar-fallback';
+      d.style.width = img.getAttribute('width') + 'px'; d.style.height = img.getAttribute('height') + 'px';
+      if (img.classList.contains('big-avatar')) d.style.fontSize = '1.8rem';
+      d.textContent = img.dataset.fallback; d.setAttribute('aria-hidden', 'true');
+      img.replaceWith(d);
+    };
+    if (img.complete && img.naturalWidth === 0) swap(); else img.addEventListener('error', swap, { once: true });
+  });
+
+  /* ---------- Theme ---------- */
+  function setTheme(t) {
+    root.setAttribute('data-theme', t);
+    try { localStorage.setItem('rh-theme', t); } catch (e) {}
+    $('meta[name="theme-color"]').setAttribute('content', t === 'light' ? '#F6F4EE' : '#0A0D12');
+    window.dispatchEvent(new Event('themechange'));
+  }
+  const toggleTheme = () => setTheme(root.getAttribute('data-theme') === 'light' ? 'dark' : 'light');
+  $('#themeBtn').addEventListener('click', toggleTheme);
+
+  /* ---------- Nav state, progress, active link ---------- */
+  const nav = $('#nav'), bar = $('#progress');
+  let ticking = false;
+  function onScroll() {
+    if (ticking) return; ticking = true;
+    requestAnimationFrame(() => {
+      const y = window.scrollY, h = document.documentElement.scrollHeight - innerHeight;
+      nav.classList.toggle('scrolled', y > 10);
+      bar.style.transform = `scaleX(${h > 0 ? Math.min(1, y / h) : 0})`;
+      ticking = false;
+    });
+  }
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+  const navLinks = $$('.nav-links a');
+  if ('IntersectionObserver' in window) {
+    const so = new IntersectionObserver((es) => {
+      es.forEach(e => {
+        if (!e.isIntersecting) return;
+        navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    $$('main section[id]').forEach(s => so.observe(s));
+  }
+
+  /* ---------- Reveal on scroll ---------- */
+  if ('IntersectionObserver' in window && !reduced) {
+    const ro = new IntersectionObserver((es) => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); ro.unobserve(e.target); }
+    }), { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    $$('.reveal').forEach(el => ro.observe(el));
+  } else { $$('.reveal').forEach(el => el.classList.add('in')); }
+
+  /* ---------- Hero ridgeline canvas ---------- */
+  (function ridge() {
+    const c = $('#ridge'); if (!c || !c.getContext) return;
+    const ctx = c.getContext('2d');
+    let w = 0, h = 0, t = 0, raf = 0, visible = true, colors = {};
+    function readColors() {
+      const cs = getComputedStyle(root);
+      colors = { accent: cs.getPropertyValue('--accent').trim(), cyan: cs.getPropertyValue('--cyan').trim(), bg: cs.getPropertyValue('--bg').trim() };
+    }
+    function size() {
+      const dpr = Math.min(window.devicePixelRatio || 1, 2), r = c.getBoundingClientRect();
+      w = r.width; h = r.height; c.width = Math.round(w * dpr); c.height = Math.round(h * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    function frame() {
+      ctx.clearRect(0, 0, w, h);
+      const lines = 20, step = w < 700 ? 10 : 7, gap = h / (lines + 3);
+      for (let i = 0; i < lines; i++) {
+        const y0 = gap * 2.4 + i * gap, amp = 18 + i * 2.6;
+        ctx.beginPath(); ctx.moveTo(0, h);
+        for (let x = 0; x <= w + step; x += step) {
+          const nx = x / w;
+          const env = Math.exp(-Math.pow((nx - 0.7) * 3, 2)) + 0.35 * Math.exp(-Math.pow((nx - 0.2) * 5, 2));
+          const n = Math.sin(nx * 8 + t * 0.55 + i * 0.6) * 0.55 + Math.sin(nx * 21 - t * 0.8 + i * 1.7) * 0.22 + Math.sin(nx * 3.3 + t * 0.25 + i * 0.9) * 0.6;
+          ctx.lineTo(x, y0 - env * amp * (1.1 + n));
+        }
+        ctx.lineTo(w + step, h); ctx.closePath();
+        ctx.fillStyle = colors.bg; ctx.fill();
+        ctx.globalAlpha = 0.12 + (i / lines) * 0.5;
+        ctx.strokeStyle = i % 5 === 4 ? colors.cyan : colors.accent;
+        ctx.lineWidth = 1.1; ctx.stroke(); ctx.globalAlpha = 1;
+      }
+    }
+    function loop() { t += 0.012; frame(); raf = visible ? requestAnimationFrame(loop) : 0; }
+    readColors(); size(); frame();
+    addEventListener('resize', () => { size(); frame(); });
+    addEventListener('themechange', () => { readColors(); frame(); });
+    if (reduced) return;
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(([e]) => { visible = e.isIntersecting; if (visible && !raf) loop(); }).observe(c);
+    }
+    document.addEventListener('visibilitychange', () => { visible = !document.hidden; if (visible && !raf) loop(); });
+    loop();
+  })();
+
+  /* ---------- SQL console ---------- */
+  (function consoleTyping() {
+    const SQL = [
+      [['c', '-- the analyst you need'], ['p', '']],
+      [['k', 'SELECT'], ['p', '  name, title, focus']],
+      [['k', 'FROM'], ['p', '    talent.analysts']],
+      [['k', 'WHERE'], ['p', '   stack '], ['k', 'ILIKE'], ['s', " '%power bi%'"]],
+      [['k', '  AND'], ['p', '   stack '], ['k', 'ILIKE'], ['s', " '%snowflake%'"]],
+      [['k', '  AND'], ['p', '   background = '], ['s', "'USMC Officer'"]],
+      [['k', 'QUALIFY'], ['f', ' ROW_NUMBER'], ['p', '() '], ['k', 'OVER'], ['p', ' ('], ['k', 'ORDER BY'], ['p', ' impact '], ['k', 'DESC'], ['p', ') = 1;']]
+    ];
+    const code = $('#code'), result = $('#result');
+    let timer = 0, run = 0;
+    function build() {
+      code.innerHTML = '';
+      return SQL.map((tokens, i) => {
+        const ln = document.createElement('div'); ln.className = 'ln';
+        const num = document.createElement('span'); num.className = 'num'; num.textContent = i + 1;
+        const txt = document.createElement('span'); txt.className = 'txt';
+        ln.append(num, txt); code.appendChild(ln);
+        return tokens.map(([cls, text]) => { const s = document.createElement('span'); s.className = 'tk-' + cls; txt.appendChild(s); return { s, text, txt }; });
+      });
+    }
+    function play() {
+      const id = ++run; clearTimeout(timer);
+      result.classList.remove('show');
+      const lines = build();
+      if (reduced) { lines.flat().forEach(o => o.s.textContent = o.text); result.classList.add('show'); return; }
+      const caret = document.createElement('span'); caret.className = 'caret';
+      const queue = lines.flat(); let qi = 0, ci = 0;
+      (function tick() {
+        if (id !== run) return;
+        if (qi >= queue.length) { caret.remove(); timer = setTimeout(() => result.classList.add('show'), 250); return; }
+        const o = queue[qi];
+        o.txt.appendChild(caret);
+        if (ci < o.text.length) { o.s.textContent += o.text[ci++]; timer = setTimeout(tick, o.text[ci - 1] === ' ' ? 10 : 22 + Math.random() * 26); }
+        else { qi++; ci = 0; timer = setTimeout(tick, 0); }
+      })();
+    }
+    $('#rerun').addEventListener('click', play);
+    window.__replayConsole = () => { $('#top').scrollIntoView({ behavior: reduced ? 'auto' : 'smooth' }); play(); };
+    setTimeout(play, reduced ? 0 : 650);
+  })();
+
+  /* ---------- KPI count-up ---------- */
+  $$('.kpi').forEach(k => onceVisible(k, () => {
+    k.classList.add('in');
+    const el = $('[data-count]', k), end = +el.dataset.count;
+    if (reduced) { el.textContent = end.toLocaleString(); return; }
+    const dur = 1500, t0 = performance.now();
+    (function step(now) {
+      const p = Math.min(1, (now - t0) / dur), e = 1 - Math.pow(1 - p, 4);
+      el.textContent = Math.round(end * e).toLocaleString();
+      if (p < 1) requestAnimationFrame(step);
+    })(t0);
+  }, 0.4));
+
+  /* ---------- Case files: visuals ---------- */
+  // seeded random for stable minimap shapes
+  let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  function mm(el, count, ratio) {
+    for (let i = 0; i < count; i++) {
+      const b = document.createElement('i');
+      const indent = (rnd() < .35 ? 8 : 0) + (rnd() < .2 ? 8 : 0);
+      b.style.marginLeft = indent + '%'; b.style.width = (25 + rnd() * (70 - indent)) + '%';
+      b.style.transitionDelay = (i * ratio) + 'ms'; el.appendChild(b);
+    }
+  }
+  mm($('#mmBefore'), 64, 14); mm($('#mmAfter'), 8, 60);
+
+  const nodesEl = $('#nodes');
+  for (let i = 1; i <= 29; i++) { const n = document.createElement('div'); n.className = 'node'; n.textContent = String(i).padStart(2, '0'); nodesEl.appendChild(n); }
+  const waffleEl = $('#waffle');
+  for (let i = 0; i < 131; i++) waffleEl.appendChild(document.createElement('i'));
+
+  const vizTimers = new Set();
+  const later = (fn, ms) => { const t = setTimeout(() => { vizTimers.delete(t); fn(); }, ms); vizTimers.add(t); };
+  function clearViz() { vizTimers.forEach(clearTimeout); vizTimers.clear(); }
+
+  const VIZ = {
+    minimap(v) {
+      v.classList.remove('play'); void v.offsetWidth;
+      later(() => v.classList.add('play'), 30);
+    },
+    nodes() {
+      const ns = $$('.node', nodesEl), ph = $$('#phases li'), cnt = $('#nodeCount');
+      ns.forEach(n => n.classList.remove('on')); ph.forEach(p => p.classList.remove('on')); cnt.textContent = '0';
+      const show = (i) => ph.slice(0, i + 1).forEach(p => p.classList.add('on'));
+      if (reduced) { ns.forEach(n => n.classList.add('on')); show(4); cnt.textContent = '29'; return; }
+      show(0); later(() => show(1), 450); later(() => show(2), 900);
+      ns.forEach((n, i) => later(() => { n.classList.add('on'); cnt.textContent = i + 1; if (i === 0) show(3); if (i === 28) later(() => show(4), 350); }, 1300 + i * 70));
+    },
+    waffle() {
+      const cells = $$('i', waffleEl), cnt = $('#waffleCount');
+      cells.forEach(c => c.classList.remove('on')); cnt.textContent = '0';
+      if (reduced) { cells.forEach(c => c.classList.add('on')); cnt.textContent = '131'; return; }
+      // order: diagonal sweep
+      const cols = Math.max(1, Math.round(waffleEl.clientWidth / 19));
+      const order = cells.map((c, i) => ({ c, k: (i % cols) + Math.floor(i / cols) * 1.4 + rnd() * 2 })).sort((a, b) => a.k - b.k);
+      order.forEach((o, i) => later(() => { o.c.classList.add('on'); cnt.textContent = i + 1; }, 200 + i * 14));
+    }
+  };
+  function playPanel(panel) { clearViz(); const v = $('.viz', panel); if (v) VIZ[v.dataset.viz](v); }
+  $$('.viz .replay').forEach(b => b.addEventListener('click', () => playPanel(b.closest('.case-panel'))));
+
+  const tabs = $$('.case-tab');
+  function selectTab(tab, focus) {
+    tabs.forEach(t => {
+      const on = t === tab;
+      t.setAttribute('aria-selected', on); t.tabIndex = on ? 0 : -1;
+      $('#' + t.getAttribute('aria-controls')).hidden = !on;
+    });
+    if (focus) tab.focus();
+    playPanel($('#' + tab.getAttribute('aria-controls')));
+  }
+  tabs.forEach((t, i) => {
+    t.addEventListener('click', () => selectTab(t));
+    t.addEventListener('keydown', e => {
+      const dir = { ArrowDown: 1, ArrowRight: 1, ArrowUp: -1, ArrowLeft: -1 }[e.key];
+      if (dir) { e.preventDefault(); selectTab(tabs[(i + dir + tabs.length) % tabs.length], true); }
+      if (e.key === 'Home') { e.preventDefault(); selectTab(tabs[0], true); }
+      if (e.key === 'End') { e.preventDefault(); selectTab(tabs[tabs.length - 1], true); }
+    });
+  });
+  onceVisible($('#cases .cases'), () => playPanel($('.case-panel:not([hidden])')), 0.35);
+
+  /* ---------- Star schema wires ---------- */
+  (function wires() {
+    const grid = $('#modelGrid'), svg = $('#wires'), fact = $('.tbl.fact', grid);
+    const dims = $$('.tbl:not(.fact)', grid);
+    const NS = 'http://www.w3.org/2000/svg';
+    let links = [];
+    function draw() {
+      svg.innerHTML = ''; links = [];
+      if (getComputedStyle(svg).display === 'none') return;
+      const g = grid.getBoundingClientRect(), f = fact.getBoundingClientRect();
+      const fx = f.left - g.left, fy = f.top - g.top;
+      dims.forEach(d => {
+        const r = d.getBoundingClientRect();
+        const dx = r.left - g.left + r.width / 2, top = r.top - g.top;
+        const above = top < fy;
+        const y1 = above ? top + r.height : top;          // dim edge
+        const x2 = Math.min(Math.max(dx, fx + 24), fx + f.width - 24);
+        const y2 = above ? fy : fy + f.height;            // fact edge
+        const my = (y1 + y2) / 2;
+        const p = document.createElementNS(NS, 'path');
+        const dpath = `M${dx},${y1} C${dx},${my} ${x2},${my} ${x2},${y2}`;
+        p.setAttribute('d', dpath); p.id = 'w-' + d.dataset.dim;
+        const t1 = document.createElementNS(NS, 'text'); t1.textContent = '1';
+        t1.setAttribute('x', dx + 6); t1.setAttribute('y', above ? y1 + 15 : y1 - 6);
+        const t2 = document.createElementNS(NS, 'text'); t2.textContent = '∗';
+        t2.setAttribute('x', x2 + 6); t2.setAttribute('y', above ? y2 - 6 : y2 + 15);
+        const dot = document.createElementNS(NS, 'circle'); dot.setAttribute('r', 3.5); dot.setAttribute('class', 'flow');
+        if (!reduced) {
+          const am = document.createElementNS(NS, 'animateMotion');
+          am.setAttribute('dur', '1.4s'); am.setAttribute('repeatCount', 'indefinite'); am.setAttribute('path', dpath);
+          dot.appendChild(am);
+        }
+        svg.append(p, t1, t2, dot);
+        links.push({ dim: d, els: [p, t1, t2, dot] });
+      });
+    }
+    function hot(dimEl, on) {
+      links.forEach(l => { if (l.dim === dimEl) l.els.forEach(e => e.classList.toggle('hot', on)); });
+      fact.classList.toggle('hot', on);
+    }
+    dims.forEach(d => {
+      d.addEventListener('mouseenter', () => hot(d, true)); d.addEventListener('mouseleave', () => hot(d, false));
+      d.addEventListener('focusin', () => hot(d, true)); d.addEventListener('focusout', () => hot(d, false));
+    });
+    let rt; const redraw = () => { cancelAnimationFrame(rt); rt = requestAnimationFrame(draw); };
+    if ('ResizeObserver' in window) new ResizeObserver(redraw).observe(grid); else addEventListener('resize', redraw);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(redraw);
+    // reveal transforms shift layout slightly; redraw once they settle
+    grid.addEventListener('transitionend', e => { if (e.target === grid) redraw(); });
+    draw();
+  })();
+
+  /* ---------- Gantt ---------- */
+  (function gantt() {
+    const S = new Date(2011, 0, 1), now = new Date(), E = new Date(Math.max(2027, now.getFullYear() + 1), 0, 1);
+    const pct = d => ((d - S) / (E - S)) * 100;
+    const rows = [
+      { label: 'Marine Corps', sub: 'Officer', bars: [{ s: '2012-09', e: '2015-09', t: 'Field Artillery Officer', c: 'var(--cyan)' }] },
+      { label: 'Education', sub: 'Degrees', ms: [{ y: 2011, t: 'B.A. Religious Studies · Gardner-Webb · 2011' }, { y: 2019, t: 'M.Div., distinction in Hebrew & Greek · Campbell · 2019' }] },
+      { label: 'EnviroServe', sub: 'Manufacturing', bars: [{ s: '2019-07', e: '2022-11', t: 'Manufacturing Data Analyst', c: 'var(--cyan)' }] },
+      { label: 'Caterpillar', sub: 'Analytics', bars: [
+        { s: '2022-11', e: '2024-07', t: 'Data Viz Professional', c: 'color-mix(in srgb, var(--accent) 65%, var(--cyan))' },
+        { s: '2024-07', e: 'present', t: 'Senior BI Analyst', c: 'var(--accent)', live: true }] }
+    ];
+    const wrap = $('#gTracks'), tip = $('#tip');
+    let total = 0;
+    rows.forEach(r => {
+      const row = document.createElement('div'); row.className = 'g-row';
+      row.innerHTML = `<div class="g-label">${r.label}<small>${r.sub}</small></div>`;
+      const tr = document.createElement('div'); tr.className = 'g-track';
+      (r.bars || []).forEach((b, i) => {
+        const s = parseYM(b.s), e = parseYM(b.e), m = monthsBetween(s, e); total += m;
+        const el = document.createElement('button'); el.type = 'button'; el.className = 'g-bar' + (b.live ? ' live' : '');
+        el.style.left = pct(s) + '%'; el.style.width = (pct(e) - pct(s)) + '%'; el.style.setProperty('--c', b.c);
+        el.style.transitionDelay = (0.15 + i * 0.25) + 's';
+        el.textContent = b.t;
+        const fmt = d => d.toLocaleString('en-US', { month: 'short', year: 'numeric' });
+        el.dataset.tip = `${b.t}\n${fmt(s)} – ${b.e === 'present' ? 'Present' : fmt(e)} · ${fmtDur(m)}`;
+        el.setAttribute('aria-label', el.dataset.tip.replace('\n', ', '));
+        tr.appendChild(el);
+      });
+      (r.ms || []).forEach(m => {
+        const el = document.createElement('button'); el.type = 'button'; el.className = 'g-ms';
+        el.style.left = pct(new Date(m.y, 4, 15)) + '%'; el.dataset.tip = m.t; el.setAttribute('aria-label', m.t);
+        tr.appendChild(el);
+      });
+      row.appendChild(tr); wrap.appendChild(row);
+    });
+    // today line spans all tracks
+    const today = document.createElement('div'); today.className = 'g-today';
+    today.innerHTML = '<b>Today</b>';
+    const placeToday = () => {
+      const first = $('.g-track', wrap);
+      const off = first.offsetLeft, wTrack = first.clientWidth;
+      today.style.left = (off + wTrack * pct(now) / 100) + 'px';
+    };
+    wrap.appendChild(today); placeToday(); addEventListener('resize', placeToday);
+    // ticks
+    const ticks = $('#gTicks');
+    for (let y = S.getFullYear(); y <= E.getFullYear(); y++) {
+      const sp = document.createElement('span'); sp.textContent = "'" + String(y).slice(2); sp.style.left = pct(new Date(y, 0, 1)) + '%';
+      if (y === E.getFullYear()) sp.style.translate = '-100% 0';
+      if (y === S.getFullYear()) sp.style.translate = '0 0';
+      ticks.appendChild(sp);
+    }
+    $('#ganttTotal').textContent = fmtDur(total) + ' of professional experience';
+    // tooltips
+    function showTip(el) {
+      tip.textContent = el.dataset.tip; tip.style.whiteSpace = 'pre-line'; tip.classList.add('show');
+      const r = el.getBoundingClientRect(), tr = tip.getBoundingClientRect();
+      let x = r.left + r.width / 2 - tr.width / 2; x = Math.max(8, Math.min(x, innerWidth - tr.width - 8));
+      let y = r.top - tr.height - 10; if (y < 8) y = r.bottom + 10;
+      tip.style.left = x + 'px'; tip.style.top = y + 'px';
+    }
+    const hide = () => tip.classList.remove('show');
+    $$('[data-tip]', wrap).forEach(el => {
+      el.addEventListener('mouseenter', () => showTip(el)); el.addEventListener('focus', () => showTip(el));
+      el.addEventListener('mouseleave', hide); el.addEventListener('blur', hide);
+      el.addEventListener('click', () => showTip(el));
+    });
+    addEventListener('scroll', hide, { passive: true });
+    onceVisible($('#gantt'), () => $('#gantt').classList.add('in'), 0.35);
+
+    // role durations
+    $$('.when b[data-start]').forEach(b => b.textContent = fmtDur(monthsBetween(parseYM(b.dataset.start), parseYM(b.dataset.end))));
+  })();
+
+  /* ---------- Experience slicer ---------- */
+  const NAMES = { all: 'all skills', viz: 'Visualization', eng: 'Engineering', platform: 'Platforms', lead: 'Leadership', comm: 'Communication', domain: 'Ops & planning' };
+  const allWins = $$('.wins li'), chips = $$('.fchip');
+  chips.forEach(c => {
+    const f = c.dataset.f;
+    $('.n', c).textContent = f === 'all' ? allWins.length : allWins.filter(li => li.dataset.tags.split(' ').includes(f)).length;
+  });
+  function applyFilter(f) {
+    chips.forEach(c => c.setAttribute('aria-pressed', c.dataset.f === f));
+    let n = 0;
+    $$('.role').forEach(role => {
+      const list = $('.wins', role); let any = false;
+      list.classList.toggle('filtering', f !== 'all');
+      $$('li', list).forEach(li => {
+        const m = f !== 'all' && li.dataset.tags.split(' ').includes(f);
+        li.classList.toggle('match', m); if (m) { any = true; n++; }
+      });
+      role.classList.toggle('empty', f !== 'all' && !any);
+    });
+    $('#filterStatus').textContent = f === 'all' ? `Showing all ${allWins.length} achievements.` : `${n} achievements highlighted for ${NAMES[f]}.`;
+  }
+  chips.forEach(c => c.addEventListener('click', () => applyFilter(c.getAttribute('aria-pressed') === 'true' && c.dataset.f !== 'all' ? 'all' : c.dataset.f)));
+  $$('.xfilter').forEach(b => b.addEventListener('click', () => {
+    applyFilter(b.dataset.filter);
+    $('#journey .filters').scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+    toast(`Cross-filtered: ${NAMES[b.dataset.filter]}`);
+  }));
+
+  /* ---------- Email copy + print ---------- */
+  async function copyEmail() {
+    try { await navigator.clipboard.writeText(EMAIL); toast('Email copied to clipboard'); }
+    catch (e) { location.href = 'mailto:' + EMAIL; }
+  }
+  $('#copyEmail').addEventListener('click', copyEmail);
+  const printCV = () => { $$('.reveal').forEach(el => el.classList.add('in')); window.print(); };
+  $('#printBtn').addEventListener('click', printCV);
+
+  /* ---------- Command palette ---------- */
+  const cmdk = $('#cmdk'), input = $('#cmdkInput'), list = $('#cmdkList');
+  const go = id => () => $(id).scrollIntoView({ behavior: reduced ? 'auto' : 'smooth' });
+  const open = url => () => window.open(url, '_blank', 'noopener');
+  const COMMANDS = [
+    { g: 'Navigate', t: 'Impact: results, measured', i: 'i-hash', run: go('#impact'), k: 'kpis numbers metrics' },
+    { g: 'Navigate', t: 'Case files', i: 'i-hash', run: go('#cases'), k: 'snowflake migration forecast' },
+    { g: 'Navigate', t: 'Skills: star schema', i: 'i-hash', run: go('#model'), k: 'expertise power bi dax sql' },
+    { g: 'Navigate', t: 'Professional journey', i: 'i-hash', run: go('#journey'), k: 'experience gantt resume' },
+    { g: 'Navigate', t: 'Independent projects', i: 'i-hash', run: go('#projects'), k: 'github covid nashville python' },
+    { g: 'Navigate', t: 'The through-line & education', i: 'i-hash', run: go('#through-line'), k: 'usmc divinity hebrew greek' },
+    { g: 'Navigate', t: 'Contact', i: 'i-hash', run: go('#contact'), k: 'email hire' },
+    { g: 'Actions', t: 'Copy email address', i: 'i-copy', run: copyEmail, h: EMAIL },
+    { g: 'Actions', t: 'Toggle light / dark theme', i: 'i-sun', run: toggleTheme },
+    { g: 'Actions', t: 'Print résumé / save as PDF', i: 'i-print', run: printCV },
+    { g: 'Actions', t: 'Replay the SQL console', i: 'i-play', run: () => window.__replayConsole() },
+    ...['viz', 'eng', 'platform', 'lead', 'comm', 'domain'].map(f => ({ g: 'Slicer', t: `Filter journey: ${NAMES[f]}`, i: 'i-filter', run: () => { applyFilter(f); go('#journey')(); } })),
+    { g: 'Links', t: 'LinkedIn', i: 'i-linkedin', run: open('https://www.linkedin.com/in/ron-houser/'), h: '↗' },
+    { g: 'Links', t: 'GitHub: Power BI', i: 'i-github', run: open('https://github.com/RonHouser/Power-BI'), h: '↗' },
+    { g: 'Links', t: 'GitHub: SQL', i: 'i-github', run: open('https://github.com/RonHouser/SQL'), h: '↗' },
+    { g: 'Links', t: 'GitHub: Python', i: 'i-github', run: open('https://github.com/RonHouser/Python'), h: '↗' }
+  ];
+  let filtered = COMMANDS, sel = 0, lastFocus = null;
+  function score(q, c) {
+    if (!q) return 1;
+    const hay = (c.t + ' ' + c.g + ' ' + (c.k || '')).toLowerCase();
+    if (hay.includes(q)) return 3 - hay.indexOf(q) / 100;
+    let i = 0; for (const ch of hay) { if (ch === q[i]) i++; if (i === q.length) return 1; }
+    return 0;
+  }
+  function render() {
+    const q = input.value.trim().toLowerCase();
+    filtered = COMMANDS.map(c => ({ c, s: score(q, c) })).filter(x => x.s > 0).sort((a, b) => q ? b.s - a.s : 0).map(x => x.c);
+    sel = Math.min(sel, Math.max(0, filtered.length - 1));
+    list.innerHTML = '';
+    if (!filtered.length) { list.innerHTML = '<li class="empty" role="presentation">No matches. Try "email" or "migration".</li>'; input.removeAttribute('aria-activedescendant'); return; }
+    let grp = null;
+    filtered.forEach((c, i) => {
+      if (!q && c.g !== grp) { grp = c.g; const h = document.createElement('li'); h.className = 'grp'; h.setAttribute('role', 'presentation'); h.textContent = grp; list.appendChild(h); }
+      const li = document.createElement('li'); li.id = 'cmd-' + i; li.setAttribute('role', 'option'); li.setAttribute('aria-selected', i === sel);
+      li.innerHTML = `<svg aria-hidden="true"><use href="#${c.i}"/></svg><span></span>${c.h ? `<span class="hint"></span>` : ''}`;
+      li.children[1].textContent = c.t; if (c.h) li.children[2].textContent = c.h;
+      li.addEventListener('mousemove', () => { if (sel !== i) { sel = i; mark(); } });
+      li.addEventListener('click', () => exec(i));
+      list.appendChild(li);
+    });
+    mark();
+  }
+  function mark() {
+    $$('li[role="option"]', list).forEach((li, i) => li.setAttribute('aria-selected', i === sel));
+    const cur = $('#cmd-' + sel); if (cur) { input.setAttribute('aria-activedescendant', cur.id); cur.scrollIntoView({ block: 'nearest' }); }
+  }
+  function exec(i) { const c = filtered[i]; if (!c) return; closeCmdk(); setTimeout(c.run, 60); }
+  function openCmdk() {
+    lastFocus = document.activeElement; cmdk.hidden = false; input.value = ''; sel = 0; render();
+    document.body.style.overflow = 'hidden'; setTimeout(() => input.focus(), 10);
+  }
+  function closeCmdk() {
+    if (cmdk.hidden) return; cmdk.hidden = true; document.body.style.overflow = '';
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  input.addEventListener('input', () => { sel = 0; render(); });
+  input.addEventListener('keydown', e => {
+    if (e.key === 'ArrowDown') { e.preventDefault(); if (filtered.length) { sel = (sel + 1) % filtered.length; mark(); } }
+    else if (e.key === 'ArrowUp') { e.preventDefault(); if (filtered.length) { sel = (sel - 1 + filtered.length) % filtered.length; mark(); } }
+    else if (e.key === 'Enter') { e.preventDefault(); exec(sel); }
+    else if (e.key === 'Tab') { e.preventDefault(); }
+  });
+  cmdk.addEventListener('click', e => { if (e.target.hasAttribute('data-close')) closeCmdk(); });
+  $('#openCmdk').addEventListener('click', openCmdk);
+  $('#footCmdk').addEventListener('click', openCmdk);
+  document.addEventListener('keydown', e => {
+    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); cmdk.hidden ? openCmdk() : closeCmdk(); }
+    else if (e.key === 'Escape') closeCmdk();
+    else if (e.key === '/' && cmdk.hidden && !/input|textarea/i.test(document.activeElement.tagName)) { e.preventDefault(); openCmdk(); }
+  });
+})();
+</script>
 </body>
 </html>
