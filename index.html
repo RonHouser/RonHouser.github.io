@@ -516,8 +516,6 @@ footer { border-top: 1px solid var(--line); padding: 2rem 0; }
 .toast { position: fixed; left: 50%; bottom: 1.5rem; z-index: 310; translate: -50% 0; padding: .7rem 1.1rem; border-radius: 12px; background: var(--text); color: var(--bg); font-size: .88rem; font-weight: 500; opacity: 0; transform: translateY(10px); transition: opacity .25s, transform .25s var(--ease); pointer-events: none; }
 .toast.show { opacity: 1; transform: none; }
 
-.print-only { display: none; }
-
 /* ==========================================================================
    Responsive
    ========================================================================== */
@@ -567,42 +565,6 @@ footer { border-top: 1px solid var(--line); padding: 2rem 0; }
   .js .reveal { opacity: 1; transform: none; }
   .console { transform: none; }
 }
-
-/* ==========================================================================
-   Print — the site doubles as a clean résumé
-   ========================================================================== */
-@media print {
-  @page { margin: .6in; }
-  :root, [data-theme] { --bg: #fff; --surface: #fff; --surface-2: #fff; --text: #000; --muted: #333; --faint: #666; --line: #ddd; --accent-text: #6b4a00; --accent-soft: transparent; }
-  body { font-size: 10.5pt; }
-  .nav, .progress, #ridge, .console, .scroll-cue, .hero-cta, .socials, .viz, .case-tabs, .model svg, .xfilter, .gantt, .filters, .proj-code, .contact, .cmdk, .toast, .tip, .no-print { display: none !important; }
-  .print-only { display: block; }
-  .js .reveal { opacity: 1 !important; transform: none !important; }
-  .hero { min-height: 0; padding: 0 0 1rem; display: block; }
-  .hero h1 { font-size: 22pt; margin: .4rem 0; }
-  .hero::before, .hero::after { display: none; }
-  .section { padding: 1.2rem 0; break-inside: auto; }
-  .sec-head { margin-bottom: .8rem; }
-  .sec-head h2 { font-size: 15pt; margin-top: .2rem; }
-  .sec-head p { display: none; }
-  .kpis { grid-template-columns: repeat(4, 1fr); }
-  .kpi { min-height: 0; padding: .6rem; }
-  .kpi-val { font-size: 18pt; margin: .4rem 0; }
-  .kpi-bar, .kpi-note { display: none; }
-  .case-panel[hidden] { display: grid !important; }
-  .case-panel { grid-template-columns: 1fr; min-height: 0; padding: .6rem 0; border: 0; }
-  .card { border: 0; box-shadow: none; }
-  .model { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem; }
-  .tbl { break-inside: avoid; } .tbl.fact { display: none; }
-  .tbl[data-dim] { grid-row: auto; }
-  .roles::before, .role::before { display: none; }
-  .roles { padding: 0; }
-  .role { padding: .4rem 0; break-inside: avoid; }
-  .wins li { opacity: 1 !important; background: none !important; padding: .1rem 0 .1rem 1rem; }
-  .projects { grid-template-columns: 1fr 1fr 1fr; }
-  .through { grid-template-columns: 1fr 1fr; }
-  a { text-decoration: none; }
-}
 </style>
 </head>
 <body>
@@ -617,7 +579,7 @@ footer { border-top: 1px solid var(--line); padding: 2rem 0; }
     <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/></g></symbol>
     <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></symbol>
     <symbol id="i-ext" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9"/></symbol>
-    <symbol id="i-print" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9V3h10v6"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M7 14h10v7H7z"/></g></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></g></symbol>
     <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></g></symbol>
     <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></symbol>
     <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></symbol>
@@ -668,13 +630,12 @@ footer { border-top: 1px solid var(--line); padding: 2rem 0; }
   <canvas id="ridge" aria-hidden="true"></canvas>
   <div class="wrap hero-grid">
     <div>
-      <div class="print-only" style="font:500 10pt var(--font-mono);color:#333">ron.houser12@gmail.com · linkedin.com/in/ron-houser · github.com/RonHouser</div>
       <span class="status reveal"><span class="pulse" aria-hidden="true"></span><span><strong>Senior BI Analyst</strong> · Caterpillar Inc.</span></span>
       <h1 class="reveal" style="--d:.08s">Turning operational data into <em>decisions</em> leaders <span class="u">act on.<svg viewBox="0 0 200 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8 C 50 2, 120 2, 198 7"/></svg></span></h1>
       <p class="lede reveal" style="--d:.16s">I'm <strong>Ron Houser</strong>. I design enterprise <strong>Power BI</strong> and <strong>Snowflake</strong> solutions — executive scorecards, KPI reporting, and self-service analytics for S&amp;OP, demand planning, and manufacturing scheduling. Former <strong>USMC officer</strong>: I lead with clarity and finish the mission.</p>
       <div class="hero-cta reveal" style="--d:.24s">
         <a class="btn btn-primary" href="#impact">See the impact <svg class="arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-        <button class="btn" type="button" id="printBtn"><svg aria-hidden="true"><use href="#i-print"/></svg> Résumé PDF</button>
+        <a class="btn" href="Ron-Houser-Resume.pdf" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-doc"/></svg> Résumé (PDF)</a>
       </div>
       <div class="socials reveal" style="--d:.32s">
         <span>Find me</span>
@@ -1138,7 +1099,7 @@ sns.<span class="tk-f">heatmap</span>(corr, annot=<span class="tk-k">True</span>
 <footer>
   <div class="wrap foot">
     <span>© <span id="yr">2026</span> Ron Houser · Crafted with precision. Deployed with purpose.</span>
-    <span class="no-print">One hand-built HTML file, no frameworks · <button type="button" id="footCmdk">press <span class="kbd-word">Ctrl K</span></button></span>
+    <span>One hand-built HTML file, no frameworks · <button type="button" id="footCmdk">press <span class="kbd-word">Ctrl K</span></button></span>
   </div>
 </footer>
 
@@ -1169,6 +1130,7 @@ sns.<span class="tk-f">heatmap</span>(corr, annot=<span class="tk-k">True</span>
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const isMac = /Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent);
   const EMAIL = 'ron.houser12@gmail.com';
+  const RESUME = 'Ron-Houser-Resume.pdf';
 
   /* ---------- Small utilities ---------- */
   const toastEl = $('#toast'); let toastT;
@@ -1581,14 +1543,12 @@ sns.<span class="tk-f">heatmap</span>(corr, annot=<span class="tk-k">True</span>
     toast(`Cross-filtered: ${NAMES[b.dataset.filter]}`);
   }));
 
-  /* ---------- Email copy + print ---------- */
+  /* ---------- Email copy ---------- */
   async function copyEmail() {
     try { await navigator.clipboard.writeText(EMAIL); toast('Email copied to clipboard'); }
     catch (e) { location.href = 'mailto:' + EMAIL; }
   }
   $('#copyEmail').addEventListener('click', copyEmail);
-  const printCV = () => { $$('.reveal').forEach(el => el.classList.add('in')); window.print(); };
-  $('#printBtn').addEventListener('click', printCV);
 
   /* ---------- Command palette ---------- */
   const cmdk = $('#cmdk'), input = $('#cmdkInput'), list = $('#cmdkList');
@@ -1602,9 +1562,9 @@ sns.<span class="tk-f">heatmap</span>(corr, annot=<span class="tk-k">True</span>
     { g: 'Navigate', t: 'Independent projects', i: 'i-hash', run: go('#projects'), k: 'github covid nashville python' },
     { g: 'Navigate', t: 'The through-line & education', i: 'i-hash', run: go('#through-line'), k: 'usmc divinity hebrew greek' },
     { g: 'Navigate', t: 'Contact', i: 'i-hash', run: go('#contact'), k: 'email hire' },
+    { g: 'Actions', t: 'Open résumé (PDF)', i: 'i-doc', run: open(RESUME), k: 'resume cv download', h: '↗' },
     { g: 'Actions', t: 'Copy email address', i: 'i-copy', run: copyEmail, h: EMAIL },
     { g: 'Actions', t: 'Toggle light / dark theme', i: 'i-sun', run: toggleTheme },
-    { g: 'Actions', t: 'Print résumé / save as PDF', i: 'i-print', run: printCV },
     { g: 'Actions', t: 'Replay the SQL console', i: 'i-play', run: () => window.__replayConsole() },
     ...['viz', 'eng', 'platform', 'lead', 'comm', 'domain'].map(f => ({ g: 'Slicer', t: `Filter journey: ${NAMES[f]}`, i: 'i-filter', run: () => { applyFilter(f); go('#journey')(); } })),
     { g: 'Links', t: 'LinkedIn', i: 'i-linkedin', run: open('https://www.linkedin.com/in/ron-houser/'), h: '↗' },
