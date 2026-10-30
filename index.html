@@ -320,7 +320,7 @@ section { position: relative; }
 .nodes { display: grid; grid-template-columns: repeat(auto-fill, minmax(34px, 1fr)); gap: 7px; }
 .node { aspect-ratio: 1; border-radius: 8px; border: 1.5px dashed var(--line-strong); display: grid; place-items: center; font: 500 .62rem/1 var(--font-mono); color: var(--faint); transition: background-color .35s, border-color .35s, color .35s, transform .35s var(--ease); }
 .node.on { background: var(--cyan-soft); border: 1.5px solid var(--cyan); color: var(--cyan); transform: scale(1.04); }
-.phases { list-style: none; padding: 0; margin: 1.2rem 0 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; counter-reset: ph; }
+.phases { list-style: none; padding: 0; margin: 1.2rem 0 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
 .phases li { font: 500 .66rem/1.3 var(--font-mono); color: var(--faint); padding-top: .6rem; border-top: 2px solid var(--line-strong); transition: color .3s, border-color .3s; }
 .phases li.on { color: var(--text); border-color: var(--cyan); }
 .counter-line { display: flex; align-items: baseline; gap: .5rem; margin-top: 1rem; }
@@ -391,7 +391,12 @@ section { position: relative; }
 .gantt.in .g-bar { transform: scaleX(1); }
 .g-bar:hover, .g-bar:focus-visible { filter: brightness(1.12); }
 .g-bar.live { background: linear-gradient(90deg, var(--c) 70%, color-mix(in srgb, var(--c) 30%, transparent)); }
-.g-ms { position: absolute; top: 14px; width: 16px; height: 16px; margin-left: -8px; transform: rotate(45deg); background: var(--surface); border: 2px solid var(--cyan); border-radius: 3px; padding: 0; cursor: default; }
+/* Education study period: thin line with a start tick, leading into the milestone diamond */
+.g-span { position: absolute; top: 8px; height: 28px; padding: 0; margin: 0; border: 0; background: transparent; cursor: default; display: block; }
+.g-span .ln { position: absolute; left: 0; right: 0; top: 13px; height: 2px; border-radius: 2px; background: #5AD7C8; background: var(--cyan); }
+.g-span .tk { position: absolute; left: 0; top: 6px; width: 2px; height: 16px; border-radius: 2px; background: #5AD7C8; background: var(--cyan); }
+.g-span:hover .ln, .g-span:focus-visible .ln { height: 3px; top: 12.5px; }
+.g-ms { position: absolute; z-index: 1; top: 14px; width: 16px; height: 16px; margin-left: -8px; transform: rotate(45deg); background: var(--surface); border: 2px solid var(--cyan); border-radius: 3px; padding: 0; cursor: default; }
 .g-axis { display: grid; grid-template-columns: 150px 1fr; margin-top: .4rem; }
 .g-ticks { position: relative; height: 22px; border-top: 1px solid var(--line-strong); }
 .g-ticks span { position: absolute; top: 6px; translate: -50% 0; font: 500 .66rem/1 var(--font-mono); color: var(--faint); }
@@ -552,7 +557,6 @@ footer { border-top: 1px solid var(--line); padding: 2rem 0; }
   .roles { padding-left: 1.6rem; }
   .role::before { left: calc(-1.6rem + 1px); }
   .icon-btn .lbl, .icon-btn kbd { display: none; }
-  .phases { grid-template-columns: repeat(5, minmax(0,1fr)); }
   .phases li { font-size: .58rem; }
   .scroll-cue { display: none; }
 }
@@ -590,6 +594,7 @@ footer { border-top: 1px solid var(--line); padding: 2rem 0; }
   .card { border: 0; box-shadow: none; }
   .model { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem; }
   .tbl { break-inside: avoid; } .tbl.fact { display: none; }
+  .tbl[data-dim] { grid-row: auto; }
   .roles::before, .role::before { display: none; }
   .roles { padding: 0; }
   .role { padding: .4rem 0; break-inside: avoid; }
@@ -616,7 +621,6 @@ footer { border-top: 1px solid var(--line); padding: 2rem 0; }
     <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></g></symbol>
     <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></symbol>
     <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></symbol>
-    <symbol id="i-cmd" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M9 6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6Z"/></symbol>
     <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></g></symbol>
     <symbol id="i-table" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 10v10"/></g></symbol>
     <symbol id="i-key" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="8" cy="15" r="4"/><path d="m11 12 9-9m-3 3 2 2m-5 1 2 2"/></g></symbol>
@@ -1090,7 +1094,7 @@ sns.<span class="tk-f">heatmap</span>(corr, annot=<span class="tk-k">True</span>
         <div class="pillars">
           <div class="pillar"><svg aria-hidden="true"><use href="#i-target"/></svg><div><b>Precision</b><span>100% safety record across 256 days of live-fire training.</span></div></div>
           <div class="pillar"><svg aria-hidden="true"><use href="#i-book"/></svg><div><b>Translation</b><span>Master of Divinity, with distinction in Hebrew &amp; Greek.</span></div></div>
-          <div class="pillar"><svg aria-hidden="true"><use href="#i-people"/></svg><div><b>Enablement</b><span>Tier-2 ThoughtSpot expert who mentors analysts and trains business partners.</span></div></div>
+          <div class="pillar"><svg aria-hidden="true"><use href="#i-people"/></svg><div><b>Enablement</b><span>Mentors analysts and business partners, delivers training, and builds the materials that help teams use data on their own.</span></div></div>
         </div>
       </div>
       <div class="edu">
@@ -1185,6 +1189,7 @@ sns.<span class="tk-f">heatmap</span>(corr, annot=<span class="tk-k">True</span>
     if (mo) out.push(mo + ' mo');
     return out.join(' ') || '< 1 mo';
   }
+  const fmtMY = d => d.toLocaleString('en-US', { month: 'short', year: 'numeric' });
 
   /* ---------- Year + keyboard hint ---------- */
   $('#yr').textContent = new Date().getFullYear();
@@ -1349,7 +1354,6 @@ sns.<span class="tk-f">heatmap</span>(corr, annot=<span class="tk-k">True</span>
   }, 0.4));
 
   /* ---------- Case files: visuals ---------- */
-  // seeded random for stable minimap shapes
   let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
   function mm(el, count, ratio) {
     for (let i = 0; i < count; i++) {
@@ -1387,7 +1391,6 @@ sns.<span class="tk-f">heatmap</span>(corr, annot=<span class="tk-k">True</span>
       const cells = $$('i', waffleEl), cnt = $('#waffleCount');
       cells.forEach(c => c.classList.remove('on')); cnt.textContent = '0';
       if (reduced) { cells.forEach(c => c.classList.add('on')); cnt.textContent = '131'; return; }
-      // order: diagonal sweep
       const cols = Math.max(1, Math.round(waffleEl.clientWidth / 19));
       const order = cells.map((c, i) => ({ c, k: (i % cols) + Math.floor(i / cols) * 1.4 + rnd() * 2 })).sort((a, b) => a.k - b.k);
       order.forEach((o, i) => later(() => { o.c.classList.add('on'); cnt.textContent = i + 1; }, 200 + i * 14));
@@ -1432,13 +1435,13 @@ sns.<span class="tk-f">heatmap</span>(corr, annot=<span class="tk-k">True</span>
         const r = d.getBoundingClientRect();
         const dx = r.left - g.left + r.width / 2, top = r.top - g.top;
         const above = top < fy;
-        const y1 = above ? top + r.height : top;          // dim edge
+        const y1 = above ? top + r.height : top;
         const x2 = Math.min(Math.max(dx, fx + 24), fx + f.width - 24);
-        const y2 = above ? fy : fy + f.height;            // fact edge
+        const y2 = above ? fy : fy + f.height;
         const my = (y1 + y2) / 2;
         const p = document.createElementNS(NS, 'path');
         const dpath = `M${dx},${y1} C${dx},${my} ${x2},${my} ${x2},${y2}`;
-        p.setAttribute('d', dpath); p.id = 'w-' + d.dataset.dim;
+        p.setAttribute('d', dpath);
         const t1 = document.createElementNS(NS, 'text'); t1.textContent = '1';
         t1.setAttribute('x', dx + 6); t1.setAttribute('y', above ? y1 + 15 : y1 - 6);
         const t2 = document.createElementNS(NS, 'text'); t2.textContent = '∗';
@@ -1464,7 +1467,6 @@ sns.<span class="tk-f">heatmap</span>(corr, annot=<span class="tk-k">True</span>
     let rt; const redraw = () => { cancelAnimationFrame(rt); rt = requestAnimationFrame(draw); };
     if ('ResizeObserver' in window) new ResizeObserver(redraw).observe(grid); else addEventListener('resize', redraw);
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(redraw);
-    // reveal transforms shift layout slightly; redraw once they settle
     grid.addEventListener('transitionend', e => { if (e.target === grid) redraw(); });
     draw();
   })();
@@ -1473,9 +1475,13 @@ sns.<span class="tk-f">heatmap</span>(corr, annot=<span class="tk-k">True</span>
   (function gantt() {
     const S = new Date(2011, 0, 1), now = new Date(), E = new Date(Math.max(2027, now.getFullYear() + 1), 0, 1);
     const pct = d => ((d - S) / (E - S)) * 100;
+    const MDIV = new Date(2019, 4, 15);
     const rows = [
       { label: 'Marine Corps', sub: 'Officer', bars: [{ s: '2012-09', e: '2015-09', t: 'Field Artillery Officer', c: 'var(--cyan)' }] },
-      { label: 'Education', sub: 'Degrees', ms: [{ y: 2011, t: 'B.A. Religious Studies · Gardner-Webb · 2011' }, { y: 2019, t: 'M.Div., distinction in Hebrew & Greek · Campbell · 2019' }] },
+      { label: 'Education', sub: 'Degrees',
+        // Study period after the Marine Corps, leading into the M.Div. milestone
+        spans: [{ s: '2015-10', e: MDIV, t: 'Master of Divinity studies · Campbell University' }],
+        ms: [{ d: new Date(2011, 4, 15), t: 'B.A. Religious Studies · Gardner-Webb · 2011' }, { d: MDIV, t: 'M.Div., distinction in Hebrew & Greek · Campbell · 2019' }] },
       { label: 'EnviroServe', sub: 'Manufacturing', bars: [{ s: '2019-07', e: '2022-11', t: 'Manufacturing Data Analyst', c: 'var(--cyan)' }] },
       { label: 'Caterpillar', sub: 'Analytics', bars: [
         { s: '2022-11', e: '2024-07', t: 'Data Viz Professional', c: 'color-mix(in srgb, var(--accent) 65%, var(--cyan))' },
@@ -1493,28 +1499,33 @@ sns.<span class="tk-f">heatmap</span>(corr, annot=<span class="tk-k">True</span>
         el.style.left = pct(s) + '%'; el.style.width = (pct(e) - pct(s)) + '%'; el.style.setProperty('--c', b.c);
         el.style.transitionDelay = (0.15 + i * 0.25) + 's';
         el.textContent = b.t;
-        const fmt = d => d.toLocaleString('en-US', { month: 'short', year: 'numeric' });
-        el.dataset.tip = `${b.t}\n${fmt(s)} – ${b.e === 'present' ? 'Present' : fmt(e)} · ${fmtDur(m)}`;
+        el.dataset.tip = `${b.t}\n${fmtMY(s)} – ${b.e === 'present' ? 'Present' : fmtMY(e)} · ${fmtDur(m)}`;
+        el.setAttribute('aria-label', el.dataset.tip.replace('\n', ', '));
+        tr.appendChild(el);
+      });
+      (r.spans || []).forEach(sp => {
+        const s = parseYM(sp.s), e = sp.e;
+        const el = document.createElement('button'); el.type = 'button'; el.className = 'g-span';
+        el.innerHTML = '<span class="ln" aria-hidden="true"></span><span class="tk" aria-hidden="true"></span>';
+        el.style.left = pct(s) + '%'; el.style.width = (pct(e) - pct(s)) + '%';
+        el.dataset.tip = `${sp.t}\n${fmtMY(s)} – ${fmtMY(e)} · ${fmtDur(monthsBetween(s, e))}`;
         el.setAttribute('aria-label', el.dataset.tip.replace('\n', ', '));
         tr.appendChild(el);
       });
       (r.ms || []).forEach(m => {
         const el = document.createElement('button'); el.type = 'button'; el.className = 'g-ms';
-        el.style.left = pct(new Date(m.y, 4, 15)) + '%'; el.dataset.tip = m.t; el.setAttribute('aria-label', m.t);
+        el.style.left = pct(m.d) + '%'; el.dataset.tip = m.t; el.setAttribute('aria-label', m.t);
         tr.appendChild(el);
       });
       row.appendChild(tr); wrap.appendChild(row);
     });
-    // today line spans all tracks
     const today = document.createElement('div'); today.className = 'g-today';
     today.innerHTML = '<b>Today</b>';
     const placeToday = () => {
       const first = $('.g-track', wrap);
-      const off = first.offsetLeft, wTrack = first.clientWidth;
-      today.style.left = (off + wTrack * pct(now) / 100) + 'px';
+      today.style.left = (first.offsetLeft + first.clientWidth * pct(now) / 100) + 'px';
     };
     wrap.appendChild(today); placeToday(); addEventListener('resize', placeToday);
-    // ticks
     const ticks = $('#gTicks');
     for (let y = S.getFullYear(); y <= E.getFullYear(); y++) {
       const sp = document.createElement('span'); sp.textContent = "'" + String(y).slice(2); sp.style.left = pct(new Date(y, 0, 1)) + '%';
@@ -1523,7 +1534,6 @@ sns.<span class="tk-f">heatmap</span>(corr, annot=<span class="tk-k">True</span>
       ticks.appendChild(sp);
     }
     $('#ganttTotal').textContent = fmtDur(total) + ' of professional experience';
-    // tooltips
     function showTip(el) {
       tip.textContent = el.dataset.tip; tip.style.whiteSpace = 'pre-line'; tip.classList.add('show');
       const r = el.getBoundingClientRect(), tr = tip.getBoundingClientRect();
@@ -1540,7 +1550,6 @@ sns.<span class="tk-f">heatmap</span>(corr, annot=<span class="tk-k">True</span>
     addEventListener('scroll', hide, { passive: true });
     onceVisible($('#gantt'), () => $('#gantt').classList.add('in'), 0.35);
 
-    // role durations
     $$('.when b[data-start]').forEach(b => b.textContent = fmtDur(monthsBetween(parseYM(b.dataset.start), parseYM(b.dataset.end))));
   })();
 
